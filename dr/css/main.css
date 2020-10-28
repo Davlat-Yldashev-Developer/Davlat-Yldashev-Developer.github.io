@@ -1261,6 +1261,14 @@ footer {
     padding-top: 140px;
     padding-bottom: 150px;
   }
+
+  .order-services a {
+    width: 150px;
+    border-radius: 5px;
+    padding: 16px 0;
+    margin-top: 20px;
+    font-size: 13px;
+   }
 }
 @media screen and (max-width: 1270px) {
   .services_hover__item {

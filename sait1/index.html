@@ -5,12 +5,24 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Document</title>
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-	<script src="js/common.js"></script>
 	<link href="https://fonts.googleapis.com/css2?family=Commissioner:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="css/main.css">
 </head>
 <body>
+	  <div id="preloader" class="preloader">
+		  <div class="loader">
+		  	<div id="cube-loader">
+			    <div class="caption">
+			      <div class="cube-loader">
+			        <div class="cube loader-1"></div>
+			        <div class="cube loader-2"></div>
+			        <div class="cube loader-4"></div>
+			        <div class="cube loader-3"></div>
+			      </div>
+			    </div>
+			  </div>
+		  </div>
+	</div>
 	<header>
 		<div class="container">
 			<div class="header_top">
@@ -629,6 +641,18 @@
 			</div>
 		</div>
 	</footer>
+	<script>
+		document.body.onload = function() {
+
+			setTimeout(function() {
+				var preloader = document.getElementById('preloader');
+				if(!preloader.classList.contains('done') ) {
+					preloader.classList.add('done');
+				}
+			}, 1000);
+
+		}
+	</script>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 	<script src="js/common.js"></script>
 	

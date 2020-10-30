@@ -3017,4 +3017,10 @@ footer {
   .header2_content__item-text h6 {
     font-size: 16px;
   }
+  .developer_page p {
+    display: none;
+  }
+  .footer_text {
+    width: 65px;
+  }
 }

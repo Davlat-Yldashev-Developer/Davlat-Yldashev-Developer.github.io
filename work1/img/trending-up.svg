@@ -6,16 +6,16 @@
         </clipPath>
     </defs>
     <style>
-@keyframes a0_do { 0% { stroke-dashoffset: 130px; } 31.5789% { stroke-dashoffset: 130px; } 84.2105% { stroke-dashoffset: 0px; } 100% { stroke-dashoffset: 0px; } }
-@keyframes a1_do { 0% { stroke-dashoffset: 25px; } 31.5789% { stroke-dashoffset: 25px; } 84.2105% { stroke-dashoffset: 25px; } 100% { stroke-dashoffset: 0px; } }
-@keyframes a2_do { 0% { stroke-dashoffset: 25px; } 31.5789% { stroke-dashoffset: 25px; } 84.2105% { stroke-dashoffset: 25px; } 100% { stroke-dashoffset: 0px; } }
+@keyframes a0_do { 0% { stroke-dashoffset: 130px; } 8.5714% { stroke-dashoffset: 130px; } 22.8571% { stroke-dashoffset: 0px; } 100% { stroke-dashoffset: 0px; } }
+@keyframes a1_do { 0% { stroke-dashoffset: 25px; } 8.5714% { stroke-dashoffset: 25px; } 22.8571% { stroke-dashoffset: 25px; } 27.1429% { stroke-dashoffset: 0px; } 100% { stroke-dashoffset: 0px; } }
+@keyframes a2_do { 0% { stroke-dashoffset: 25px; } 8.5714% { stroke-dashoffset: 25px; } 22.8571% { stroke-dashoffset: 25px; } 27.1429% { stroke-dashoffset: 0px; } 100% { stroke-dashoffset: 0px; } }
     </style>
     <title>trending-up</title>
     <g clip-path="url(#ClipPath-1)" transform="translate(49.9999,30) translate(-49.9999,-29.1666)">
         <g transform="translate(49.9995,29.167) translate(-45.8335,-25)">
-            <path d="M4.166,54.167L35.416,22.917L56.25,43.75L95.833,4.167" fill="none" fill-rule="nonzero" stroke="#fb5314" stroke-width="8.33px" stroke-dasharray="130 130" stroke-dashoffset="130" transform="translate(45.8335,25) translate(-49.9995,-29.167)" style="animation: 1.9s linear both a0_do;"/>
-            <path d="M95.833,4.167L95.833,29.167" fill="none" fill-rule="nonzero" stroke="#fb5314" stroke-width="8.33px" stroke-dasharray="25 25" stroke-dashoffset="25" transform="translate(79.167,12.5) translate(-83.333,-16.667)" style="animation: 1.9s linear both a1_do;"/>
-            <path d="M95.833,4.167L70.833,4.167" fill="none" fill-rule="nonzero" stroke="#fb5314" stroke-width="8.33px" stroke-dasharray="25 25" stroke-dashoffset="25" transform="translate(79.167,12.5) translate(-83.333,-16.667)" style="animation: 1.9s linear both a2_do;"/>
+            <path d="M4.166,54.167L35.416,22.917L56.25,43.75L95.833,4.167" fill="none" fill-rule="nonzero" stroke="#fb5314" stroke-width="8.33px" stroke-dasharray="130 130" stroke-dashoffset="130" transform="translate(45.8335,25) translate(-49.9995,-29.167)" style="animation: 7s linear infinite both a0_do;"/>
+            <path d="M95.833,4.167L95.833,29.167" fill="none" fill-rule="nonzero" stroke="#fb5314" stroke-width="8.33px" stroke-dasharray="25 25" stroke-dashoffset="25" transform="translate(79.167,12.5) translate(-83.333,-16.667)" style="animation: 7s linear infinite both a1_do;"/>
+            <path d="M95.833,4.167L70.833,4.167" fill="none" fill-rule="nonzero" stroke="#fb5314" stroke-width="8.33px" stroke-dasharray="25 25" stroke-dashoffset="25" transform="translate(79.167,12.5) translate(-83.333,-16.667)" style="animation: 7s linear infinite both a2_do;"/>
         </g>
     </g>
 </svg>

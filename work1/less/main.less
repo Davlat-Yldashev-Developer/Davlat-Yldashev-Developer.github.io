@@ -108,7 +108,7 @@ h1,h2,h3,h4,h5,h6 {
     display: none;
 }
 
-.select_profile:hover .menu {
+.menu.active {
     display: block;
 }
 
@@ -160,6 +160,10 @@ h1,h2,h3,h4,h5,h6 {
     font-size: 14px;
     color: #70747B;
     font-weight: normal;
+}
+
+.big-slider2 {
+    display: none !important;
 }
 
 .properties {
@@ -223,6 +227,10 @@ h1,h2,h3,h4,h5,h6 {
     height: 24px;
 }
 
+.address2 {
+    display:none !important;
+}
+
 .portfolio {
     display: flex;
     justify-content: space-between;
@@ -245,6 +253,14 @@ h1,h2,h3,h4,h5,h6 {
   margin-top: 23px;
 }
 
+.big_photo p {
+    position: absolute;
+    font-weight: bold;
+    font-size: 18px;
+    color: #fff;
+    bottom: 20px;
+    margin-left: 20px;
+}
 .slider .slick-arrow{
     position: absolute;
     top: 45%;
@@ -1343,6 +1359,11 @@ footer {
     .title h1 {
         font-size: 26px;
     }
+    .big_photo p {
+        font-size: 14px;
+        bottom: 15px;
+        margin-left: 15px;
+    }
 
 }
 
@@ -1799,11 +1820,11 @@ footer {
     }
     .slider .slick-list {
         width: 400px;
-        height: 266px;
+        height: 223px;
     }
     .big_photo img {
         width: 400px;
-        height: 266px;
+        height: 223px;
     }
     .slider {
         width: 400px;
@@ -1901,39 +1922,44 @@ footer {
 }
 
 @media screen and (max-width: 450px) {
+    .portfolio_slider {
+        margin: 0 auto;
+        width: 100%;
+    }
     .header_content__item {
-        width: 330px;
+        width: 95%;
     }
     .container {
-        width: 330px;
+        width: 95%;
     }
     .section3_content {
-        width: 330px;
+        width: 95%;
     }
     .information_text__left {
-        width: 330px;
+        width: 95%;
     }
     .title_section2 {
-        width: 330px;
+        width: 90%;
     }
     .slider .slick-list {
-        width: 330px;
-        height: 215px;
+        width: 100%;
+        height: 100%;
     }
     .big_photo img {
-        width: 330px;
-        height: 215px;
+        width: 100%;
+        height: 100%;
     }
     .slider {
-        width: 330px;
+        width: 100%;
         margin-top: 5px;
     }
     .min_slider .slick-list {
-        width: 330px;
+        width: 100%;
     }
     .min_slider {
-        width: 330px;
+        width: 100%;
         margin-top: 15px;
+        margin-left: 0;
     }
     .slider .slick-arrow.slick-prev {
         left: 20px;
@@ -1942,10 +1968,13 @@ footer {
        right: 20px;
     }
     .min_photo img {
-        width: 102px;
+        width: 97%;
+    }
+    .min_photo {
+        width: 97%;
     }
     .score_chart {
-        width: 330px;
+        width: 100%;
         margin: 0 auto;
         margin-top: 15px;
         height: 128px;
@@ -1984,13 +2013,13 @@ footer {
         height: 44px;
     }
     .title_dexcription {
-        width: 330px;
+        width: 90%;
     }
     .line_section2 {
-        width: 330px;
+        width: 90%;
     }
     .photo_modal {
-        width: 330px;
+        width: 90%;
     }
     .slider_contact .slick-list {
         width: 300px;
@@ -2009,7 +2038,8 @@ footer {
         right: 21px;
     }
     .information_text {
-        width: 330px;
+        width: 200px;
+        flex-direction: column;
     }
     .score_chart__fri img {
         margin-top: 12px;
@@ -2027,5 +2057,19 @@ footer {
         margin-top: -194px;
         z-index: 20;
         display: none;
+    }
+    .address2 {
+        display: flex !important;
+        margin-top: 10px;
+        margin-bottom: 5px;
+    }
+    .address {
+        display: none !important;
+    }
+    .big-slider {
+        display: none !important;
+    }
+    .big-slider2 {
+        display: block !important;
     }
 }

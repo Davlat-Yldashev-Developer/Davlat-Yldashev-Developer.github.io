@@ -100,3 +100,7 @@ $(function () {
     });
   });
 
+$('.select_profile').click(function(event) {
+    $('.menu').toggleClass('active');
+    $('body').toggleClass('lock');
+  });

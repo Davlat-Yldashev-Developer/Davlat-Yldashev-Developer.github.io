@@ -2115,7 +2115,7 @@ footer {
     width: 95%;
   }
   .section3_content {
-    width: 95%;
+    width: 100%;
   }
   .information_text__left {
     width: 100%;
@@ -2212,7 +2212,7 @@ footer {
     width: 300px;
   }
   .slider_contact__one {
-    width: 220px;
+    width: 100%;
     margin: 0 auto;
   }
   .slider_contact .slick-arrow.slick-prev {
@@ -2273,5 +2273,40 @@ footer {
   .portfolio_right_two__item {
     margin: 0 auto;
     width: 240px;
+  }
+  .title h2 {
+    font-size: 30px;
+    margin: 0 auto;
+    margin-top: 15px;
+  }
+  .services_section2 {
+    width: 100%;
+  }
+  .section3_content__slider {
+    width: 330px;
+  }
+  .section3_content__slider .slick-list {
+    width: 100%;
+  }
+  .section3_content__photo {
+    width: 100%;
+  }
+  .section3_content__photo2 {
+    width: 100%;
+  }
+  .section3_content__photo3 {
+    width: 100%;
+  }
+  .section3_content__photo4 {
+    width: 100%;
+  }
+  .slider_contact .slick-arrow.slick-next {
+    right: -20px;
+  }
+  .slider_contact .slick-arrow.slick-prev {
+    left: -20px;
+  }
+  .price {
+    width: 100%;
   }
 }

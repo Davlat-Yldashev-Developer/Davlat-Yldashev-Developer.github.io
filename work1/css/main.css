@@ -86,13 +86,18 @@ h6 {
   width: 24px;
   height: 18px;
 }
-.select_profile select {
-  width: 100%;
-  border: none;
-  background: none;
-  margin-left: 5px;
+.select_profile p {
+  margin-left: 10px;
   font-weight: 500;
   font-family: 'Avenir Next Cyr';
+  font-size: 14px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+.select_profile p img {
+  padding-left: 13px;
 }
 .select_profile {
   display: -webkit-box;
@@ -100,12 +105,75 @@ h6 {
   display: -ms-flexbox;
   display: flex;
   height: 24px;
-  width: 120px;
+  width: 135px;
   margin-top: 18px;
   -webkit-box-align: center;
   -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center;
+}
+.menu {
+  background: #fff;
+  border: 1px solid #F5F5F5;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 200px;
+  padding-bottom: 10px;
+  margin-left: -121px;
+  top: 0;
+  margin-top: 50px;
+  -webkit-box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.1);
+  border-radius: 6px;
+  padding-top: 5px;
+  position: absolute;
+  display: none;
+}
+.select_profile:hover .menu {
+  display: block;
+}
+.menu a {
+  font-size: 14px;
+  color: #222;
+  font-weight: 500;
+}
+.menu_link {
+  padding-bottom: 15px;
+  border-bottom: 1px solid #D9DBE0;
+}
+.menu_link__item {
+  padding-top: 10px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.menu_link__item p {
+  background: #e4662b42;
+  width: 16px;
+  font-size: 12px;
+  border-radius: 9px;
+  color: #F86030;
+  padding-left: 5px;
+  height: 16px;
+  padding-top: 1px;
+}
+.logout {
+  font-size: 14px;
+  color: #222;
+  font-weight: 500;
+  padding-top: 10px;
+  padding-left: 20px;
 }
 .link_title {
   display: -webkit-box;
@@ -161,7 +229,7 @@ h6 {
   color: #000 !important;
 }
 .title h2 span {
-  color: #00b8ff !important;
+  color: #4889de !important;
   font-size: 25px;
 }
 .information_text {
@@ -345,6 +413,7 @@ h6 {
 .score_chart__one img {
   margin-top: 18px;
   margin-left: 20px;
+  width: 24px;
 }
 .score_chart__two {
   display: -webkit-box;
@@ -372,6 +441,7 @@ h6 {
   font-family: 'Avenir Next Cyr';
   font-weight: 500;
   font-size: 16px;
+  background: #fff;
 }
 .score_chart__fri img {
   margin-top: 10px;
@@ -584,7 +654,7 @@ h6 {
   color: #000 !important;
 }
 .title_section2 h4 span {
-  color: #00b8ff !important;
+  color: #4889de !important;
   font-size: 19px;
 }
 .services_section2 {
@@ -604,6 +674,14 @@ h6 {
   -webkit-justify-content: space-around;
       -ms-flex-pack: distribute;
           justify-content: space-around;
+}
+.big_photo img {
+  border-radius: 8px;
+}
+.min_photo img {
+  width: 120px;
+  height: 90px;
+  border-radius: 5px;
 }
 .services_section2__item {
   display: -webkit-box;
@@ -842,6 +920,8 @@ h6 {
           align-items: center;
   margin-top: 60px;
   margin-left: 13px;
+  width: 70px;
+  text-shadow: 0 0 15px black;
 }
 .views_slider p {
   font-size: 14px;
@@ -863,7 +943,7 @@ h6 {
   position: absolute;
   text-align: center;
   margin-top: 7px;
-  margin-left: -101px;
+  margin-left: -78px;
   display: none;
 }
 .phone_slider:hover .tel-hover {
@@ -1045,6 +1125,7 @@ footer {
   .big_photo img {
     width: 830px;
     height: 450px;
+    border-radius: 8px;
   }
   .slider {
     width: 830px;
@@ -1818,8 +1899,23 @@ footer {
     margin-top: 10px;
     padding-left: 13px;
   }
-  .score_chart__fri:hover .warning_hover {
+  .warning_hover {
+    border-radius: 8px;
+    width: 330px;
+    height: 180px;
+    padding: 17px 20px 50px 25px;
+    position: absolute;
+    margin-left: -292px;
+    margin-top: -188px;
+    z-index: 20;
     display: none;
+  }
+  .warning_hover p {
+    font-size: 10px;
+    color: #55585E;
+    font-weight: 500;
+    padding-top: 5px;
+    line-height: 12px;
   }
 }
 @media screen and (max-width: 570px) {
@@ -1980,6 +2076,13 @@ footer {
   .title_section2 {
     width: 400px;
   }
+  .select_profile p {
+    display: none;
+  }
+  .menu {
+    margin-top: 45px;
+    margin-left: -180px;
+  }
 }
 @media screen and (max-width: 450px) {
   .header_content__item {
@@ -2093,5 +2196,22 @@ footer {
   }
   .information_text {
     width: 330px;
+  }
+  .score_chart__fri img {
+    margin-top: 12px;
+    margin-right: 16px;
+    cursor: pointer;
+    width: 18px;
+  }
+  .warning_hover {
+    border-radius: 8px;
+    width: 330px;
+    height: 180px;
+    padding: 17px 20px 50px 20px;
+    position: absolute;
+    margin-left: -291px;
+    margin-top: -194px;
+    z-index: 20;
+    display: none;
   }
 }

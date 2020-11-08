@@ -32,11 +32,19 @@ $(function () {
         arrows:true,
         dots:false,  
         slidesToShow:1,
+        asNavFor:".min_slider",
+        slidesToScroll:1,
+        autoplaySpeed: 2000,
+        speed: 500,
+        cssEase: 'linear'
       });
       $('.min_slider').slick({
         arrows:true,
         dots:false,  
         slidesToShow:7,
+        asNavFor:".slider",
+        slidesToScroll:1,
+        autoplaySpeed: 2000,
         responsive:[
       {
         breakpoint: 1340,
@@ -91,3 +99,4 @@ $(function () {
       }); 
     });
   });
+

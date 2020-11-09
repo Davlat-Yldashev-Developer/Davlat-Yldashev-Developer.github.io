@@ -2817,7 +2817,12 @@ footer {
     margin-top: 15px;
   }
   .services_section2 {
-    width: 100%;
+    width: 95%;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    padding: 0 0 20px 20px;
   }
   .section3_content__slider {
     width: 330px;
@@ -2871,5 +2876,38 @@ footer {
   }
   .form_right__content {
     width: 95%;
+  }
+  .portfolio_right_two__item {
+    margin: 0 auto;
+    width: 93%;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .portfolio_right_two h5 {
+    font-size: 15px;
+    width: 100%;
+  }
+  .portfolio_right_two textarea {
+    margin-top: 10px;
+    padding-left: 13px;
+    width: 100% !important;
+  }
+  .portfolio_right_two button {
+    width: 100% !important;
   }
 }

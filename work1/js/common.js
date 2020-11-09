@@ -97,6 +97,19 @@ $(function () {
         dots:true,  
         slidesToShow:1,
       }); 
+      $('.photo_modal__slider').slick({
+        arrows:true,
+        dots:false,  
+        slidesToShow:2,
+        responsive:[
+      {
+        breakpoint: 570,
+        settings: {
+          slidesToShow:1,
+        }
+      },
+      ]
+      }); 
     });
   });
 

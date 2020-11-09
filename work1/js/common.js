@@ -117,3 +117,23 @@ $('.select_profile').click(function(event) {
     $('.menu').toggleClass('active');
     $('body').toggleClass('lock');
   });
+$(document).on('click','.box', function(){
+    $(this).addClass('active').siblings().removeClass('active')
+});
+
+$ (function() {
+   $('#btn__one') .ready (function() {
+        $('.form2_button') .hide();
+    })
+    $('#box2') .click(function() {
+        $('.form2_button') .show();
+        $('.form1_button') .hide();
+        $('.form_profile__text a') .hide();
+    })
+     $('#box1') .click(function() {
+        $('.form2_button') .hide();
+        $('.form1_button') .show();
+        $('.form_profile__text a') .show();
+    })
+   
+});

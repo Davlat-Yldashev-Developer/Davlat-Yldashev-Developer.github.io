@@ -1738,6 +1738,9 @@ footer {
   .photo_modal__slider .slick-arrow {
     top: 40%;
   }
+  .section3_icon__contact {
+    margin-left: 180px;
+  }
 }
 @media screen and (max-width: 1200px) {
   .header_content__item {
@@ -2675,6 +2678,9 @@ footer {
   }
   .photo_modal__slider {
     width: 255px;
+  }
+  .section3_icon__contact {
+    margin-left: 210px;
   }
 }
 @media screen and (max-width: 570px) {

@@ -102,7 +102,7 @@ $(function () {
       $('.photo_modal__slider').slick({
         arrows:true,
         dots:false,  
-        slidesToShow:2,
+        slidesToShow:1,
         responsive:[
       {
         breakpoint: 570,

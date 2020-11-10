@@ -41,30 +41,32 @@ $(function () {
       $('.min_slider').slick({
         arrows:true,
         dots:false,  
-        slidesToShow:7,
+        slidesToShow:6,
         asNavFor:".slider",
         slidesToScroll:1,
         autoplaySpeed: 2000,
+        focusOnSelect: true,
+        centerMode: true,
         responsive:[
       {
         breakpoint: 1340,
         settings: {
-          slidesToShow:6,
+          slidesToShow:5,
         }
       },{
         breakpoint: 1080,
         settings: {
-          slidesToShow:5,
+          slidesToShow:4,
         }
       },{
         breakpoint: 950,
         settings: {
-          slidesToShow:4,
+          slidesToShow:3,
         }
       },{
         breakpoint: 570,
         settings: {
-          slidesToShow:3,
+          slidesToShow:2,
         }
       },
     ]
@@ -117,23 +119,67 @@ $('.select_profile').click(function(event) {
     $('.menu').toggleClass('active');
     $('body').toggleClass('lock');
   });
+
+$('.select').click(function(event) {
+    $('.language_active').toggleClass('active');
+    $('body').toggleClass('lock');
+  });
+$(document).on('click','.box3', function(){
+    $(this).toggleClass('active')
+});
+$(document).on('click','.box4', function(){
+    $(this).toggleClass('active')
+});
 $(document).on('click','.box', function(){
     $(this).addClass('active').siblings().removeClass('active')
 });
 
+$('.mobile__button').click(function(event) {
+    $('.mobile_text,.mobile__button img').toggleClass('active');
+    $('body').toggleClass('lock');
+  });
+
 $ (function() {
    $('#btn__one') .ready (function() {
         $('.form2_button') .hide();
+        $('.registration_text') .hide();
+        $('.bottom_text2') .hide();
     })
     $('#box2') .click(function() {
         $('.form2_button') .show();
         $('.form1_button') .hide();
         $('.form_profile__text a') .hide();
+        $('.registration_text') .show();
+        $('.login_text') .hide();
+        $('.bottom_text2') .show();
+        $('.bottom_text1') .hide();
     })
      $('#box1') .click(function() {
         $('.form2_button') .hide();
         $('.form1_button') .show();
         $('.form_profile__text a') .show();
+        $('.registration_text') .hide();
+        $('.login_text') .show();
+        $('.bottom_text1') .show();
+        $('.bottom_text2') .hide();
     })
    
 });
+
+function myFunction() {
+  document.getElementById("myDropdown").classList.toggle("show");
+}
+
+// Close the dropdown menu if the user clicks outside of it
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}

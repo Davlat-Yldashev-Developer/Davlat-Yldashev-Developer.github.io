@@ -112,6 +112,24 @@ $(function () {
       },
       ]
       }); 
+      $('.slider1_landing3').slick({
+        arrows:true,
+        dots:false,  
+        slidesToShow:3,
+        responsive:[
+      {
+        breakpoint: 830,
+        settings: {
+          slidesToShow:2,
+        }
+      },{
+        breakpoint: 570,
+        settings: {
+          slidesToShow:1,
+        }
+      },
+      ]
+      }); 
     });
   });
 
@@ -183,3 +201,4 @@ window.onclick = function(event) {
     }
   }
 }
+

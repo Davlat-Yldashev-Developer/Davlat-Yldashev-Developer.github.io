@@ -2006,6 +2006,7 @@ button {
   -moz-appearance: none;
   appearance: none;
   cursor: pointer;
+  background: #fff;
 }
 .lable_landing3 {
   position: relative;

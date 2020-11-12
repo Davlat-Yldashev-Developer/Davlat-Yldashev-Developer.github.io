@@ -162,6 +162,9 @@ $ (function() {
         $('.form2_button') .hide();
         $('.registration_text') .hide();
         $('.bottom_text2') .hide();
+        $('.modal_subscription') .hide();
+        $('.modal_contact') .hide();
+        $('.modal_address') .hide();
     })
     $('#box2') .click(function() {
         $('.form2_button') .show();
@@ -181,7 +184,24 @@ $ (function() {
         $('.bottom_text1') .show();
         $('.bottom_text2') .hide();
     })
-   
+     $('.landing3_header__content__item a') .click(function() {
+        $('.modal_subscription') .show();
+    })
+      $('.modal_subscription__title button') .click(function() {
+        $('.modal_subscription') .hide();
+    })
+      $('.button__add ') .click(function() {
+        $('.modal_contact') .show();
+    })
+       $('.button__add2 ') .click(function() {
+        $('.modal_address') .show();
+    })
+    $('.modal_contact__content__title button') .click(function() {
+        $('.modal_contact') .hide();
+    })
+    $('.modal_contact__content__title b') .click(function() {
+        $('.modal_address') .hide();
+    })
 });
 
 function myFunction() {

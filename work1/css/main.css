@@ -2082,11 +2082,11 @@ button {
 }
 .butoon__verification span {
   position: absolute;
-  margin-top: 42px;
+  margin-top: 38px;
   margin-left: 15px;
   display: inline-block;
-  height: 5px;
-  width: 5px;
+  height: 10px;
+  width: 10px;
   border-radius: 100%;
   background-color: #ff3131;
 }
@@ -4119,7 +4119,7 @@ button {
     display: none !important;
   }
   .butoon__verification span {
-    margin-top: 62px;
+    margin-top: 59px;
   }
 }
 @media screen and (max-width: 570px) {

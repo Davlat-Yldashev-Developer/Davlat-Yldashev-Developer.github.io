@@ -151,9 +151,38 @@ $(document).on('click','.box4', function(){
 $(document).on('click','.box', function(){
     $(this).addClass('active').siblings().removeClass('active')
 });
+$(document).on('click','.box_filtr', function(){
+    $(this).toggleClass('active')
+});
 
 $('.mobile__button').click(function(event) {
-    $('.mobile_text,.mobile__button img').toggleClass('active');
+    $('.mobile_text,.mobile__button img,.showe_text').toggleClass('active');
+    $('body').toggleClass('lock');
+  });
+$('.box19').click(function(event) {
+    $('.box16').toggleClass('active');
+    $('body').toggleClass('lock');
+  });
+$('.box20').click(function(event) {
+    $('.box17').toggleClass('active');
+    $('body').toggleClass('lock');
+  });
+$('.box21').click(function(event) {
+    $('.box18').toggleClass('active');
+    $('body').toggleClass('lock');
+  });
+
+
+$('.box15').click(function(event) {
+    $('.box22').toggleClass('active');
+    $('body').toggleClass('lock');
+  });
+$('.box_two').click(function(event) {
+    $('.box23').toggleClass('active');
+    $('body').toggleClass('lock');
+  });
+$('.box_fri').click(function(event) {
+    $('.box24').toggleClass('active');
     $('body').toggleClass('lock');
   });
 

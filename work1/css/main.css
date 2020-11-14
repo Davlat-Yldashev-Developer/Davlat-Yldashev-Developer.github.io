@@ -2149,7 +2149,7 @@ button {
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
-  font-weight: 500;
+  font-weight: 600;
 }
 .adress_item__content {
   display: -webkit-box;

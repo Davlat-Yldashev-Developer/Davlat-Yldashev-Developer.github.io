@@ -256,10 +256,9 @@ h6 {
   font-size: 12px;
   border-radius: 9px;
   color: #F86030;
+  padding-left: 5px;
   height: 16px;
-  display: flex;
-    align-items: center;
-    justify-content: center;
+  padding-top: 1px;
 }
 .logout {
   font-size: 14px;
@@ -2176,7 +2175,6 @@ button {
 .adress_title p {
   background: #e4662b42;
   width: 20px;
-  font-weight: 600;
   font-size: 14px;
   border-radius: 9px;
   color: #F86030;
@@ -2194,7 +2192,6 @@ button {
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
-
 }
 .adress_item__content {
   display: -webkit-box;
@@ -3739,10 +3736,33 @@ button {
   margin-top: 15px;
   color: #222;
 }
-
 .button_delete:hover {
   color: #fb5314;
-  background: #fff
+  background: #fff;
+}
+.redactor_focus__item b {
+  -webkit-transform: scale(1.5);
+      -ms-transform: scale(1.5);
+          transform: scale(1.5);
+  display: block;
+  right: 15px;
+  position: absolute;
+  top: 6px;
+  font-weight: 500;
+}
+.landing_title__item__right p {
+  border: 1px solid #fb5314;
+}
+.landing_title__item__right {
+  -webkit-transition: 0.2s linear;
+  -o-transition: 0.2s linear;
+  transition: 0.2s linear;
+  cursor: pointer;
+}
+.landing_title__item__right:hover p {
+  color: #FB5314;
+  background: #fff;
+  border: 1px solid #fb5314;
 }
 @media screen and (max-width: 1340px) {
   .header_content__item {

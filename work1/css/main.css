@@ -3736,6 +3736,11 @@ button {
   margin-top: 15px;
   color: #222;
 }
+
+.button_delete:hover {
+  color: #fb5314;
+  background: #fff
+}
 @media screen and (max-width: 1340px) {
   .header_content__item {
     width: 1150px;
@@ -6271,6 +6276,15 @@ button {
   }
   .showe_text.active {
     display: block;
+  }
+  .product_right__one span {
+    padding-top: 3px;
+    font-size: 12px;
+    margin-left: 92px;
+    position: absolute;
+  }
+  .product_right__one {
+    width: 100%;
   }
 }
 @media screen and (max-width: 400px) {

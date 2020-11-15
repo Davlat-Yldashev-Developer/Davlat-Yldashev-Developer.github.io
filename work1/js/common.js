@@ -1,3 +1,27 @@
+$(document).ready(function () {
+  var stepsSlider = document.getElementById('range-slider');
+  var input0 = document.getElementById('input-with-keypress-0');
+  var input1 = document.getElementById('input-with-keypress-1');
+  var inputs = [input0, input1];
+
+  noUiSlider.create(stepsSlider, {
+    start: [0, 300],
+    connect: true,
+    tooltips: [true, true],
+    range: {
+        'min': 0,
+        'max': 300
+    }
+  });
+
+  stepsSlider.noUiSlider.on('update', function (values, handle) {
+    inputs[handle].value = values[handle];
+  });
+});
+
+
+
+
 jQuery(($) => {
     $('.select').on('click', '.select__head', function () {
         if ($(this).hasClass('open')) {
@@ -172,6 +196,16 @@ $('.box21').click(function(event) {
     $('body').toggleClass('lock');
   });
 
+$('.button__mobile__showe__two').click(function(event) {
+    $('.checkbox_content,.select_content').toggleClass('active');
+    $('body').toggleClass('lock');
+  });
+
+$('.landing5_section__select__language__item').click(function(event) {
+    $('.showe_language').toggleClass('active');
+    $('body').toggleClass('lock');
+  });
+
 
 $('.box15').click(function(event) {
     $('.box22').toggleClass('active');
@@ -231,6 +265,7 @@ $ (function() {
     $('.modal_contact__content__title b') .click(function() {
         $('.modal_address') .hide();
     })
+
 });
 
 function myFunction() {

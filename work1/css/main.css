@@ -3936,13 +3936,13 @@ button {
   background: #fff;
 }
 #range-slider {
-  width: 171px;
+  width: 98%;
   height: 2px;
   margin-top: -2px;
   background: red;
   color: red;
   border: none;
-  margin-left: 35px;
+  margin-left: 6px;
 }
 .area__item:hover {
   border: 2px solid #fb5314;
@@ -4004,7 +4004,7 @@ button {
 .noUi-horizontal .noUi-handle {
   width: 20px !important;
   height: 20px !important;
-  left: -17px !important;
+  left: -13px !important;
   top: -8px !important;
 }
 .checkbox_content {
@@ -4483,6 +4483,9 @@ button {
 }
 .key_icon {
   padding-left: 20px;
+}
+.custom-checkbox + label::before {
+  background: #fff;
 }
 @media screen and (max-width: 1340px) {
   .header_content__item {
@@ -5644,9 +5647,6 @@ button {
     width: 230px;
     height: 40px;
   }
-  #range-slider {
-    width: 150px;
-  }
   .select_filtr__content__right {
     width: 44%;
   }
@@ -6081,8 +6081,9 @@ button {
             justify-content: center;
   }
   .checbox_left {
-    margin-top: -15px;
-    display: none;
+    position: absolute;
+    margin-top: -220px;
+    margin-left: -330px;
   }
   .product_left {
     width: 455px;
@@ -6151,9 +6152,6 @@ button {
   }
   .input2 {
     width: 50%;
-  }
-  #range-slider {
-    width: 70%;
   }
   .select_min {
     width: 100%;
@@ -6240,6 +6238,11 @@ button {
   }
   .select_filtr__content__right {
     width: 53%;
+  }
+  .checbox_left {
+    position: absolute;
+    margin-top: -230px;
+    margin-left: -340px;
   }
 }
 @media screen and (max-width: 700px) {
@@ -7078,6 +7081,11 @@ button {
     margin-left: 140px;
     margin-top: -150px;
   }
+  .checbox_left {
+    position: absolute;
+    margin-top: -184px;
+    margin-left: -170px;
+  }
 }
 @media screen and (max-width: 450px) {
   .portfolio_slider {
@@ -7507,5 +7515,10 @@ button {
   }
   .select_filtr__content__right {
     width: 95%;
+  }
+  .checbox_left {
+    position: absolute;
+    margin-top: -173px;
+    margin-left: -145px;
   }
 }

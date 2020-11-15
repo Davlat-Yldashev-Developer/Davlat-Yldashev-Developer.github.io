@@ -3939,7 +3939,7 @@ button {
   width: 98%;
   height: 2px;
   margin-top: -2px;
-  background: red;
+  background: transparent;
   color: red;
   border: none;
   margin-left: 6px;

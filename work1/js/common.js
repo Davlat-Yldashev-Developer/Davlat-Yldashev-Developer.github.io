@@ -179,6 +179,24 @@ $(document).on('click','.box_filtr', function(){
     $(this).toggleClass('active')
 });
 
+$('.message_content__left__chat').click(function(event) {
+    $('.message_hover__chat').toggleClass('active');
+    $('body').toggleClass('lock');
+  });
+$('.message_content__left__chat2').click(function(event) {
+    $('.message_hover__chat2').toggleClass('active');
+    $('body').toggleClass('lock');
+  });
+$('.message_content__left__chat3').click(function(event) {
+    $('.message_hover__chat3').toggleClass('active');
+    $('body').toggleClass('lock');
+  });
+$('.message_content__left__chat4').click(function(event) {
+    $('.message_hover__chat4').toggleClass('active');
+    $('body').toggleClass('lock');
+  });
+
+
 $('.mobile__button').click(function(event) {
     $('.mobile_text,.mobile__button img,.showe_text').toggleClass('active');
     $('body').toggleClass('lock');

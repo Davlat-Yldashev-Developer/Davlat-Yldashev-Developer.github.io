@@ -4523,6 +4523,8 @@ button {
   border-top: 1px solid #D9DBE0;
   border-bottom: 1px solid #D9DBE0;
   border-left: 1px solid #D9DBE0;
+  height: 500px;
+  overflow-x: hidden;
 }
 .message_content__left__chat:hover {
   background: #F5F5F5;
@@ -5011,6 +5013,10 @@ button {
   cursor: pointer;
   width: 24px;
   height: 24px;
+}
+.message_hover__chat__item {
+  overflow-x: hidden;
+  height: 370px;
 }
 @media screen and (max-width: 1340px) {
   .header_content__item {
@@ -6889,6 +6895,8 @@ button {
     width: 370px;
     margin: 0 auto;
     border: 1px solid #D9DBE0;
+    height: 347px;
+    overflow-x: hidden;
   }
   .message_content {
     width: 100%;

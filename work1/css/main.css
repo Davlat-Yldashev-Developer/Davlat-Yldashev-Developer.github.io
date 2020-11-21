@@ -8185,7 +8185,8 @@ button {
   }
   .add_button2__landing5 {
     margin-left: 125px;
-  }
+    display: none;
+}
   .select_filtr__content__right {
     width: 95%;
   }

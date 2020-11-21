@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8" />
+    <!-- <base href="/"> -->
+
+    <title>Тест</title>
+    <meta name="description" content="" />
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=1"
+    />
+
+    <!-- Template Basic Images Start -->
+    <link rel="icon" type="image/png" href="img/favicon/favicon-32x32.png" />
+    <!-- Template Basic Images End -->
+
+    <!-- Custom Browsers Color Start -->
+    <meta name="theme-color" content="#ffffff" />
+    <!-- Custom Browsers Color End -->
+
+    <link rel="stylesheet" href="css/main.min.css" />
+  </head>
+
+  <body>
+
+    <div id="section-first-menu">
+      <div class="container">
+        <div class="row">
+          <div class="col-auto mr-auto">
+            <div class="dropdown">
+              <a class="dropdown-toggle" href="#" role="button" id="dropdownLan" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <img src="img/flag/GB.svg" height="16px" width="24px"> EN
+              </a>
+
+              <div class="dropdown-menu" aria-labelledby="dropdownLan">
+                <a class="dropdown-item" href="#"><img src="img/flag/ES.svg" height="16px" width="24px"> ES</a>
+              </div>
+            </div>
+
+
+
+          </div>
+
+          <div class="col-auto">
+            <div class="dropdown">
+              <a class="dropdown-toggle" href="#" role="button" id="dropdownMenu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <img src="img/User.svg" height="24px" width="24px"> Evgeniy D.
+              </a>
+
+              <div class="dropdown-menu profile-dropdown" aria-labelledby="dropdownMenu">
+                <a class="dropdown-item" href="#">Profile</a>
+                <a class="dropdown-item" href="#">Favorites <span>3</span></a>
+                <a class="dropdown-item" href="#">Messages <span>3</span></a>
+                <a class="dropdown-item" href="#">My properties <span>3</span></a>
+                <a class="dropdown-item" href="#"><b>Real estate exchange</b></a>
+                <hr>
+                <a class="dropdown-item" href="#">Logout</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-auto"><a class="sign" href="" data-target="#modalReg" data-toggle="modal">Registration</a></div>
+          <div class="col-auto"><a class="sign" href="" data-target="#modalLog" data-toggle="modal">Log in</a></div>
+
+        </div>
+      </div>
+    </div>
+
+    <script src="js/scripts.min.js"></script>
+
+    <div id="block-img">
+      <div class="dfs"></div>
+    </div>
+
+    <style>
+      .test{
+        width: 150px;
+        height: 150px;
+      }
+    </style>
+
+    <input accept="image/*" type="file" onchange="loadImg(this.files)" multiple>
+
+    <script>
+      const loadImg = (files) => {
+
+        $('#block-img').find('.test').remove();
+
+        for (var i = 0; i < files.length; i++){
+          var img = document.createElement("img");
+          img.setAttribute("src", window.URL.createObjectURL(files[i]));
+          img.setAttribute("class", 'test');
+
+          document.getElementById('block-img').appendChild(img);
+        };
+
+      };
+    </script>
+
+  </body>
+</html>

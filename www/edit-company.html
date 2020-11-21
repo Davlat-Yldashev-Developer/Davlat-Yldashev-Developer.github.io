@@ -1,0 +1,777 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8" />
+    <!-- <base href="/"> -->
+
+    <title>Тест</title>
+    <meta name="description" content="" />
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=1"
+    />
+
+    <!-- Template Basic Images Start -->
+    <link rel="icon" type="image/png" href="img/favicon/favicon-32x32.png" />
+    <!-- Template Basic Images End -->
+
+    <!-- Custom Browsers Color Start -->
+    <meta name="theme-color" content="#ffffff" />
+    <!-- Custom Browsers Color End -->
+
+    <link rel="stylesheet" href="css/main.min.css" />
+  </head>
+
+  <body>
+
+    <div id="section-first-menu">
+      <div class="container">
+        <div class="row align-items-center">
+
+          <div class="col-auto">
+            <div class="dropdown">
+              <a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <img src="img/flag/GB.svg" height="16px" width="24px"> EN
+              </a>
+
+              <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                <a class="dropdown-item" href="#"><img src="img/flag/ES.svg" height="16px" width="24px"> ES</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-auto mx-auto">
+            <a href="" class="d-md-none"><img src="img/Abarzo3.svg" width="100%" alt=""></a>
+            <a href="" class="d-none d-md-block"><img src="img/Abarzo2.svg" width="100%" alt=""></a>
+          </div>
+
+          <div class="col-auto">
+            <div class="dropdown">
+              <a class="dropdown-toggle" href="#" role="button" id="dropdownMenu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <img src="img/User.svg" height="24px" width="24px"> <span class="d-none d-sm-inline-block">Evgeniy D.</span>
+              </a>
+
+              <div class="dropdown-menu profile" aria-labelledby="dropdownMenu">
+                <a class="dropdown-item" href="#">Profile</a>
+                <a class="dropdown-item" href="#">Favorites <span>3</span></a>
+                <a class="dropdown-item" href="#">Messages <span>3</span></a>
+                <a class="dropdown-item" href="#">My properties <span>3</span></a>
+                <a class="dropdown-item" href="#"><b>Real estate exchange</b></a>
+                <hr>
+                <a class="dropdown-item" href="#">Logout</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-auto">
+            <div class="dropdown dropdownPlus">
+              <a href="#" role="button" id="dropdownPlus" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M12 8V16" stroke="#7E7E3F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M16 12H8" stroke="#7E7E3F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M12 21V21C7.029 21 3 16.971 3 12V12C3 7.029 7.029 3 12 3V3C16.971 3 21 7.029 21 12V12C21 16.971 16.971 21 12 21Z" stroke="#7E7E3F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </a>
+
+              <div class="dropdown-menu" aria-labelledby="dropdownPlus">
+                <a class="dropdown-item" href="#">Sell</a>
+                <a class="dropdown-item" href="#">To rent</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="section-edit-company">
+      <div class="container">
+        <div class="row">
+
+          <div class="col-lg-9 col-xl-8 order-2 order-lg-1">
+
+            <div class="row align-items-center justify-content-center">
+
+              <div class="col-auto">
+                <div class="edit-profil-img">
+                  <img src="img/person.svg" alt="">
+                </div>
+              </div>
+              <div class="col-auto">
+                <div class="block-upload-photo">
+                  <label for="uploadPhoto" class="btn-edit mb-2">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M15.9749 11.0251C17.3417 12.392 17.3417 14.608 15.9749 15.9749C14.608 17.3417 12.392 17.3417 11.0251 15.9749C9.65829 14.608 9.65829 12.392 11.0251 11.0251C12.392 9.65829 14.608 9.65829 15.9749 11.0251" stroke="#55585E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                      <path d="M5 12V19C5 20.105 5.895 21 7 21H20C21.105 21 22 20.105 22 19V10C22 8.895 21.105 8 20 8H18L16.487 5.484C16.306 5.184 15.981 5 15.63 5H12" stroke="#55585E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                      <path d="M5 2V8" stroke="#55585E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                      <path d="M2 5H8" stroke="#55585E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                    Upload photo
+                  </label>
+                  <input id="uploadPhoto" type="file" accept="image/*" onchange="uploadPhoto(this.files)">
+                </div>      
+              </div>
+              <div class="col-12 col-md-auto ml-auto d-none d-md-block">
+                <a class="btn-edit font-demi mb-2" href="">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path fill-rule="evenodd" clip-rule="evenodd" d="M4.636 5.045H19.363C20.267 5.045 21 5.778 21 6.682V17.318C21 18.222 20.267 18.954 19.364 18.954H4.636C3.733 18.955 3 18.222 3 17.318V6.682C3 5.778 3.733 5.045 4.636 5.045Z" stroke="#70747B" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                      <path d="M3.11914 6.075L10.8131 11.578C11.5081 12.075 12.4421 12.076 13.1381 11.58L20.8761 6.061" stroke="#70747B" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                    Support
+                  </a>
+              </div>
+
+            </div>
+
+            <div class="block-form">
+
+              <div class="row">
+                <div class="col-12 mt-5 mb-3"><h3>General information</h3></div>
+                <div class="col-6">
+                  <div class="form-group">
+                    <label for="formGroupExampleInput">E-mail:</label>
+                    <input type="text" class="form-control" id="formGroupExampleInput" placeholder="ujgjghjghj">
+                  </div>
+                </div>
+                <div class="col-6">
+                  <div class="form-group">
+                    <label for="formGroupExampleInput">Name of the agency:</label>
+                    <input type="text" class="form-control" id="formGroupExampleInput" placeholder="">
+                  </div>
+                </div>
+                <div class="col-6">
+                  <div class="form-group">
+                    <label for="formGroupExampleInput">Foundation date:</label>
+                    <input type="date" class="form-control" id="formGroupExampleInput" placeholder="">
+                  </div>
+                </div>
+                <div class="col-6">
+                  <div class="form-group">
+                    <label for="Select01">Default language:</label>
+                    <select class="custom-select" id="Select01">
+                      <option selected>Choose...</option>
+                      <option value="1">One</option>
+                      <option value="2">Two</option>
+                      <option value="3">Three</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="col-6">
+                  <div class="form-group">
+                    <label for="formGroupExampleInput">Address inmoll.com/...</label>
+                    <input type="text" class="form-control" id="formGroupExampleInput" placeholder="">
+                  </div>
+                </div>
+                <div class="col-auto btn-verify align-self-end">
+                  <a href="" class="edit-modul-btn-olive mt-0 mb-3">Verify</a>
+                  <!-- Когда верификация пройдена, добавить класс done -->
+                  <span class="verify-check"></span>
+                </div>
+                <div class="col-12"><hr class="my-4"></div>
+              </div>
+
+              <div class="row">
+                <div class="col-12 mb-3"><h3>Contacts</h3></div>
+                <div class="col-sm-6">
+                  <div class="form-group">
+                    <label for="formGroupExampleInput">Phone:</label>
+                    <input type="text" class="form-control" id="formGroupExampleInput" placeholder="">
+                  </div>
+                </div>
+                <div class="col-xl-6 order-3 order-xl-2">
+                  <div class="social-block">
+                    <div class="social-label">Social networks:</div>
+                    <a href="" class="social-item www">
+                      <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M14 3.61664C19.4448 9.3648 19.4448 18.6351 14 24.3833" stroke="#C7CBCF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M13.9996 24.3833C8.55481 18.6351 8.55481 9.3648 13.9996 3.61664" stroke="#C7CBCF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M14 3.5C19.8123 3.5 24.5 8.18767 24.5 14C24.5 19.8123 19.8123 24.5 14 24.5" stroke="#C7CBCF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M14 24.5C8.18767 24.5 3.5 19.8123 3.5 14C3.5 8.18767 8.18767 3.5 14 3.5" stroke="#C7CBCF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M4.09473 10.5H23.9047" stroke="#C7CBCF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M4.09473 17.5H23.9047" stroke="#C7CBCF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                      </svg>
+                    </a
+                    ><a href="" class="social-item">
+                      <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M6.66747 10C6.66747 8.15912 8.15945 6.6664 10.0004 6.6664C11.8414 6.6664 13.3341 8.15912 13.3341 10C13.3341 11.8409 11.8414 13.3336 10.0004 13.3336C8.15945 13.3336 6.66747 11.8409 6.66747 10ZM4.86531 10C4.86531 12.836 7.16429 15.1349 10.0004 15.1349C12.8365 15.1349 15.1355 12.836 15.1355 10C15.1355 7.164 12.8365 4.86512 10.0004 4.86512C7.16429 4.86512 4.86531 7.164 4.86531 10ZM14.1387 4.66152C14.1386 4.89886 14.2089 5.13089 14.3407 5.32829C14.4725 5.52568 14.6598 5.67956 14.8791 5.77047C15.0983 5.86138 15.3396 5.88524 15.5724 5.83904C15.8052 5.79283 16.0191 5.67862 16.187 5.51087C16.3549 5.34311 16.4693 5.12934 16.5157 4.89658C16.5621 4.66382 16.5384 4.42253 16.4477 4.20322C16.3569 3.98392 16.2032 3.79644 16.0059 3.6645C15.8086 3.53257 15.5766 3.4621 15.3393 3.462H15.3388C15.0206 3.46215 14.7156 3.58856 14.4905 3.81347C14.2655 4.03837 14.139 4.34339 14.1387 4.66152ZM5.96024 18.1398C4.98524 18.0954 4.4553 17.933 4.10312 17.7958C3.63623 17.614 3.30309 17.3975 2.95284 17.0478C2.60258 16.698 2.38578 16.3652 2.20481 15.8983C2.06752 15.5463 1.90512 15.0162 1.86079 14.0413C1.81231 12.9872 1.80263 12.6706 1.80263 10.0001C1.80263 7.3296 1.81311 7.01384 1.86079 5.95888C1.9052 4.98392 2.0688 4.45488 2.20481 4.10184C2.38658 3.63496 2.60306 3.30184 2.95284 2.9516C3.30261 2.60136 3.63543 2.38456 4.10312 2.2036C4.45514 2.06632 4.98524 1.90392 5.96024 1.8596C7.01436 1.81112 7.33101 1.80144 10.0004 1.80144C12.6698 1.80144 12.9868 1.81192 14.0418 1.8596C15.0168 1.904 15.5458 2.0676 15.8989 2.2036C16.3658 2.38456 16.6989 2.60184 17.0492 2.9516C17.3994 3.30136 17.6154 3.63496 17.7972 4.10184C17.9345 4.45384 18.0969 4.98392 18.1412 5.95888C18.1897 7.01384 18.1994 7.3296 18.1994 10.0001C18.1994 12.6706 18.1897 12.9863 18.1412 14.0413C18.0968 15.0162 17.9336 15.5462 17.7972 15.8983C17.6154 16.3652 17.3989 16.6983 17.0492 17.0478C16.6994 17.3972 16.3658 17.614 15.8989 17.7958C15.5469 17.933 15.0168 18.0954 14.0418 18.1398C12.9876 18.1882 12.671 18.1979 10.0004 18.1979C7.32981 18.1979 7.01404 18.1882 5.96024 18.1398ZM5.87744 0.06056C4.81283 0.10904 4.08536 0.27784 3.45006 0.52504C2.79211 0.78032 2.23513 1.1228 1.67855 1.67848C1.12196 2.23416 0.780351 2.792 0.525061 3.44992C0.277851 4.0856 0.109044 4.81264 0.0605624 5.8772C0.0112805 6.94344 0 7.28432 0 10C0 12.7157 0.0112805 13.0566 0.0605624 14.1228C0.109044 15.1874 0.277851 15.9144 0.525061 16.5501C0.780351 17.2076 1.12205 17.7661 1.67855 18.3215C2.23505 18.877 2.79211 19.219 3.45006 19.475C4.08656 19.7222 4.81283 19.891 5.87744 19.9394C6.94428 19.9879 7.28461 20 10.0004 20C12.7162 20 13.0571 19.9887 14.1234 19.9394C15.188 19.891 15.915 19.7222 16.5507 19.475C17.2083 19.219 17.7657 18.8772 18.3223 18.3215C18.8788 17.7658 19.2197 17.2076 19.4757 16.5501C19.723 15.9144 19.8926 15.1874 19.9402 14.1228C19.9887 13.0558 20 12.7157 20 10C20 7.28432 19.9887 6.94344 19.9402 5.8772C19.8918 4.81256 19.723 4.0852 19.4757 3.44992C19.2197 2.7924 18.878 2.23504 18.3223 1.67848C17.7666 1.12192 17.2083 0.78032 16.5515 0.52504C15.915 0.27784 15.188 0.10824 14.1242 0.06056C13.0579 0.01208 12.717 0 10.0012 0C7.28541 0 6.94428 0.01128 5.87744 0.06056Z" fill="#C7CBCF"/>
+                      </svg>
+                    </a
+                    ><a href="" class="social-item">
+                      <svg width="20" height="16" viewBox="0 0 20 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M17.175 3.875C17.175 4.05 17.175 4.225 17.175 4.375C17.175 9.55 13.225 15.525 6.025 15.525C3.8 15.525 1.75 14.875 0 13.775C0.3 13.8 0.625 13.825 0.925 13.825C2.75 13.825 4.45 13.2 5.8 12.15C4.075 12.125 2.625 10.975 2.15 9.425C2.4 9.475 2.625 9.5 2.9 9.5C3.25 9.5 3.6 9.45 3.925 9.35C2.125 9 0.775 7.425 0.775 5.525C0.775 5.5 0.775 5.5 0.775 5.475C1.3 5.775 1.9 5.95 2.55 5.975C1.5 5.275 0.8 4.075 0.8 2.7C0.8 1.975 1 1.3 1.325 0.725C3.25 3.1 6.15 4.65 9.4 4.825C9.325 4.55 9.3 4.225 9.3 3.925C9.3 1.75 11.05 0 13.225 0C14.35 0 15.375 0.475 16.075 1.225C16.975 1.05 17.8 0.725 18.575 0.275C18.275 1.2 17.65 1.95 16.85 2.45C17.65 2.35 18.4 2.15 19.1 1.825C18.6 2.625 17.95 3.325 17.175 3.875Z" fill="#C7CBCF"/>
+                      </svg>
+                    </a
+                    ><a href="" class="social-item">
+                      <svg width="20" height="16" viewBox="0 0 20 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M17.8253 1.42681C18.682 1.65745 19.3574 2.3329 19.5881 3.18957C20.0164 4.75464 19.9999 8.01657 19.9999 8.01657C19.9999 8.01657 19.9999 11.262 19.5881 12.8271C19.3574 13.6838 18.682 14.3592 17.8253 14.5898C16.2602 15.0017 9.99996 15.0017 9.99996 15.0017C9.99996 15.0017 3.75616 15.0017 2.17462 14.5734C1.31795 14.3427 0.642501 13.6673 0.41186 12.8106C0 11.262 0 8.00009 0 8.00009C0 8.00009 0 4.75464 0.41186 3.18957C0.642501 2.3329 1.33443 1.64098 2.17462 1.41033C3.73969 0.998474 9.99996 0.998474 9.99996 0.998474C9.99996 0.998474 16.2602 0.998474 17.8253 1.42681ZM13.2126 7.99979L8.00665 10.9981V5.00145L13.2126 7.99979Z" fill="#C7CBCF"/>
+                      </svg>
+                    </a
+                    ><a href="" class="social-item">
+                      <svg width="19" height="16" viewBox="0 0 19 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M1.30615 6.88796C6.40641 4.63001 9.80739 3.14143 11.5091 2.42222C16.3677 0.368731 17.3773 0.0120186 18.0354 0.000114193C18.1801 -0.00235084 18.5037 0.0340956 18.7133 0.206929C18.8903 0.352865 18.939 0.550006 18.9623 0.68837C18.9856 0.826734 19.0146 1.14193 18.9916 1.38822C18.7283 4.19928 17.589 11.021 17.0094 14.1694C16.7642 15.5017 16.2813 15.9484 15.8138 15.9921C14.7978 16.0871 14.0263 15.3098 13.0422 14.6543C11.5024 13.6287 10.6325 12.9902 9.13785 11.9894C7.4105 10.8327 8.53027 10.197 9.51468 9.15804C9.7723 8.88615 14.2488 4.74875 14.3354 4.37343C14.3463 4.32649 14.3563 4.15151 14.254 4.05912C14.1517 3.96673 14.0007 3.99833 13.8918 4.02345C13.7373 4.05907 11.2775 5.71119 6.51212 8.97983C5.81389 9.46702 5.18145 9.7044 4.61481 9.69196C3.99014 9.67824 2.78851 9.33306 1.89523 9.038C0.799577 8.6761 -0.0712243 8.48477 0.00460293 7.87015C0.0440984 7.55002 0.477948 7.22262 1.30615 6.88796Z" fill="#C7CBCF"/>
+                      </svg>
+                    </a
+                    ><a href="" class="social-item">
+                      <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M19.2921 11.6415C19.2858 11.6766 19.2813 11.7121 19.2747 11.7472L19.2405 11.5458C19.2592 11.5772 19.2747 11.6098 19.2921 11.6415C19.3954 11.0796 19.4495 10.5044 19.4495 9.92953C19.4495 8.65468 19.1999 7.41785 18.7068 6.25354C18.2311 5.12883 17.5504 4.11877 16.6826 3.25156C15.816 2.38435 14.8053 1.7037 13.6812 1.22797C12.5172 0.73545 11.2804 0.485866 10.0055 0.485866C9.4047 0.485866 8.80291 0.542244 8.21728 0.654684C8.21601 0.655 8.21443 0.655 8.21284 0.655317C8.24578 0.672737 8.27904 0.688257 8.31135 0.706311L8.11276 0.675271C8.14601 0.668937 8.17959 0.661968 8.21284 0.655317C7.4093 0.228047 6.50566 0 5.59094 0C4.09755 0 2.69348 0.581519 1.6375 1.63782C0.581835 2.6938 0 4.09787 0 5.59126C0 6.54177 0.244517 7.47613 0.70346 8.30184C0.709478 8.26764 0.713596 8.23311 0.720247 8.19891L0.754454 8.39686C0.736717 8.36582 0.721197 8.33352 0.70346 8.30184C0.610341 8.8368 0.561248 9.38348 0.561248 9.92953C0.561248 11.2047 0.810832 12.4412 1.30398 13.6058C1.77908 14.7309 2.46005 15.7403 3.32695 16.6075C4.19479 17.4747 5.20421 18.1563 6.32956 18.6308C7.49355 19.1242 8.7307 19.3741 10.0055 19.3741C10.5605 19.3741 11.1166 19.3235 11.6595 19.2272C11.6278 19.2094 11.5955 19.1933 11.5632 19.1746L11.765 19.2101C11.7301 19.2167 11.695 19.2208 11.6595 19.2272C12.496 19.7004 13.443 19.9519 14.41 19.9519C15.9031 19.9519 17.3065 19.3713 18.3625 18.3147C19.4188 17.2593 20 15.8549 20 14.3615C20 13.4079 19.7542 12.4703 19.2921 11.6415ZM10.0432 15.7134C6.6881 15.7134 5.18711 14.0638 5.18711 12.8276C5.18711 12.1935 5.65524 11.7491 6.30042 11.7491C7.73616 11.7491 7.36432 13.8108 10.0432 13.8108C11.4147 13.8108 12.172 13.0661 12.172 12.3041C12.172 11.8457 11.9458 11.3377 11.0428 11.1151L8.05859 10.3701C5.65524 9.76736 5.2191 8.46813 5.2191 7.24681C5.2191 4.71106 7.60662 3.75897 9.84876 3.75897C11.9142 3.75897 14.3489 4.90047 14.3489 6.42173C14.3489 7.07356 13.7845 7.45269 13.1396 7.45269C11.9142 7.45269 12.1397 5.75659 9.67139 5.75659C8.44659 5.75659 7.76815 6.31119 7.76815 7.10492C7.76815 7.89706 8.73545 8.15013 9.57542 8.34144L11.7843 8.83174C14.2038 9.37081 14.8173 10.7834 14.8173 12.114C14.8173 14.1747 13.2356 15.7134 10.0432 15.7134ZM11.5632 19.1746C11.5955 19.1933 11.6278 19.2094 11.6595 19.2272C11.695 19.2208 11.7301 19.2167 11.765 19.2101L11.5632 19.1746ZM19.2747 11.7472C19.2813 11.7121 19.2858 11.6766 19.2921 11.6415C19.2747 11.6098 19.2592 11.5772 19.2405 11.5458L19.2747 11.7472ZM0.720247 8.19891C0.713596 8.23311 0.709478 8.26764 0.70346 8.30184C0.721197 8.33352 0.736717 8.36582 0.754454 8.39686L0.720247 8.19891ZM8.31135 0.706311C8.27904 0.688257 8.24578 0.672737 8.21284 0.655317C8.17959 0.661968 8.14601 0.668937 8.11276 0.675271L8.31135 0.706311Z" fill="#C7CBCF"/>
+                      </svg>
+                    </a
+                    ><a href="" class="social-item">
+                      <svg width="10" height="20" viewBox="0 0 10 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M6.4908 19.9999V10.8769H9.43911L9.88051 7.32157H6.4908V5.05157C6.4908 4.02223 6.76604 3.32068 8.18733 3.32068L10 3.31981V0.139943C9.68636 0.0967723 8.61042 0 7.35864 0C4.74517 0 2.95593 1.65682 2.95593 4.69964V7.32167H0V10.877H2.95584V20L6.4908 19.9999Z" fill="#C7CBCF"/>
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+                <div class="col-sm-6 order-2 order-xl-3">
+                  <div class="form-group">
+                    <label for="formGroupExampleInput">Additional Phone: (Optional)</label>
+                    <input type="text" class="form-control" id="formGroupExampleInput" placeholder="">
+                  </div>
+                </div>
+                <div class="col-sm-6 order-4 order-xl-4">
+                  <div class="form-group">
+                    <label for="formGroupExampleInput">Website link:</label>
+                    <input type="text" class="form-control" id="formGroupExampleInput" placeholder="">
+                  </div>
+                </div>
+                <div class="col-12 order-5"><hr class="my-4"></div>
+              </div>
+
+              <div class="row">
+                <div class="col-12 mb-3"><h3>Location</h3></div>
+                <div class="col-6">
+                  <div class="form-group">
+                    <label for="Select01">Province:</label>
+                    <select class="custom-select" id="Select01">
+                      <option selected>Choose...</option>
+                      <option value="1">One</option>
+                      <option value="2">Two</option>
+                      <option value="3">Three</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="col-6">
+                  <div class="form-group">
+                    <label for="Select01">City:</label>
+                    <select class="custom-select" id="Select01">
+                      <option selected>Choose...</option>
+                      <option value="1">One</option>
+                      <option value="2">Two</option>
+                      <option value="3">Three</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="col-12"><hr class="my-4"></div>
+              </div>
+
+              <div class="row">
+                <div class="col-12 mb-3"><h3>My address <span>3</span></h3></div>
+
+                <div class="col-sm-6">
+                  <div class="address-edit">
+                    <div class="row">
+                      <div class="col-auto">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path fill-rule="evenodd" clip-rule="evenodd" d="M5 10.045V9.873C5 6.077 8.13386 3 12 3V3C15.8661 3 19 6.077 19 9.873V10.045C19 13.506 14.537 18.716 12.7384 20.676C12.3422 21.108 11.6578 21.108 11.2616 20.676C9.46297 18.716 5 13.506 5 10.045Z" stroke="#70747B" stroke-width="1.4468" stroke-linecap="round" stroke-linejoin="round"/>
+                          <path d="M9 10.0275C9 11.6698 10.3425 13 12 13V13C13.6575 13 15 11.6698 15 10.0275V9.9725C15 8.3302 13.6575 7 12 7V7C10.3425 7 9 8.3302 9 9.9725" stroke="#70747B" stroke-width="1.4468" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                      </div>
+                      <div class="col">
+                        <a href="" class="address-edit-title">Alicante, Guardamar</a>
+                        <div class="address-edit-text">Ciudad Quesada</div>
+                      </div>
+                      <div class="col-auto address-edit-pen">
+                        <a href="" class="addres-edit-link">
+                          <svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M16.8112 8.02149L12.9785 4.18884" stroke="#70747B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M4.98931 19.4149H1.58496V16.0106C1.58496 15.7331 1.69491 15.4661 1.89178 15.2702L15.8547 1.30623C16.2642 0.896785 16.9271 0.896785 17.3354 1.30623L19.6926 3.66341C20.1021 4.07285 20.1021 4.73571 19.6926 5.14411L5.72966 19.1081C5.53384 19.305 5.26681 19.4149 4.98931 19.4149V19.4149Z" stroke="#70747B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                          </svg>
+                        </a>
+                      </div>
+                      <div class="col-auto">
+                        <a href="" class="addres-edit-link">
+                          <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M1 1L13 13" stroke="#70747B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M13 1L1 13" stroke="#70747B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                          </svg>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-6">
+                  <div class="address-edit">
+                    <div class="row">
+                      <div class="col-auto">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path fill-rule="evenodd" clip-rule="evenodd" d="M5 10.045V9.873C5 6.077 8.13386 3 12 3V3C15.8661 3 19 6.077 19 9.873V10.045C19 13.506 14.537 18.716 12.7384 20.676C12.3422 21.108 11.6578 21.108 11.2616 20.676C9.46297 18.716 5 13.506 5 10.045Z" stroke="#70747B" stroke-width="1.4468" stroke-linecap="round" stroke-linejoin="round"/>
+                          <path d="M9 10.0275C9 11.6698 10.3425 13 12 13V13C13.6575 13 15 11.6698 15 10.0275V9.9725C15 8.3302 13.6575 7 12 7V7C10.3425 7 9 8.3302 9 9.9725" stroke="#70747B" stroke-width="1.4468" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                      </div>
+                      <div class="col">
+                        <a href="" class="address-edit-title">Alicante, Guardamar</a>
+                        <div class="address-edit-text">Ciudad Quesada</div>
+                      </div>
+                      <div class="col-auto address-edit-pen">
+                        <a href="" class="addres-edit-link">
+                          <svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M16.8112 8.02149L12.9785 4.18884" stroke="#70747B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M4.98931 19.4149H1.58496V16.0106C1.58496 15.7331 1.69491 15.4661 1.89178 15.2702L15.8547 1.30623C16.2642 0.896785 16.9271 0.896785 17.3354 1.30623L19.6926 3.66341C20.1021 4.07285 20.1021 4.73571 19.6926 5.14411L5.72966 19.1081C5.53384 19.305 5.26681 19.4149 4.98931 19.4149V19.4149Z" stroke="#70747B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                          </svg>
+                        </a>
+                      </div>
+                      <div class="col-auto">
+                        <a href="" class="addres-edit-link">
+                          <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M1 1L13 13" stroke="#70747B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M13 1L1 13" stroke="#70747B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                          </svg>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-6">
+                  <div class="address-edit">
+                    <div class="row">
+                      <div class="col-auto">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path fill-rule="evenodd" clip-rule="evenodd" d="M5 10.045V9.873C5 6.077 8.13386 3 12 3V3C15.8661 3 19 6.077 19 9.873V10.045C19 13.506 14.537 18.716 12.7384 20.676C12.3422 21.108 11.6578 21.108 11.2616 20.676C9.46297 18.716 5 13.506 5 10.045Z" stroke="#70747B" stroke-width="1.4468" stroke-linecap="round" stroke-linejoin="round"/>
+                          <path d="M9 10.0275C9 11.6698 10.3425 13 12 13V13C13.6575 13 15 11.6698 15 10.0275V9.9725C15 8.3302 13.6575 7 12 7V7C10.3425 7 9 8.3302 9 9.9725" stroke="#70747B" stroke-width="1.4468" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                      </div>
+                      <div class="col">
+                        <a href="" class="address-edit-title">Alicante, Guardamar</a>
+                        <div class="address-edit-text">Ciudad Quesada</div>
+                      </div>
+                      <div class="col-auto address-edit-pen">
+                        <a href="" class="addres-edit-link">
+                          <svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M16.8112 8.02149L12.9785 4.18884" stroke="#70747B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M4.98931 19.4149H1.58496V16.0106C1.58496 15.7331 1.69491 15.4661 1.89178 15.2702L15.8547 1.30623C16.2642 0.896785 16.9271 0.896785 17.3354 1.30623L19.6926 3.66341C20.1021 4.07285 20.1021 4.73571 19.6926 5.14411L5.72966 19.1081C5.53384 19.305 5.26681 19.4149 4.98931 19.4149V19.4149Z" stroke="#70747B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                          </svg>
+                        </a>
+                      </div>
+                      <div class="col-auto">
+                        <a href="" class="addres-edit-link">
+                          <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M1 1L13 13" stroke="#70747B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M13 1L1 13" stroke="#70747B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                          </svg>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-auto col-sm-12 ml-auto"><a href="" data-target="#modalAddress" data-toggle="modal" class="edit-modul-btn-olive">Add address</a></div>
+
+                <div class="col-12"><hr class="my-4"></div>
+
+              </div>
+
+              <div class="row">
+                <div class="col-12 mb-3"><h3>Contacts <span>3</span></h3></div>
+                <div class="col-12">
+
+                  <div class="owl-carousel modul-owl-contact owl-theme">
+
+                    <div class="item">
+                      <img src="img/modul-owl-contact.png" alt="">
+                      <div class="position">Director</div>
+                      <div class="name">Ramon Jhonson</div>
+                      <a href="">info@ramon.es</a>
+                      <a href="">+34690314311</a>
+                      <a href="" class="modul-owl-contact-btn-del">
+                        <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M1 1L13 13" stroke="#70747B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                          <path d="M13 1L1 13" stroke="#70747B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                      </a>
+                      <a href="" class="modul-owl-contact-btn-edit">
+                        <svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M16.8112 8.02149L12.9785 4.18884" stroke="#70747B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                          <path fill-rule="evenodd" clip-rule="evenodd" d="M4.98931 19.4149H1.58496V16.0106C1.58496 15.7331 1.69491 15.4661 1.89178 15.2702L15.8547 1.30623C16.2642 0.896785 16.9271 0.896785 17.3354 1.30623L19.6926 3.66341C20.1021 4.07285 20.1021 4.73571 19.6926 5.14411L5.72966 19.1081C5.53384 19.305 5.26681 19.4149 4.98931 19.4149V19.4149Z" stroke="#70747B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                      </a>
+                    </div>
+
+                    <div class="item">
+                      <img src="img/modul-owl-contact.png" alt="">
+                      <div class="position">Director</div>
+                      <div class="name">Ramon Jhonson</div>
+                      <a href="">info@ramon.es</a>
+                      <a href="">+34690314311</a>
+                      <a href="" class="modul-owl-contact-btn-del">
+                        <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M1 1L13 13" stroke="#70747B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                          <path d="M13 1L1 13" stroke="#70747B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                      </a>
+                      <a href="" class="modul-owl-contact-btn-edit">
+                        <svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M16.8112 8.02149L12.9785 4.18884" stroke="#70747B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                          <path fill-rule="evenodd" clip-rule="evenodd" d="M4.98931 19.4149H1.58496V16.0106C1.58496 15.7331 1.69491 15.4661 1.89178 15.2702L15.8547 1.30623C16.2642 0.896785 16.9271 0.896785 17.3354 1.30623L19.6926 3.66341C20.1021 4.07285 20.1021 4.73571 19.6926 5.14411L5.72966 19.1081C5.53384 19.305 5.26681 19.4149 4.98931 19.4149V19.4149Z" stroke="#70747B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                      </a>
+                    </div>
+
+                    <div class="item">
+                      <img src="img/modul-owl-contact.png" alt="">
+                      <div class="position">Director</div>
+                      <div class="name">Ramon Jhonson</div>
+                      <a href="">info@ramon.es</a>
+                      <a href="">+34690314311</a>
+                      <a href="" class="modul-owl-contact-btn-del">
+                        <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M1 1L13 13" stroke="#70747B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                          <path d="M13 1L1 13" stroke="#70747B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                      </a>
+                      <a href="" class="modul-owl-contact-btn-edit">
+                        <svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M16.8112 8.02149L12.9785 4.18884" stroke="#70747B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                          <path fill-rule="evenodd" clip-rule="evenodd" d="M4.98931 19.4149H1.58496V16.0106C1.58496 15.7331 1.69491 15.4661 1.89178 15.2702L15.8547 1.30623C16.2642 0.896785 16.9271 0.896785 17.3354 1.30623L19.6926 3.66341C20.1021 4.07285 20.1021 4.73571 19.6926 5.14411L5.72966 19.1081C5.53384 19.305 5.26681 19.4149 4.98931 19.4149V19.4149Z" stroke="#70747B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                      </a>
+                    </div>
+
+                    <div class="item">
+                      <img src="img/modul-owl-contact.png" alt="">
+                      <div class="position">Director</div>
+                      <div class="name">Ramon Jhonson</div>
+                      <a href="">info@ramon.es</a>
+                      <a href="">+34690314311</a>
+                      <a href="" class="modul-owl-contact-btn-del">
+                        <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M1 1L13 13" stroke="#70747B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                          <path d="M13 1L1 13" stroke="#70747B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                      </a>
+                      <a href="" class="modul-owl-contact-btn-edit">
+                        <svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M16.8112 8.02149L12.9785 4.18884" stroke="#70747B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                          <path fill-rule="evenodd" clip-rule="evenodd" d="M4.98931 19.4149H1.58496V16.0106C1.58496 15.7331 1.69491 15.4661 1.89178 15.2702L15.8547 1.30623C16.2642 0.896785 16.9271 0.896785 17.3354 1.30623L19.6926 3.66341C20.1021 4.07285 20.1021 4.73571 19.6926 5.14411L5.72966 19.1081C5.53384 19.305 5.26681 19.4149 4.98931 19.4149V19.4149Z" stroke="#70747B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                      </a>
+                    </div>
+
+                  </div>
+
+                </div>
+
+                <div class="col-auto col-sm-12 ml-auto"><a href="" data-target="#modalAddContact" data-toggle="modal" class="edit-modul-btn-olive">Add contact</a></div>
+
+                <div class="col-12"><hr class="my-4"></div>
+              </div>
+
+              <div class="row">
+                <div class="col-sm-auto align-self-center">
+                  <h3>About company</h3>
+                </div>
+                <div class="col-sm-auto ml-auto mt-2 mt-md-0">
+                  <div class="block-lang">
+                    <span class="lang-item">RU</span
+                    ><span class="lang-item">EN</span
+                    ><span class="lang-item">FR</span
+                    ><span class="lang-item">ES</span>
+                  </div>
+                </div>
+                <div class="col-12">
+                  <textarea name="" id="" rows="10" placeholder="Come up with a description so that you have fewer unnecessary questions"></textarea>
+                </div>
+
+                <div class="col-12"><hr class="my-4"></div>
+              </div>
+
+              <div class="row">
+                <div class="col-12 mb-3"><h3>Languages</h3></div>
+
+                <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+                  <div class="custom-control custom-checkbox">
+                    <input type="checkbox" class="custom-control-input" id="customLang1">
+                    <label class="custom-control-label" for="customLang1">Russian</label>
+                  </div>
+                </div>
+                <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+                  <div class="custom-control custom-checkbox">
+                    <input type="checkbox" class="custom-control-input" id="customLang2">
+                    <label class="custom-control-label" for="customLang2">English</label>
+                  </div>
+                </div>
+                <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+                  <div class="custom-control custom-checkbox">
+                    <input type="checkbox" class="custom-control-input" id="customLang3">
+                    <label class="custom-control-label" for="customLang3">French</label>
+                  </div>
+                </div>
+                <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+                  <div class="custom-control custom-checkbox">
+                    <input type="checkbox" class="custom-control-input" id="customLang4">
+                    <label class="custom-control-label" for="customLang4">Spanish</label>
+                  </div>
+                </div>
+                <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+                  <div class="custom-control custom-checkbox">
+                    <input type="checkbox" class="custom-control-input" id="customLang5">
+                    <label class="custom-control-label" for="customLang5">Estonian</label>
+                  </div>
+                </div>
+                <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+                  <div class="custom-control custom-checkbox">
+                    <input type="checkbox" class="custom-control-input" id="customLang6">
+                    <label class="custom-control-label" for="customLang6">Latvian</label>
+                  </div>
+                </div>
+                <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+                  <div class="custom-control custom-checkbox">
+                    <input type="checkbox" class="custom-control-input" id="customLang4">
+                    <label class="custom-control-label" for="customLang4">Spanish</label>
+                  </div>
+                </div>
+                <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+                  <div class="custom-control custom-checkbox">
+                    <input type="checkbox" class="custom-control-input" id="customLang5">
+                    <label class="custom-control-label" for="customLang5">Estonian</label>
+                  </div>
+                </div>
+
+                <div class="col-12"><hr class="my-4"></div>
+              </div>
+
+              <div class="row">
+                <div class="col-12 mb-3"><h3>Change password</h3></div>
+
+                <div class="col-sm-6">
+                  <div class="form-group">
+                    <label for="formGroupExampleInput">Old password:</label>
+                    <input type="text" class="form-control" id="formGroupExampleInput" placeholder="">
+                  </div>
+                </div>
+                <div class="col-12"></div>
+                <div class="col-sm-6">
+                  <div class="form-group">
+                    <label for="formGroupExampleInput">New password:</label>
+                    <input type="text" class="form-control" id="formGroupExampleInput" placeholder="">
+                  </div>
+                </div>
+                <div class="col-12"></div>
+                <div class="col-sm-6">
+                  <div class="form-group">
+                    <label for="formGroupExampleInput">Confirm password:</label>
+                    <input type="text" class="form-control" id="formGroupExampleInput" placeholder="">
+                  </div>
+                </div>
+
+                <div class="col-12"><hr class="my-4"></div>
+              </div>
+
+              <div class="row justify-content-center">
+                <div class="col-auto"><a href="" class="edit-modul-btn-olive mt-0">Save</a></div>
+              </div>
+
+            </div>
+
+          </div>
+
+          <div class="col-lg-3 offset-xl-1 order-1 order-lg-2">
+
+            <div class="row justify-content-center">
+              
+              <div class="col-12 col-md-auto ml-auto d-block d-md-none support mb-5">
+                <a class="btn-edit font-demi" href="">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path fill-rule="evenodd" clip-rule="evenodd" d="M4.636 5.045H19.363C20.267 5.045 21 5.778 21 6.682V17.318C21 18.222 20.267 18.954 19.364 18.954H4.636C3.733 18.955 3 18.222 3 17.318V6.682C3 5.778 3.733 5.045 4.636 5.045Z" stroke="#70747B" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                      <path d="M3.11914 6.075L10.8131 11.578C11.5081 12.075 12.4421 12.076 13.1381 11.58L20.8761 6.061" stroke="#70747B" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                    Support
+                  </a>
+              </div>
+
+              <div class="col-sm-8 col-lg-12 mb-5 mb-lg-0">
+                <div class="block-regular">
+                  <div class="block-regular-title">Regular</div>
+                  <p>Active until: December 20, 2021</p>
+                  <div class="progress">
+                    <div class="progress-bar" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                  </div>
+                  <a href="" class="edit-modul-btn-olive" data-target="#modalUpgradePlan" data-toggle="modal">Upgrade Plan</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col-auto mr-auto">
+            <a href=""><img class="footer-logo" src="img/Abarzo2.svg" alt=""></a>
+          </div>
+          <div class="col-auto">
+            <a href=""><img class="footer-aspera-logo" src="img/aspera.svg" alt=""></a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+<div class="modal modal-addContactAddress fade" id="modalAddContact" tabindex="-1" aria-labelledby="modalAddContact" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="regModalLabel">Add contact</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+
+          <div class="row align-items-center">
+            <div class="col-auto">
+              <div class="edit-profil-img">
+                <img  src="img/person.svg" alt="">
+              </div>
+            </div>
+            <div class="col col-md-auto block-photo">
+              <label for="uploadPhotoModal" class="btn-edit mb-2">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M15.9749 11.0251C17.3417 12.392 17.3417 14.608 15.9749 15.9749C14.608 17.3417 12.392 17.3417 11.0251 15.9749C9.65829 14.608 9.65829 12.392 11.0251 11.0251C12.392 9.65829 14.608 9.65829 15.9749 11.0251" stroke="#55585E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M5 12V19C5 20.105 5.895 21 7 21H20C21.105 21 22 20.105 22 19V10C22 8.895 21.105 8 20 8H18L16.487 5.484C16.306 5.184 15.981 5 15.63 5H12" stroke="#55585E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M5 2V8" stroke="#55585E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M2 5H8" stroke="#55585E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+                Upload photo
+              </label>
+              <input id="uploadPhotoModal" type="file" accept="image/*" onchange="uploadPhotoModal(this.files)">
+            </div>
+          </div>
+
+          <div class="form-group mt-3">
+            <label for="formPosition">Position:</label>
+            <input type="text" class="form-control" id="formPosition" placeholder="Example input placeholder">
+          </div>
+          <div class="form-group">
+            <label for="formEmail">E-mail:</label>
+            <input type="text" class="form-control" id="formEmail" placeholder="Example input placeholder">
+          </div>
+          <div class="form-group">
+            <label for="formName">Name:</label>
+            <input type="text" class="form-control" id="formName" placeholder="Example input placeholder">
+          </div>
+          <div class="form-group">
+            <label for="formPhone">Phone:</label>
+            <input type="text" class="form-control" id="formPhone" placeholder="Example input placeholder">
+          </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button">Save</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal modal-addContactAddress fade" id="modalAddress" tabindex="-1" aria-labelledby="modalAddress" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="modalAddress">Add address</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+
+          <div class="form-group">
+            <label for="Select01">Province:</label>
+            <select class="custom-select" id="Select03">
+              <option selected>1</option>
+              <option value="1">2</option>
+              <option value="2">3</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="Select01">Province:</label>
+            <select class="custom-select" id="Select03">
+              <option selected>1</option>
+              <option value="1">2</option>
+              <option value="2">3</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="formPhone">Office address:</label>
+            <input type="text" class="form-control" id="formPhone" placeholder="Example input placeholder">
+          </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button">Save</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal modal-upgradePlan fade" id="modalUpgradePlan" tabindex="-1" aria-labelledby="modalUpgradePlan" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="modalUpgradePlan">Subscription</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="container">
+        <div class="row">
+
+          <div class="col-sm-6 mb-5">
+            <div class="upgradePlan-item">
+              <div class="upgradePlan-item-title">Regular</div>
+              <div class="upgradePlan-item-price">299€</div>
+              <div class="upgradePlan-item-iva">+ IVA per year</div>
+              <hr class="mt-3 mb-4">
+              <p>Unlimited addition of real estate</p>
+              <p>Access to the B2B real estate exchanger</p>
+              <div class="block-btn">
+                <a href="" class="block-btn-olive">Buy now</a>
+                <div class="custom-control custom-checkbox">
+                  <input type="checkbox" class="custom-control-input" id="custom1">
+                  <label class="custom-control-label" for="custom1">I read and I accept legal notice and data protection policy</label>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-sm-6 mb-5">
+            <div class="upgradePlan-item active">
+              <div class="upgradePlan-item-title">Extended <span class="popular">Most popular</span></div>
+              <div class="upgradePlan-item-price">399€</div>
+              <div class="upgradePlan-item-iva">+ IVA per year</div>
+              <hr class="mt-3 mb-4">
+              <p>Unlimited addition of real estate</p>
+              <p>Access to the B2B real estate exchanger</p>
+              <p>In the section similar objects, only your offers are displayed</p>
+              <div class="block-btn">
+                <a href="" class="block-btn-olive">Buy now</a>
+                <div class="custom-control custom-checkbox">
+                  <input type="checkbox" class="custom-control-input" id="custom2">
+                  <label class="custom-control-label" for="custom2">I read and I accept legal notice and data protection policy</label>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+        </div>
+          
+      </div>
+    </div>
+  </div>
+</div>
+
+    <script src="js/scripts.min.js"></script>
+
+  </body>
+</html>

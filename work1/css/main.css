@@ -6746,8 +6746,9 @@ button {
   }
   .add_button2__landing5 {
     display: block;
-    margin-left: 165px;
-    margin-top: -165px;
+    margin-left: 345px;
+    margin-top: 10px;
+    position: relative;
   }
   .select_content {
     display: -webkit-box;
@@ -6887,7 +6888,7 @@ button {
   }
   .checbox_left {
     position: absolute;
-    margin-top: -230px;
+    margin-top: -280px;
     margin-left: -340px;
   }
   .message_content__right {
@@ -7436,6 +7437,17 @@ button {
     color: #111;
     padding-top: 20px;
   }
+  .add_button2__landing5 {
+    display: block;
+    margin-left: 410px;
+    margin-top: 10px;
+    position: relative;
+  }
+  .checbox_left {
+    position: absolute;
+    margin-top: -330px;
+    margin-left: -410px;
+  }
 }
 @media screen and (max-width: 570px) {
   .header_content__item {
@@ -7753,13 +7765,14 @@ button {
   }
   .add_button2__landing5 {
     display: block;
-    margin-left: 140px;
-    margin-top: -150px;
+    margin-left: 290px;
+    margin-top: 10px;
+    position: relative;
   }
   .checbox_left {
     position: absolute;
-    margin-top: -184px;
-    margin-left: -170px;
+    margin-top: -257px;
+    margin-left: -204px;
   }
 }
 @media screen and (max-width: 450px) {
@@ -8158,6 +8171,17 @@ button {
     margin-left: 265px;
     margin-top: 10px;
   }
+  .add_button2__landing5 {
+    display: block;
+    margin-left: 270px;
+    margin-top: 10px;
+    position: relative;
+  }
+  .checbox_left {
+    position: absolute;
+    margin-top: -257px;
+    margin-left: -185px;
+  }
 }
 @media screen and (max-width: 400px) {
   .button_delete {
@@ -8197,15 +8221,15 @@ button {
     width: 150px;
   }
   .add_button2__landing5 {
-    margin-left: 125px;
+    margin-left: 250px;
   }
   .select_filtr__content__right {
-    width: 95%;
+    width: 100%;
   }
   .checbox_left {
     position: absolute;
-    margin-top: -173px;
-    margin-left: -145px;
+    margin-top: -240px;
+    margin-left: -160px;
   }
   .message_content__left__chat {
     padding: 10px;
@@ -8228,6 +8252,14 @@ button {
     margin-left: 230px;
     margin-top: 10px;
   }
+  .add_button2__landing5 {
+    margin-left: 235px;
+  }
+  .checbox_left {
+    position: absolute;
+    margin-top: -230px;
+    margin-left: -145px;
+  }
 }
 @media screen and (max-width: 370px) {
   .section3_content__slider {
@@ -8239,5 +8271,13 @@ button {
   .button_delete {
     margin-left: 220px;
     margin-top: 10px;
+  }
+  .checbox_left {
+    position: absolute;
+    margin-top: -215px;
+    margin-left: -125px;
+  }
+  .add_button2__landing5 {
+    margin-left: 215px;
   }
 }

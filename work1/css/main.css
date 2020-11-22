@@ -6669,10 +6669,11 @@ button {
   }
   .button_delete {
     display: block;
-    margin-top: -150px;
+    margin-top: 10px;
     margin-left: 340px;
     background: #22222291;
     font-weight: 500;
+    position: relative;
     border: none;
   }
   .product_item2 {
@@ -6731,6 +6732,7 @@ button {
   }
   .product_left {
     width: 455px;
+    margin-top: -55px;
   }
   .product_center2 {
     width: 70%;
@@ -7380,7 +7382,7 @@ button {
     width: 82%;
   }
   .button_delete {
-    margin-left: 320px;
+    margin-left: 315px;
   }
   .product_right {
     width: 82%;
@@ -7688,7 +7690,7 @@ button {
   }
   .button_delete {
     margin-left: 294px;
-    margin-top: -140px;
+    margin-top: 10px;
   }
   .modal_content__item {
     width: 100%;
@@ -8117,9 +8119,8 @@ button {
     width: 90%;
   }
   .button_delete {
-    margin-left: 0;
-    margin-top: -140px;
-    right: 30px;
+    margin-left: 290px;
+    margin-top: 10px;
   }
   .min_block__comment {
     margin-left: 286px;
@@ -8145,11 +8146,23 @@ button {
     width: 100%;
   }
 }
+
+@media screen and (max-width: 430px) {
+  .button_delete {
+    margin-left: 280px;
+    margin-top: 10px;
+  }
+}
+@media screen and (max-width: 420px) {
+  .button_delete {
+    margin-left: 265px;
+    margin-top: 10px;
+  }
+}
 @media screen and (max-width: 400px) {
   .button_delete {
-    margin-left: 0;
-    margin-top: -137px;
-    right: 23px;
+    margin-left: 245px;
+    margin-top: 10px;
   }
   .filtr {
     width: 99%;
@@ -8209,11 +8222,22 @@ button {
     margin-left: 29px;
   }
 }
+
+@media screen and (max-width: 385px) {
+  .button_delete {
+    margin-left: 230px;
+    margin-top: 10px;
+  }
+}
 @media screen and (max-width: 370px) {
   .section3_content__slider {
     width: 340px;
   }
   .section3_icon__contact {
     margin-left: 250px;
+  }
+  .button_delete {
+    margin-left: 220px;
+    margin-top: 10px;
   }
 }

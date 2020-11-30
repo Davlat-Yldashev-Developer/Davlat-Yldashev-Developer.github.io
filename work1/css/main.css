@@ -1539,6 +1539,10 @@ footer {
   padding-top: 20px;
   font-size: 14px;
   font-weight: 500;
+  transition: 0.2s linear;
+}
+.form_profile__text a:hover {
+  color: #222;
 }
 .link_bold {
   font-weight: 700 !important;
@@ -1655,6 +1659,10 @@ footer {
 }
 .bottom_text2 b {
   color: #fb5314;
+  transition: 0.2s linear;
+}
+.bottom_text2 b:hover {
+  color: #222;
 }
 .landing3_header {
   padding-left: 55px;

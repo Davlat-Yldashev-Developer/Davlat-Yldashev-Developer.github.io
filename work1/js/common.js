@@ -99,6 +99,7 @@ $(function () {
         arrows:true,
         dots:false,  
         slidesToShow:4,
+        infinite: false,
         responsive:[
       {
         breakpoint: 1200,
@@ -230,6 +231,7 @@ $ (function() {
         $('.modal_subscription') .hide();
         $('.modal_contact') .hide();
         $('.modal_address') .hide();
+        $('.modal_changes') .hide();
     })
     $('#box2') .click(function() {
         $('.form2_button') .show();
@@ -258,7 +260,7 @@ $ (function() {
       $('.button__add ') .click(function() {
         $('.modal_contact') .show();
     })
-       $('.button__add2 ') .click(function() {
+    $('.button__add2 ') .click(function() {
         $('.modal_address') .show();
     })
     $('.modal_contact__content__title button') .click(function() {
@@ -266,6 +268,12 @@ $ (function() {
     })
     $('.modal_contact__content__title b') .click(function() {
         $('.modal_address') .hide();
+    })
+    $('.download_btn ') .click(function() {
+        $('.modal_changes') .show();
+    })
+    $('.hide_changes') .click(function() {
+        $('.modal_changes') .hide();
     })
 
 });

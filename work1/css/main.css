@@ -39,6 +39,9 @@ h6 {
   position: relative;
   z-index: 2;
 }
+#sait2 {
+  height: 100vh;
+}
 .header_content__item {
   display: -webkit-box;
   display: -webkit-flex;
@@ -1035,6 +1038,9 @@ h6 {
   background-repeat: no-repeat;
   background-position: center;
 }
+.slider_contact .slick-arrow.slick-disabled {
+  opacity: 0.6;
+}
 #section3 {
   padding-bottom: 40px;
 }
@@ -1354,7 +1360,7 @@ footer {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  height: 570px;
+  height: 100vh;
 }
 .form_left {
   width: 50%;
@@ -1365,8 +1371,9 @@ footer {
   width: 50%;
 }
 .big_search {
-  margin-top: 97px;
   position: absolute;
+  bottom: -80px;
+  width: 35%;
 }
 .form_left__content {
   width: 370px;
@@ -1651,7 +1658,7 @@ footer {
 .bottom_text2 {
   margin-top: 20px;
   font-size: 14px;
-  color: #fb5314;
+  color: #222;
   text-align: center;
   margin-bottom: 28px;
   font-weight: 500;
@@ -2096,12 +2103,12 @@ button {
   -webkit-transition: 0.2s linear;
   -o-transition: 0.2s linear;
   transition: 0.2s linear;
+  border-radius: 18px;
+  background: tan;
 }
 .social_network img:hover {
   -webkit-box-shadow: 0 0 5px black;
   box-shadow: 0 0 5px black;
-  border-radius: 18px;
-  background: tan;
 }
 .select_landing3 {
   position: relative;
@@ -2594,14 +2601,23 @@ button {
   font-weight: 500;
   font-family: 'Avenir Next Cyr';
 }
+.modal_changes {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    background: #0000005e;
+    z-index: 50;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
 .download_btn {
   background: -o-linear-gradient(bottom, #FB5314, #FB5314), #7E7E3F;
   background: -webkit-gradient(linear, left bottom, left top, from(#FB5314), to(#FB5314)), #7E7E3F;
   background: linear-gradient(0deg, #FB5314, #FB5314), #7E7E3F;
   border-radius: 6px;
-  width: 116px;
+  width: 190px;
   padding: 12px 0;
-  margin: 0 auto;
+  margin-top: 20px;
   text-align: center;
   font-weight: bold;
   font-size: 16px;
@@ -5430,7 +5446,6 @@ button {
     padding-top: 8px;
   }
   .big_search {
-    margin-top: 100px;
     position: absolute;
     width: 355px;
   }
@@ -5504,9 +5519,6 @@ button {
   }
   .line_text p {
     font-size: 13px;
-  }
-  .form {
-    height: 470px;
   }
   .form_left__content {
     width: 300px;
@@ -6540,9 +6552,10 @@ button {
     padding-bottom: 40px;
   }
   .big_search {
-    margin-top: 70px;
+    margin-top: 75px;
     position: absolute;
     width: 355px;
+    bottom: inherit;
   }
   .form_right__content {
     width: 430px;
@@ -7008,6 +7021,12 @@ button {
   }
   .message_content__left2 {
     display: block !important;
+  }
+  #sait2 {
+    height: 960px;
+  }
+  .form {
+    height: 100%;
   }
 }
 @media screen and (max-width: 700px) {

@@ -232,6 +232,7 @@ $ (function() {
         $('.modal_contact') .hide();
         $('.modal_address') .hide();
         $('.modal_changes') .hide();
+        $('.modal_user__argument') .hide();
     })
     $('#box2') .click(function() {
         $('.form2_button') .show();
@@ -274,6 +275,12 @@ $ (function() {
     })
     $('.hide_changes') .click(function() {
         $('.modal_changes') .hide();
+    })
+     $('.bottom_text2 b ') .click(function() {
+        $('.modal_user__argument') .show();
+    })
+     $('.modal_user__title button') .click(function() {
+        $('.modal_user__argument') .hide();
     })
 
 });

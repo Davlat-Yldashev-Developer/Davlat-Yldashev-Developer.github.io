@@ -6369,26 +6369,8 @@ button {
     font-size: 13px;
     margin-top: 40px;
   }
-  .comment_text {
-    width: 370px;
-    margin-left: -300px;
-    margin-top: -240px;
-  }
   .comment_text__title h6 {
     font-size: 14px;
-  }
-  .comment_text__title button {
-    -webkit-transform: scale(2);
-    -ms-transform: scale(2);
-    transform: scale(2);
-  }
-  .comment_text p {
-    font-size: 11px;
-    padding-top: 7px;
-    line-height: 15px;
-  }
-  .min_block__comment {
-    margin-left: 304px;
   }
   .redactor_focus__item button {
     width: 100%;
@@ -6864,11 +6846,6 @@ button {
     display: block !important;
     width: 20px;
     height: 20px;
-  }
-  .comment_text {
-    width: 370px;
-    margin-left: -295px;
-    margin-top: -240px;
   }
   .button_delete {
     display: block;
@@ -8391,12 +8368,13 @@ button {
     margin-top: 10px;
   }
   .min_block__comment {
-    margin-left: 286px;
+    margin-left: 235px;
+    width: 15px;
+    height: 15px;
   }
   .comment_text {
-    width: 330px;
-    margin-left: -280px;
-    margin-top: -247px;
+    margin-left: -224px;
+    margin-top: -190px;
   }
   .showe_text {
     display: none;

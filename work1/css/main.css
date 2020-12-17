@@ -243,6 +243,10 @@ h6 {
   -ms-flex-pack: justify;
   justify-content: space-between;
   color: #222;
+  transition: 0.2s linear;
+}
+.language a:hover {
+  color: #fb5314;
 }
 .flag-icon {
   width: 24px;
@@ -3356,7 +3360,6 @@ button {
   -webkit-align-items: center;
   -ms-flex-align: center;
   align-items: center;
-  width: 385px;
 }
 .filtr_item {
   display: -webkit-box;
@@ -3477,6 +3480,9 @@ button {
   padding-right: 10px;
   height: 24px;
 }
+.replay {
+  margin-top: -20px;
+}
 .product_center__one__redactor {
   display: -webkit-box;
   display: -webkit-flex;
@@ -3486,9 +3492,14 @@ button {
   -webkit-align-items: center;
   -ms-flex-align: center;
   align-items: center;
+    border: 1px solid #C7CBCF;
+    padding: 8px 0px;
+    border-radius: 8px;
+    width: 130px;
+    justify-content: center;
 }
 .product_center__one__redactor h5 {
-  font-weight: bold;
+  font-weight: 500;
   font-size: 18px;
   color: #222;
   padding-right: 20px;
@@ -3520,14 +3531,22 @@ button {
   font-size: 18px;
   color: #222;
 }
+.product_center__two p a {
+  transition: 0.2s linear;
+}
 .product_center__two p {
   font-size: 14px;
   font-weight: 500;
   padding-top: 5px;
   color: #70747B;
+  display: flex;
+}
+.product_center__two p:hover a{
+  color: #222;
 }
 .product_center__two p span {
   color: #FB5314 !important;
+  padding-left: 3px;
 }
 .product_center__fri {
   display: -webkit-box;
@@ -4331,7 +4350,7 @@ button {
 .product_right__one button {
   color: #fff;
   padding: 8px 0;
-  width: 72px;
+  width: 90px;
   background: #fb5314;
   text-align: center;
   border-radius: 6px;
@@ -5231,6 +5250,12 @@ button {
   width: 124px;
   height: 40px;
 }
+.orange_id {
+  color: #fb5314 !important;
+}
+.product_center__two p a {
+    color: #70747B;
+}
 @media screen and (max-width: 1450px) {
   #sait2 {
     height: 575px;
@@ -6064,9 +6089,6 @@ button {
   .icon_landing3 a {
     width: 36px;
     height: 36px;
-  }
-  .filtr {
-    width: 340px;
   }
   .filtr_item {
     width: 79%;
@@ -7128,6 +7150,12 @@ button {
   }
   .form {
     height: 100%;
+  }
+  .replay {
+    margin-top: 0px;
+  }
+  .product_center__one {
+    align-items: center;
   }
 }
 @media screen and (max-width: 700px) {

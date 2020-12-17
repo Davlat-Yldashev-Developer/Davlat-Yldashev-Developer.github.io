@@ -5499,6 +5499,42 @@ button {
 .message_butoon a p {
   padding-left: 12px;
 }
+.hide_icon__footer {
+  display: none;
+}
+
+.footer_icon {
+  width: 270px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.footer_icon__item {
+  width: 210px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.footer_icon__item a{
+  background: #FFFFFF;
+  border-radius: 76px;
+  width: 32px;
+  height: 32px;
+  border: 1px solid #CED4DA;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.2s linear;
+}
+.footer_icon__item a:hover .showe_icon__footer{
+  display: none;
+}
+.footer_icon__item a:hover {
+  border: 1px solid #fb5314;
+}
+.footer_icon__item a:hover .hide_icon__footer{
+  display: block;
+}
 @media screen and (max-width: 1450px) {
   #sait2 {
     height: 575px;
@@ -8814,6 +8850,13 @@ button {
   .language_active {
     margin-left: -25px;
     margin-top: 45px;
+  }
+  .footer_icon__item {
+    display: none;
+    width: initial;
+  }
+  .footer_icon {
+    width: initial;
   }
 }
 

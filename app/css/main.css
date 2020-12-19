@@ -3649,6 +3649,9 @@ button {
 .product_center__two p a {
   color: #70747B;
 }
+.product_center__two p span{
+  transition: 0.2s linear;
+}
 .product_center__two p {
   font-size: 14px;
   font-weight: 500;
@@ -3657,12 +3660,13 @@ button {
   display: flex;
   transition: 0.2s linear;
 }
-.product_center__two p:hover a{
-  color: #222;
+.product_center__two p:hover span{
+  color: #222 !important;
 }
 .product_center__two p span {
   color: #FB5314 !important;
   padding-left: 3px;
+  cursor: pointer;
 }
 .product_center__fri {
   display: -webkit-box;
@@ -3823,11 +3827,11 @@ button {
     box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.1);
     border-radius: 8px;
     width: 280px;
-    height: 153px;
+    height: 170px;
     padding-left: 20px;
     padding-right: 20px;
     margin-left: -210px;
-    margin-top: -185px;
+    margin-top: -210px;
     z-index: 20;
     padding-bottom: 20px;
     display: none;
@@ -8876,7 +8880,6 @@ button {
   }
   .comment_text {
     margin-left: -224px;
-    margin-top: -190px;
   }
   .showe_text {
     display: none;

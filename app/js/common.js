@@ -328,4 +328,3 @@ window.onclick = function(event) {
     }
   }
 }
-

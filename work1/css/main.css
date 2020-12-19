@@ -3547,6 +3547,7 @@ button {
 .product_center__two p span {
   color: #FB5314 !important;
   padding-left: 3px;
+  cursor: pointer;
 }
 .product_center__fri {
   display: -webkit-box;

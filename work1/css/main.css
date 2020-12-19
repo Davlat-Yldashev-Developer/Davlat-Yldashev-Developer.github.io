@@ -3771,6 +3771,8 @@ button {
   line-height: 16px;
   width: 240px;
   margin: 0 auto;
+  height: 140px !important;
+  overflow-x: hidden;
 }
 .min_block__comment {
       width: 20px;
@@ -8412,7 +8414,7 @@ button {
     margin-top: 10px;
   }
   .min_block__comment {
-    margin-left: 235px;
+    margin-left: 257px;
     width: 15px;
     height: 15px;
   }

@@ -3531,7 +3531,7 @@ button {
   font-size: 18px;
   color: #222;
 }
-.product_center__two p a {
+.product_center__two p span {
   transition: 0.2s linear;
 }
 .product_center__two p {
@@ -3541,8 +3541,8 @@ button {
   color: #70747B;
   display: flex;
 }
-.product_center__two p:hover a{
-  color: #222;
+.product_center__two p:hover span{
+  color: #222 !important;
 }
 .product_center__two p span {
   color: #FB5314 !important;
@@ -3779,7 +3779,7 @@ button {
     margin-top: 2px;
     bottom: -3px;
     position: absolute;
-    margin-left: 220px;
+    margin-left: 238px;
     border-radius: 1px;
     -webkit-transform: rotate(-45deg);
     -ms-transform: rotate(-45deg);
@@ -6510,7 +6510,7 @@ button {
     margin-left: 33px;
   }
   .min_block__comment {
-    margin-left: 214px;
+    margin-left: 234px;
   }
 }
 @media screen and (max-width: 830px) {
@@ -7161,7 +7161,7 @@ button {
     align-items: center;
   }
   .min_block__comment {
-    margin-left: 220px;
+    margin-left: 240px;
 }
 }
 @media screen and (max-width: 700px) {

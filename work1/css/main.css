@@ -99,6 +99,11 @@ h6 {
   margin: 0 auto;
   font-family: 'Avenir Next Cyr';
 }
+.container_two {
+  width: 1270px;
+  margin: 0 auto;
+  font-family: 'Avenir Next Cyr';
+}
 .logo {
   width: 124px;
   height: 40px;
@@ -3721,7 +3726,7 @@ button {
 }
 .modal_comment1 {
     width: 100%;
-    height: 100vh;
+    height: 850px;
     position: absolute;
     background: transparent;
     z-index: 50;
@@ -3736,7 +3741,7 @@ button {
 }
 .modal_comment2 {
     width: 100%;
-    height: 100vh;
+    height: 850px;
     position: absolute;
     background: transparent;
     z-index: 50;
@@ -3751,7 +3756,7 @@ button {
 }
 .modal_comment3 {
     width: 100%;
-    height: 100vh;
+    height: 850px;
     position: absolute;
     background: transparent;
     z-index: 50;
@@ -3873,7 +3878,7 @@ button {
 
 .modal__redactor1 {
     width: 100%;
-    height: 100vh;
+    height: 850px;
     position: absolute;
     background: transparent;
     z-index: 50;
@@ -3888,7 +3893,7 @@ button {
 }
 .modal__redactor2 {
     width: 100%;
-    height: 100vh;
+    height: 850px;
     position: absolute;
     background: transparent;
     z-index: 50;
@@ -3903,7 +3908,7 @@ button {
 }
 .modal__redactor3 {
     width: 100%;
-    height: 100vh;
+    height: 850px;
     position: absolute;
     background: transparent;
     z-index: 50;
@@ -6799,6 +6804,24 @@ button {
   .modal_language__content {
     width: 650px;
   }
+  .modal_comment1 {
+    height: 1550px;
+  }
+  .modal_comment2 {
+    height: 1550px;
+  }
+  .modal_comment3 {
+    height: 1550px;
+  }
+  .modal__redactor1 {
+    height: 1550px;
+  }
+  .modal__redactor2 {
+    height: 1550px;
+  }
+  .modal__redactor3 {
+    height: 1550px;
+  }
   .container {
     width: 650px;
   }
@@ -8243,7 +8266,7 @@ button {
   }
   .menu {
     margin-top: 45px;
-    margin-left: -180px;
+    margin-right: 0;
   }
   .photo_modal__content {
     width: 345px;
@@ -8526,10 +8549,16 @@ button {
     width: 97%;
   }
   .header_content__item {
-    width: 360px;
+    width: 95%;
+  }
+  .two_header {
+    width: 360px !important;
+  }
+  .container_two {
+    width: 360px !important;
   }
   .container {
-    width: 360px;
+    width: 95%;
   }
   .section3_content {
     width: 100%;

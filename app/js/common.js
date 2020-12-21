@@ -159,10 +159,13 @@ $(function () {
   });
 
 
-$('.select_profile').click(function(event) {
-    $('.menu').toggleClass('active');
-    $('body').toggleClass('lock');
-  });
+$(document).mouseup(function (e){
+var modalctr = $("#modal_cinw_ctnr");
+var modal = $(".modal_cinw");
+if (!modal.is(e.target) && modal.has(e.target).length === 0){
+modalctr.hide();
+}
+});
 
 $('.select').click(function(event) {
     $('.language_active').toggleClass('active');

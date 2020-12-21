@@ -398,9 +398,6 @@ h6 {
   position: absolute;
   display: none;
 }
-.menu.active {
-  display: block;
-}
 .menu a {
   font-size: 14px;
   color: #222;

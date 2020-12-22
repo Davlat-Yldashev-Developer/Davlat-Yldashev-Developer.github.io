@@ -195,10 +195,6 @@ $('.button__mobile__showe__two').click(function(event) {
     $('body').toggleClass('lock');
   });
 
-$('.landing5_section__select__language__item').click(function(event) {
-    $('.showe_language').toggleClass('active');
-    $('body').toggleClass('lock');
-  });
 
 
 $ (function() {
@@ -219,6 +215,7 @@ $ (function() {
         $('.modal_comment1') .hide();
         $('.modal_comment2') .hide();
         $('.modal_comment3') .hide();
+        $('.modal_spain') .hide();
     })
     $('#box2') .click(function() {
         $('.form2_button') .show();
@@ -315,6 +312,10 @@ $ (function() {
         $('.modal_comment3') .hide();
         $('.modal_comment3__content') .hide();
     })
+     $('.landing5_section__select__language__item') .click(function() {
+        $('.modal_spain') .show();
+        $('.modal_spain__content') .show();
+    })
     $('.hide_changes') .click(function() {
         $('.modal_changes') .hide();
     })
@@ -326,9 +327,9 @@ $ (function() {
     })
 
 });
-$(".modal_subscription, .modal_user__argument, .modal_changes, .modal_address, .modal_contact, .menu_modal, .modal_comment3, .modal_comment3__content, .modal_comment2, .modal_comment2__content, .menu_modal__content, .modal_comment1, .modal_comment1__content, .modal_language, .modal_language__content, .modal__redactor1, .modal__redactor1__content, .modal__redactor2, .modal__redactor2__content, .modal__redactor3, .modal__redactor3__content")
+$(".modal_subscription, .modal_spain, .modal_spain__content, .modal_user__argument, .modal_changes, .modal_address, .modal_contact, .menu_modal, .modal_comment3, .modal_comment3__content, .modal_comment2, .modal_comment2__content, .menu_modal__content, .modal_comment1, .modal_comment1__content, .modal_language, .modal_language__content, .modal__redactor1, .modal__redactor1__content, .modal__redactor2, .modal__redactor2__content, .modal__redactor3, .modal__redactor3__content")
 .on('click', function (e) { if (e.target == this) 
-  $(".modal_subscription, .modal_user__argument, .modal_changes, .modal_address, .modal_contact, .menu_modal, .modal_comment3, .modal_comment3__content, .menu_modal__content, .modal_comment2, .modal_comment2__content, .modal_comment1, .modal_comment1__content, .modal_language, .modal_language__content, .modal__redactor1, .modal__redactor1__content, .modal__redactor2, .modal__redactor2__content, .modal__redactor3, .modal__redactor3__content")
+  $(".modal_subscription, .modal_spain, .modal_spain__content, .modal_user__argument, .modal_changes, .modal_address, .modal_contact, .menu_modal, .modal_comment3, .modal_comment3__content, .menu_modal__content, .modal_comment2, .modal_comment2__content, .modal_comment1, .modal_comment1__content, .modal_language, .modal_language__content, .modal__redactor1, .modal__redactor1__content, .modal__redactor2, .modal__redactor2__content, .modal__redactor3, .modal__redactor3__content")
   .fadeOut('fast'); })
 
 

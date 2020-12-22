@@ -1,3 +1,18 @@
+.modal_spain {
+    width: 100%;
+    height: 760px;
+    position: absolute;
+    background: transparent;
+    z-index: 50;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+.modal_spain__content {
+    width: 1270px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: flex-start;
+}
 .modal_button__header {
     width: 100%;
     height: 100%;
@@ -4870,12 +4885,8 @@ button {
   background: #fff;
   position: absolute;
   z-index: 30;
-  margin-top: 10px;
-  display: none;
+  margin-top: 205px;
   padding-bottom: 0px;
-}
-.showe_language.active {
-  display: block;
 }
 .showe_language__world {
   display: -webkit-box;
@@ -5796,6 +5807,9 @@ button {
   .modal_button__header__content {
     width: 1150px;
   }
+  .modal_spain__content {
+    width: 1150px;
+  }
   .container {
     width: 1150px;
   }
@@ -6045,6 +6059,9 @@ button {
 }
 @media screen and (max-width: 1200px) {
   .header_content__item {
+    width: 1030px;
+  }
+  .modal_spain__content {
     width: 1030px;
   }
   .modal_button__header__content {
@@ -6512,6 +6529,9 @@ button {
   .header_content__item {
     width: 900px;
   }
+  .modal_spain__content {
+    width: 900px;
+  }
   .modal_button__header__content {
     width: 900px;
   }
@@ -6892,6 +6912,9 @@ button {
 }
 @media screen and (max-width: 950px) {
   .header_content__item {
+    width: 780px;
+  }
+  .modal_spain__content {
     width: 780px;
   }
   .modal_button__header__content {
@@ -7299,6 +7322,9 @@ button {
 }
 @media screen and (max-width: 830px) {
   .header_content__item {
+    width: 650px;
+  }
+  .modal_spain__content {
     width: 650px;
   }
   .modal_button__header__content {
@@ -8033,6 +8059,9 @@ button {
   .header_content__item {
     width: 520px;
   }
+  .modal_spain__content {
+    width: 520px;
+  }
   .modal_button__header__content {
     width: 520px;
   }
@@ -8040,6 +8069,9 @@ button {
     width: 520px;
   }
   .modal_language__content {
+    width: 520px;
+  }
+  .language_two {
     width: 520px;
   }
   .modal_comment1__content {
@@ -8619,6 +8651,9 @@ button {
   .header_content__item {
     width: 400px;
   }
+  .modal_spain__content {
+    width: 400px;
+  }
   .button_block {
     width: 242px;
     margin-top: 413px;
@@ -8628,6 +8663,9 @@ button {
     width: 400px;
   }
   .menu_modal__content {
+    width: 400px;
+  }
+  .modal_two {
     width: 400px;
   }
   .modal_comment1__content {
@@ -8649,6 +8687,9 @@ button {
       width: 400px;
   }
   .modal_language__content {
+    width: 400px;
+  }
+  .language_two {
     width: 400px;
   }
   .box22 {
@@ -9085,6 +9126,9 @@ button {
   .box18 {
     margin-top: 1177px;
   }
+  .modal_spain__content {
+    width: 95%;
+  }
   .modal_comment1__content {
       width: 360px;
   }
@@ -9104,9 +9148,15 @@ button {
       width: 360px;
   }
   .modal_language__content {
+    width: 95%;
+  }
+  .language_two {
     width: 360px;
   }
   .menu_modal__content {
+    width: 95%;
+  }
+  .modal_two {
     width: 360px;
   }
   .header_content__item {

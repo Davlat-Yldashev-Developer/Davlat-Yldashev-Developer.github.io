@@ -830,7 +830,7 @@ h6 {
 .portfolio_right__one-lable__item p {
   display: flex;
   justify-content: center;
-  font-weight: normal;
+  font-weight: 600;
   font-size: 14px;
   padding-top: 10px;
   align-items: center;
@@ -1029,6 +1029,10 @@ h6 {
   -ms-flex-align: center;
   align-items: center;
   width: 185px;
+  cursor: pointer;
+}
+.services_section2__item:hover p {
+  color: #fb5314;
 }
 .services_section2__item img {
   width: 24px;
@@ -1039,6 +1043,7 @@ h6 {
   color: #222;
   font-weight: 600;
   padding-left: 10px;
+  transition: 0.2s linear;
 }
 .title_dexcription {
   width: 950px;

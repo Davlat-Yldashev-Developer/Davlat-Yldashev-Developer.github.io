@@ -1,3 +1,120 @@
+
+.complain_content__item {
+    display: flex;
+    flex-direction: column;
+    margin: 5px 15px 15px 28px;
+}
+
+.custom-radio {
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
+  }
+
+  /* для элемента label связанного с .custom-radio */
+  .custom-radio+label {
+    display: inline-flex;
+    align-items: center;
+    user-select: none;
+    margin-top: 10px;
+  }
+  .save_btn2 {
+    background: -o-linear-gradient(bottom, #FB5314, #FB5314), #7E7E3F;
+    background: -webkit-gradient(linear, left bottom, left top, from(#FB5314), to(#FB5314)), #7E7E3F;
+    background: linear-gradient(0deg, #FB5314, #FB5314), #7E7E3F;
+    border-radius: 6px;
+    width: 116px;
+    padding: 12px 0;
+    margin: 0 auto;
+    margin-top: 20px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 16px;
+    color: #fff;
+    cursor: pointer;
+    border: 1px solid #fb5314;
+    display: block;
+}
+
+  /* создание в label псевдоэлемента  before со следующими стилями */
+  .custom-radio+label::before {
+    content: '';
+    display: inline-block;
+    width: 1em;
+    height: 1em;
+    flex-shrink: 0;
+    flex-grow: 0;
+    border: 1px solid #adb5bd;
+    border-radius: 50%;
+    margin-right: 0.5em;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 50% 50%;
+  }
+
+  /* стили при наведении курсора на радио */
+  .custom-radio:not(:disabled):not(:checked)+label:hover::before {
+    border-color: #b3d7ff;
+  }
+
+  /* стили для активной радиокнопки (при нажатии на неё) */
+  .custom-radio:not(:disabled):active+label::before {
+    background-color: #b3d7ff;
+    border-color: #b3d7ff;
+  }
+
+  /* стили для радиокнопки, находящейся в фокусе */
+  .custom-radio:focus+label::before {
+    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+  }
+
+  /* стили для радиокнопки, находящейся в фокусе и не находящейся в состоянии checked */
+  .custom-radio:focus:not(:checked)+label::before {
+    border-color: #80bdff;
+  }
+
+  /* стили для радиокнопки, находящейся в состоянии checked */
+  .custom-radio:checked+label::before {
+    border-color: #0b76ef;
+    background-color: #0b76ef;
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3e%3ccircle r='3' fill='%23fff'/%3e%3c/svg%3e");
+  }
+
+  /* стили для радиокнопки, находящейся в состоянии disabled */
+  .custom-radio:disabled+label::before {
+    background-color: #e9ecef;
+  }
+
+.ya-share2__container, .ya-share2__container .ya-share2__item {
+    font-family: 'YS Text', Arial, sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.ya-share2__list.ya-share2__list_direction_horizontal {
+    margin-top: 10px !important;
+}
+
+.modal_complain {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    background: #0000005e;
+    z-index: 50;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+.modal_complain__item {
+    width: 430px;
+    border-radius: 10px;
+    background: #fff;
+    margin: 0 auto;
+    margin-top: 38px;
+    padding-top: 20px;
+    padding-bottom: 30px;
+}
+
 .modal_spain {
     width: 100%;
     height: 760px;
@@ -1030,7 +1147,7 @@ h6 {
 }
 .portfolio_right__one {
   width: 297px;
-  height: 561px;
+  padding-bottom: 30px;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   border-radius: 4px;
@@ -1161,7 +1278,6 @@ h6 {
   box-sizing: border-box;
   border-radius: 4px;
   width: 297px;
-  height: 222px;
   padding: 30px 30px;
   margin-top: 20px;
 }
@@ -1185,12 +1301,27 @@ h6 {
   margin-top: 5px;
   font-family: 'Avenir Next Cyr';
   font-weight: 500;
+  margin-bottom: 10px;
+}
+.portfolio_right_two input {
+  background: #fff;
+    border: 1px solid #d9dbe0;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    border-radius: 6px;
+    padding: 12px 20px;
+    width: 237px;
+    color: #70747B;
+    margin-top: 5px;
+    height: 43px;
+    font-size: 14px;
+    margin-bottom: 10px;
+    font-weight: 500;
+    font-family: 'Avenir Next Cyr';
 }
 .portfolio_right_two button {
   margin: 0 auto;
-  background: -o-linear-gradient(bottom, #4889DE, #4889DE), -o-linear-gradient(bottom, #3272ED, #3272ED), -o-linear-gradient(bottom, #39A046, #39A046), #7CBC42;
-  background: -webkit-gradient(linear, left bottom, left top, from(#4889DE), to(#4889DE)), -webkit-gradient(linear, left bottom, left top, from(#3272ED), to(#3272ED)), -webkit-gradient(linear, left bottom, left top, from(#39A046), to(#39A046)), #7CBC42;
-  background: linear-gradient(0deg, #4889DE, #4889DE), linear-gradient(0deg, #3272ED, #3272ED), linear-gradient(0deg, #39A046, #39A046), #7CBC42;
+  background: #4889de;
   border-radius: 6px;
   font-weight: bold;
   font-size: 14px;
@@ -1200,7 +1331,14 @@ h6 {
   width: 238px;
   margin-top: 20px;
   font-family: 'Avenir Next Cyr';
-  border: none;
+  border: 1px solid transparent;
+  transition: 0.2s linear;
+  cursor: pointer;
+}
+.portfolio_right_two button:hover  {
+    border: 1px solid #4889de;
+    color: #4889de;
+    background: #fff;
 }
 .title_section2 {
   display: -webkit-box;
@@ -1212,7 +1350,7 @@ h6 {
   -ms-flex-pack: justify;
   justify-content: space-between;
   width: 950px;
-  margin-top: -125px;
+  margin-top: -310px;
   position: relative;
   z-index: 5;
 }
@@ -5875,7 +6013,7 @@ button {
   border: 1px solid #39A046;  
   color: #39A046;
 }
-.button_redactor a {
+.button_redactor button {
   display: flex;
   margin-top: 10px;
   border-radius: 6px;
@@ -5885,11 +6023,13 @@ button {
   width: 100%;
   justify-content: center;
   align-items: center;
+  background: #fff;
+  cursor: pointer;
 }
-.button_redactor a img {
+.button_redactor button img {
   margin-right: 12px;
 }
-.button_heshteg a {
+.button_heshteg button {
   font-weight: 500;
   font-size: 14px;
   background: rgba(251, 83, 20, 0.05);
@@ -5900,6 +6040,12 @@ button {
   margin-top: 20px;
   text-align: center;
   transition: 0.2s linear;
+  border: none;
+  cursor: pointer;
+}
+.button_heshteg button:hover {
+  background: #fb5314;
+  color: #fff;
 }
 .pen-edit-icon2 {
   display: none !important;
@@ -6010,6 +6156,11 @@ button {
   font-size: 14px;
   padding-top: 5px;
   color: #fb5314;
+  transition: 0.2s linear;
+}
+
+.info_block__content__title__text h6:hover {
+  color: #222;
 }
 
 .info_block__content__item {
@@ -6019,6 +6170,10 @@ button {
   font-weight: 500;
   font-size: 16px;
   color: #222;
+  transition: 0.2s linear;
+}
+.info_block__content__item h5:hover {
+  color: #fb5314;
 }
 .info_block__content__item p {
   font-weight: 400;
@@ -6275,6 +6430,50 @@ button {
   background-position: center;
 }
 
+.portfolio_right__one-lable__item h3 {
+  transition: 0.2s linear;
+}
+
+.portfolio_right__one-lable__item h3:hover {
+  color: #fb5314;
+  border-bottom: 1px solid #fb5314;
+}
+
+.right_contact a p {
+  transition: 0.2s linear;
+}
+
+.right_contact a p:hover {
+  color: #fb5314;
+}
+
+.showe_text {
+  transition: 0.2s linear;
+}
+
+.showe_text:hover {
+  color: #fb5314;
+}
+.services_block__info__title a {
+  transition: 0.2s linear; 
+}
+
+.arrowe-slider_hover2 {
+  display: none !important;
+}
+.services_block__info__title a:hover {
+  background: #fb5314;
+  color: #fff;
+}
+
+.services_block__info__title a:hover .arrowe-slider_hover {
+  display: none !important;
+}
+.services_block__info__title a:hover .arrowe-slider_hover2 {
+  display: block !important;
+}
+
+
 @media screen and (max-width: 1450px) {
   #sait2 {
     height: 575px;
@@ -6369,7 +6568,7 @@ button {
   }
   .title_section2 {
     width: 830px;
-    margin-top: -175px;
+    margin-top: -350px;
   }
   .services_section2 {
     width: 830px;
@@ -6689,6 +6888,9 @@ button {
   .portfolio_right_two textarea {
     width: 225px !important;
   }
+  .portfolio_right_two input {
+     width: 225px !important;
+  }
   .portfolio_right_two button {
     width: 225px !important;
   }
@@ -6702,7 +6904,7 @@ button {
     height: 35px;
   }
   .title_section2 {
-    margin-top: -225px;
+    margin-top: -395px;
   }
   .services_section2__item img {
     width: 30px;
@@ -7126,7 +7328,7 @@ button {
   }
   .title_section2 {
     width: 650px;
-    margin-top: -145px;
+    margin-top: -365px;
   }
   .services_section2 {
     width: 650px;
@@ -7154,12 +7356,10 @@ button {
   }
   .portfolio_right__one {
     width: 235px;
-    height: 453px;
   }
   .portfolio_right_two {
     width: 235px;
     padding: 15px 15px;
-    height: 205px;
   }
   .portfolio_right__one__row__item img {
     width: 22px;
@@ -7184,6 +7384,9 @@ button {
   .portfolio_right_two textarea {
     width: 200px !important;
     margin-top: 10px;
+  }
+  .portfolio_right_two input {
+     width: 200px !important;
   }
   .portfolio_right_two button {
     width: 200px !important;
@@ -7514,7 +7717,7 @@ button {
   }
   .title_section2 {
     width: 530px;
-    margin-top: -230px;
+    margin-top: -450px;
   }
   .services_section2 {
     width: 530px;
@@ -7874,7 +8077,7 @@ button {
   .button_redactor {
     width: 210px;
   }
-  .button_redactor a {
+  .button_redactor button {
     padding: 10px 0;
   }
   .modal_spain__content {
@@ -8002,17 +8205,18 @@ button {
   }
   .portfolio_right__one {
     width: 210px;
-    height: 453px;
   }
   .portfolio_right_two {
     width: 210px;
     padding: 15px 15px;
-    height: 205px;
   }
   .portfolio_right_two textarea {
     width: 175px !important;
     margin-top: 10px;
     padding-left: 13px;
+  }
+  .portfolio_right_two input {
+     width: 175px !important;
   }
   .portfolio_right_two button {
     width: 175px !important;
@@ -8034,7 +8238,7 @@ button {
   }
   .title_section2 {
     width: 430px;
-    margin-top: -280px;
+    margin-top: -460px;
   }
   .services_section2__content {
     -webkit-box-pack: center;
@@ -8746,12 +8950,10 @@ button {
   }
   .portfolio_right__one {
     width: 297px;
-    height: 561px;
   }
   .portfolio_right_two {
     width: 297px;
     padding: 30px 30px;
-    height: 222px;
   }
   .portfolio_right__one__row__item img {
     width: 24px;
@@ -8873,6 +9075,9 @@ button {
     width: 237px !important;
     margin-top: 10px;
     padding-left: 13px;
+  }
+  .portfolio_right_two input {
+     width: 237px !important;
   }
   .warning_hover {
     border-radius: 8px;
@@ -9741,6 +9946,9 @@ button {
     margin: 0 auto;
     width: 100%;
   }
+  .modal_complain__item {
+    width: 95%;
+  }
   .chart_two_text {
     margin-top: 18px;
   }
@@ -9975,7 +10183,6 @@ button {
   }
   .portfolio_right__one {
     width: 100%;
-    height: 561px;
   }
   .portfolio_right_two {
     width: 100%;
@@ -10071,6 +10278,9 @@ button {
     margin-top: 10px;
     padding-left: 13px;
     width: 100% !important;
+  }
+  .portfolio_right_two input {
+     width: 100% !important;
   }
   .portfolio_right_two button {
     width: 100% !important;

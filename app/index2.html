@@ -10,6 +10,30 @@
 	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
 </head>
 <body>
+	<div class="modal_complain">
+		<div class="modal_complain__item">
+			<div class="complain_content">
+				<div class="modal_contact__content__title">
+					<h2>
+						Complain
+					</h2>
+					<button class="complain_hide">
+						×
+					</button>
+				</div>
+				<div class="complain_content__item">
+				    <input class="custom-radio" type="radio" id="color-1" name="color" value="indigo">
+				    <label for="color-1">Текст номер 1</label>
+				    <input class="custom-radio" type="radio" id="color-2" name="color" value="indigo">
+				    <label for="color-2">Текст номер 2</label>
+				 </div>
+				 <button class="save_btn2 box10">
+						Save
+					</button>
+				</div>	
+			</div>
+		</div>
+	</div>
 	<div class="modal_button__header">
 		<div class="modal_button__header__content">
 			<div class="button_block">
@@ -690,18 +714,6 @@
 							</h5>
 						</div>
 						<div class="score_chart__fri">
-							<img src="img/warning-icon.svg" alt="">
-							<div class="warning_hover">
-								<h6>
-									Investment attractiveness
-								</h6>
-								<p>
-									The investment attractiveness of an object is calculated from the net profit from the rental of real estate per year.
-								</p> 
-								<p>
-									In order to more accurately calculate your ROI and estimate your initial investment, you must consider more factors than the initial purchase price. You should also add taxes, operating costs, and household payments (painting, electrical appliances, furniture, etc.). Only after all these costs have been taken into account, you will be able to calculate the ROI of your potential investment in Spanish property
-								</p>
-							</div>
 						</div>
 					</div>
 				</div>	
@@ -772,6 +784,12 @@
 						</div>
 						<div class="right_contact">
 							<a href="#" class="star_icon">
+								<img src="img/download_pdf.svg" alt="">
+								<p>
+									Download PDF
+								</p>
+							</a>
+							<a href="#" class="star_icon">
 								<img src="img/star-icon.svg" alt="">
 								<p>
 									Add to favorites
@@ -790,25 +808,34 @@
 								</p>
 							</a>
 						</div>
+						<div class="ya-share2" data-curtain data-lang="en" data-services="facebook,telegram,twitter,whatsapp,pinterest,skype,linkedin"></div>
 					</div>
 					<div class="button_redactor">
-						<a href="#" class="button_redactor__one">
+						<button href="#" class="button_redactor__one">
 							<img src="img/pen-edit-icon.svg" alt="" class="pen-edit-icon">
 							<img src="img/pen-edit-icon2.svg" alt="" class="pen-edit-icon2">
 							Edit
-						</a>
-						<a href="#" class="button_redactor__two">
+						</button>
+						<button class="button_redactor__two">
 							<img src="img/info-icon-btn.svg" alt="" class="info-icon-btn">
 							<img src="img/info-icon-btn2.svg" alt="" class="info-icon-btn2">
 							Complain
-						</a>
+						</button>
 					</div>
 					<div class="portfolio_right_two">
 						<div class="portfolio_right_two__item">
 							<h5>
-							Message:
-						</h5>
-						<textarea placeholder="Enter your message"></textarea>
+								Name
+							</h5>
+							<input type="text" class="box6">
+							<h5>
+								E-mail
+							</h5>
+							<input type="text" class="box6">
+							<h5>
+								Message:
+							</h5>
+						<textarea placeholder="Enter your message" class="box6"></textarea>
 						<button>
 							Send enquiry
 						</button>
@@ -939,9 +966,9 @@
 					<img src="img/mobile_arrow.svg" alt="">
 				</h6>
 				<div class="button_heshteg">
-					<a href="#">
-						#buy villa house suidad qesada
-					</a>
+					<button>
+						#buy villa house suidad qesada						
+					</button>
 				</div>
 			</div>
 			<div class="line_section2"></div>
@@ -952,7 +979,8 @@
 					</h3>
 					<a href="#">
 						Show all
-						<img src="img/arrowe-slider_hover.svg" alt="">
+						<img src="img/arrowe-slider_hover.svg" alt="" class="arrowe-slider_hover">
+						<img src="img/arrowe-slider_hover2.svg" alt="" class="arrowe-slider_hover2">
 					</a>
 				</div>
 			</div>
@@ -1640,6 +1668,7 @@
 			</div>
 		</div>
 	</footer>
+	<script src="https://yastatic.net/share2/share.js"></script>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 	<script src="js/slick.min.js"></script>
 	<script src="js/common.js"></script>

@@ -1091,8 +1091,58 @@ h6 {
   background: url(../img/warning-hover.svg) no-repeat center top / cover;
   display: none;
 }
+.download_pdf2 {
+  display: none !important;
+}
+.star-icon2 {
+  display: none !important;
+}
+.star_icon:hover .star-icon1 {
+  display: none !important;
+}
+.star_icon:hover .star-icon2 {
+  display: block !important;
+}
+.star_icon:hover {
+  background: #fff;
+  border: 1px solid #fb5314;
+}
+.star_icon:hover p {
+  color: #fb5314 !important;
+}
 .star_icon {
   margin-bottom: 8px !important;
+  width: 100%;
+  background: #F4F7FB;
+  border-radius: 6px;
+  padding: 13px 0;
+  transition: 0.2s linear;
+  border: 1px solid transparent;
+}
+.pdf_icon:hover .download_pdf1 {
+  display: none !important;
+}
+.pdf_icon:hover .download_pdf2 {
+  display: block !important;
+}
+.pdf_icon:hover {
+  background: #fff;
+  border: 1px solid #fb5314;
+}
+.pdf_icon:hover p {
+  color: #fb5314 !important;
+}
+.pdf_icon {
+  margin-bottom: 8px !important;
+  width: 100%;
+  background: #F4F7FB;
+  border-radius: 6px;
+  padding: 13px 0;
+  transition: 0.2s linear;
+  border: 1px solid transparent;
+}
+.tel_icon:hover p{
+  color: #fb5314 !important;
 }
 .warning_hover h6 {
   font-size: 16px;
@@ -1198,7 +1248,7 @@ h6 {
   border-bottom: 1px solid #2222228a;
   padding-bottom: 2px;
 }
-.portfolio_right__one-lable__item p {
+.prime_text {
   display: flex;
   justify-content: center;
   font-weight: 600;
@@ -1207,7 +1257,19 @@ h6 {
   align-items: center;
   color: #fb5314;
 }
-.portfolio_right__one-lable__item p img {
+.prime_text:hover {
+  color: #55585E;
+}
+.prime_icon2 {
+  display: none !important;
+}
+.prime_text:hover .prime_icon1 {
+  display: none !important;
+}
+.prime_text:hover .prime_icon2 {
+  display: block !important;
+}
+.prime_text img {
   padding-right: 10px;
 }
 .portfolio_right__one__row__item {
@@ -1248,7 +1310,7 @@ h6 {
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
-  width: 160px;
+  width: 85%;
   margin: 0 auto;
 }
 .right_contact a {
@@ -1261,6 +1323,7 @@ h6 {
   -webkit-align-items: center;
   -ms-flex-align: center;
   align-items: center;
+  justify-content: center;
 }
 .right_contact a img {
   width: 24px;
@@ -1910,6 +1973,9 @@ h6 {
 
 .section3_content__item:hover {
     box-shadow: 0 0 10px -5px #000;
+}
+.section3_content__item:hover .section3_text h4 {
+  color: #fb5314;
 }
 .price p {
   padding-top: 4px;
@@ -4066,6 +4132,10 @@ button {
   font-weight: bold;
   font-size: 18px;
   color: #222;
+  transition: 0.2s linear;
+}
+.product_center__two h4:hover {
+  color: #fb5314;
 }
 .orange_id {
   color: #fb5314 !important;
@@ -4388,6 +4458,14 @@ button {
   margin-top: 20px;
   font-family: 'Avenir Next Cyr';
   border: none;
+  transition: 0.2s linear;
+  cursor: pointer;
+  border: 1px solid transparent;
+}
+.redactor_focus__item button:hover {
+    border: 1px solid #4889de;
+    color: #4889de;
+    background: #fff;
 }
 .redactor_icon__two-hide {
   display: none !important;
@@ -6439,13 +6517,6 @@ button {
   border-bottom: 1px solid #fb5314;
 }
 
-.right_contact a p {
-  transition: 0.2s linear;
-}
-
-.right_contact a p:hover {
-  color: #fb5314;
-}
 
 .showe_text {
   transition: 0.2s linear;

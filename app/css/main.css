@@ -10613,7 +10613,6 @@ button {
   }
   .coin_content__item {
     margin-left: 30px;
-    display: flex;
     flex-direction: column;
   }
   .coin_content__text {

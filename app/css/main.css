@@ -1,4 +1,12 @@
-
+.exit_icon {
+    font-size: 55px;
+    color: #fff;
+    display: flex;
+    justify-content: flex-end;
+    height: 55px;
+    cursor: pointer;
+    margin-right: -6px;
+}
 .complain_content__item {
     display: flex;
     flex-direction: column;
@@ -90,6 +98,28 @@
 .ya-share2__list.ya-share2__list_direction_horizontal {
     margin-top: 10px !important;
 }
+
+.modal_video {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    background: #0000005e;
+    z-index: 50;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+.modal_video__item iframe{
+    width: 560px;
+  }
+
+.modal_video__item{
+    width: 560px;
+    border-radius: 10px;
+    margin: 0 auto;
+    margin-top: 10%;
+}
+
+
 
 .modal_complain {
     width: 100%;
@@ -6561,15 +6591,17 @@ button {
   color: #111;
 }
 
-.section_one__title_left p {
+.section_one__title_left button {
   font-weight: normal;
   font-size: 16px;
   color: #70747B;
   display: flex;
   align-items: center;
   margin-top: -30px;
+  border: none;
+  background: #fff;
 }
-.section_one__title_left p img {
+.section_one__title_left button img {
   margin-left: 5px;
 }
 
@@ -6730,6 +6762,7 @@ button {
   opacity: 0;
 }
 
+
 .select_section__one__input3.active {
   opacity: 1;
 }
@@ -6789,9 +6822,44 @@ button {
 }
 .coin_content__item {
   margin-left: 35px;
-  display: flex;
+  display: none;
 }
 
+.box50_btn.active {
+  background: #fb5314;
+  color: #fff;
+}
+
+
+.select_valut {
+    position: relative;
+}
+
+.select_valut__item img {
+  display: none;
+}
+
+.select_valut__item {
+    position: absolute;
+    border-radius: 6px;
+    border: none;
+    width: 15px;
+    font-size: 16px;
+    margin-left: -22px;
+    margin-top: 18px;
+    font-weight: 500;
+    display: inline-block;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    cursor: pointer;
+    background: #fff;
+    color: #70747B;
+}
+
+.coin_content__item.active {
+  display: flex;
+}
 .coin_content__text p {
   color: #95989D;
   font-size: 12px;
@@ -9360,7 +9428,7 @@ button {
   .button_content {
     margin-top: 0px;
   }
-  .section_one__title_left p {
+  .section_one__title_left button {
     margin-top: 25px;
   }
   .section_one__title_left {
@@ -9411,6 +9479,13 @@ button {
 @media screen and (max-width: 720px) {
   .header_content__item {
     width: 520px;
+  }
+  .modal_video__item{
+    width: 90%;
+    margin-top: 25%;
+  }
+  .modal_video__item iframe {
+    width: 100%;
   }
   .ya-share2__list.ya-share2__list_direction_horizontal {
     margin-top: -2px;

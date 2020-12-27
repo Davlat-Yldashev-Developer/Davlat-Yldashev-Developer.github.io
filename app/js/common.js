@@ -236,6 +236,9 @@ $(document).on('click','.landing_title__item__right', function(){
     $(this).addClass('active').siblings().removeClass('active')
 });
 
+$(document).on('click','.box50_btn', function(){
+    $(this).toggleClass('active')
+});
 
 $('.mobile__button').click(function(event) {
     $('.mobile_text,.mobile__button img,.showe_text').toggleClass('active');
@@ -244,6 +247,11 @@ $('.mobile__button').click(function(event) {
 
 $('.button__mobile__showe__two').click(function(event) {
     $('.checkbox_content,.select_content').toggleClass('active');
+    $('body').toggleClass('lock');
+  });
+
+$('.checkbox_coin label').click(function(event) {
+    $('.coin_content__item').toggleClass('active');
     $('body').toggleClass('lock');
   });
 
@@ -282,6 +290,7 @@ $ (function() {
         $('.modal_button__header') .hide();
         $('.modal_spain') .hide();
         $('.modal_complain') .hide();
+        $('.modal_video') .hide();
     })
     $('#box2') .click(function() {
         $('.form2_button') .show();
@@ -387,6 +396,14 @@ $ (function() {
      $('.button_redactor__two ') .click(function() {
         $('.modal_complain') .show();
     })
+      $('.section_one__title_left button ') .click(function() {
+        $('.modal_video') .show();
+         $('.modal_video__item') .show();
+    })
+      $('.exit_icon') .click(function() {
+        $('.modal_video') .hide();
+         $('.modal_video__item') .hide();
+    })
      $('.complain_hide') .click(function() {
         $('.modal_complain') .hide();
     })
@@ -403,9 +420,9 @@ $ (function() {
     })
 
 });
-$(".modal_subscription, .modal_complain, .modal_spain, .modal_spain__content, .modal_user__argument, .modal_changes, .modal_address, .modal_contact, .modal_button__header, .modal_button__header__content, .menu_modal, .modal_comment3, .modal_comment3__content, .modal_comment2, .modal_comment2__content, .menu_modal__content, .modal_comment1, .modal_comment1__content, .modal_language, .modal_language__content, .modal__redactor1, .modal__redactor1__content, .modal__redactor2, .modal__redactor2__content, .modal__redactor3, .modal__redactor3__content")
+$(".modal_subscription, .modal_video, .modal_video__item, .modal_complain, .modal_spain, .modal_spain__content, .modal_user__argument, .modal_changes, .modal_address, .modal_contact, .modal_button__header, .modal_button__header__content, .menu_modal, .modal_comment3, .modal_comment3__content, .modal_comment2, .modal_comment2__content, .menu_modal__content, .modal_comment1, .modal_comment1__content, .modal_language, .modal_language__content, .modal__redactor1, .modal__redactor1__content, .modal__redactor2, .modal__redactor2__content, .modal__redactor3, .modal__redactor3__content")
 .on('click', function (e) { if (e.target == this) 
-  $(".modal_subscription, .modal_complain, .modal_spain, .modal_spain__content, .modal_user__argument, .modal_changes, .modal_address, .modal_contact, .modal_button__header, .modal_button__header__content, .menu_modal, .modal_comment3, .modal_comment3__content, .menu_modal__content, .modal_comment2, .modal_comment2__content, .modal_comment1, .modal_comment1__content, .modal_language, .modal_language__content, .modal__redactor1, .modal__redactor1__content, .modal__redactor2, .modal__redactor2__content, .modal__redactor3, .modal__redactor3__content")
+  $(".modal_subscription, .modal_video, .modal_video__item, .modal_complain, .modal_spain, .modal_spain__content, .modal_user__argument, .modal_changes, .modal_address, .modal_contact, .modal_button__header, .modal_button__header__content, .menu_modal, .modal_comment3, .modal_comment3__content, .menu_modal__content, .modal_comment2, .modal_comment2__content, .modal_comment1, .modal_comment1__content, .modal_language, .modal_language__content, .modal__redactor1, .modal__redactor1__content, .modal__redactor2, .modal__redactor2__content, .modal__redactor3, .modal__redactor3__content")
   .fadeOut('fast'); })
 
 

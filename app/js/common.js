@@ -231,6 +231,7 @@ $(document).on('click','.box_filtr', function(){
     $(this).toggleClass('active')
 });
 
+
 $(document).on('click','.landing_title__item__right', function(){
     $(this).addClass('active').siblings().removeClass('active')
 });
@@ -246,6 +247,18 @@ $('.button__mobile__showe__two').click(function(event) {
     $('body').toggleClass('lock');
   });
 
+
+
+$('.checkbox__one label').click(function(event) {
+    $('.select_section__one__input3').toggleClass('active');
+    $('body').toggleClass('lock');
+  });
+
+
+$('.checkbox__two label').click(function(event) {
+    $('.select_section__one__input4').toggleClass('active');
+    $('body').toggleClass('lock');
+  });
 
 
 $ (function() {

@@ -291,6 +291,8 @@ $ (function() {
         $('.modal_spain') .hide();
         $('.modal_complain') .hide();
         $('.modal_video') .hide();
+        $('.modal_import') .hide();
+        $('.modal_copy') .hide();
     })
     $('#box2') .click(function() {
         $('.form2_button') .show();
@@ -404,6 +406,24 @@ $ (function() {
         $('.modal_video') .hide();
          $('.modal_video__item') .hide();
     })
+
+      $('.button_xml__two ') .click(function() {
+        $('.modal_copy') .show();
+         $('.modal_copy__item') .show();
+    })
+
+       $('.button_xml__one ') .click(function() {
+        $('.modal_import') .show();
+         $('.modal_import__item') .show();
+    })
+      $('.modal_import__content__title button') .click(function() {
+        $('.modal_import') .hide();
+         $('.modal_import__item') .hide();
+         $('.modal_copy') .hide();
+         $('.modal_copy__item') .hide();
+    })
+
+
      $('.complain_hide') .click(function() {
         $('.modal_complain') .hide();
     })
@@ -420,9 +440,9 @@ $ (function() {
     })
 
 });
-$(".modal_subscription, .modal_video, .modal_video__item, .modal_complain, .modal_spain, .modal_spain__content, .modal_user__argument, .modal_changes, .modal_address, .modal_contact, .modal_button__header, .modal_button__header__content, .menu_modal, .modal_comment3, .modal_comment3__content, .modal_comment2, .modal_comment2__content, .menu_modal__content, .modal_comment1, .modal_comment1__content, .modal_language, .modal_language__content, .modal__redactor1, .modal__redactor1__content, .modal__redactor2, .modal__redactor2__content, .modal__redactor3, .modal__redactor3__content")
+$(".modal_subscription, .modal_copy, .modal_copy__item, .modal_import, modal_import__item, .modal_video, .modal_video__item, .modal_complain, .modal_spain, .modal_spain__content, .modal_user__argument, .modal_changes, .modal_address, .modal_contact, .modal_button__header, .modal_button__header__content, .menu_modal, .modal_comment3, .modal_comment3__content, .modal_comment2, .modal_comment2__content, .menu_modal__content, .modal_comment1, .modal_comment1__content, .modal_language, .modal_language__content, .modal__redactor1, .modal__redactor1__content, .modal__redactor2, .modal__redactor2__content, .modal__redactor3, .modal__redactor3__content")
 .on('click', function (e) { if (e.target == this) 
-  $(".modal_subscription, .modal_video, .modal_video__item, .modal_complain, .modal_spain, .modal_spain__content, .modal_user__argument, .modal_changes, .modal_address, .modal_contact, .modal_button__header, .modal_button__header__content, .menu_modal, .modal_comment3, .modal_comment3__content, .menu_modal__content, .modal_comment2, .modal_comment2__content, .modal_comment1, .modal_comment1__content, .modal_language, .modal_language__content, .modal__redactor1, .modal__redactor1__content, .modal__redactor2, .modal__redactor2__content, .modal__redactor3, .modal__redactor3__content")
+  $(".modal_subscription, .modal_copy, .modal_copy__item, .modal_import, modal_import__item, .modal_video, .modal_video__item, .modal_complain, .modal_spain, .modal_spain__content, .modal_user__argument, .modal_changes, .modal_address, .modal_contact, .modal_button__header, .modal_button__header__content, .menu_modal, .modal_comment3, .modal_comment3__content, .menu_modal__content, .modal_comment2, .modal_comment2__content, .modal_comment1, .modal_comment1__content, .modal_language, .modal_language__content, .modal__redactor1, .modal__redactor1__content, .modal__redactor2, .modal__redactor2__content, .modal__redactor3, .modal__redactor3__content")
   .fadeOut('fast'); })
 
 

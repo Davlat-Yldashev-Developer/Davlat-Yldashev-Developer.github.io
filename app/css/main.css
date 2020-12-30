@@ -13,6 +13,139 @@
     margin: 5px 15px 15px 28px;
 }
 
+.modal_import {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    background: #0000005e;
+    z-index: 50;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+.modal_import__item {
+    width: 430px;
+    border-radius: 10px;
+    background: #fff;
+    margin: 0 auto;
+    margin-top: 38px;
+    padding-bottom: 30px;
+}
+
+.modal_copy {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    background: #0000005e;
+    z-index: 50;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+.modal_copy__item {
+    width: 430px;
+    border-radius: 10px;
+    background: #fff;
+    margin: 0 auto;
+    margin-top: 38px;
+    padding-bottom: 30px;
+}
+
+.modal_import__content__title {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    padding-bottom: 10px;
+    padding-left: 30px;
+    padding-right: 21px;
+}
+.modal_import__content__title h2 {
+    font-weight: bold;
+    font-size: 20px;
+    color: #222;
+    padding-top: 30px;
+}
+.modal_import__content__title button {
+    border: none;
+    background: none;
+    -webkit-transform: scale(2.7);
+    -ms-transform: scale(2.7);
+    transform: scale(2.7);
+    display: block;
+    margin-right: 1px;
+    margin-top: 1px;
+    cursor: pointer;
+    color: #55585E;
+}
+
+.clip_icon {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.clip_icon img{
+  position: absolute;
+  margin-top: 18px;
+  margin-right: 18px;
+}
+
+.import_input2 {
+  background: #fff !important;
+  border: 2px dashed #c7cbcf !important;
+}
+
+.import_input2:focus {
+  border: 2px solid #fb5314 !important;
+}
+
+.line_import {
+  width: 100%;
+  height: 1px;
+  background: #D9DBE0;
+  margin-top: 30px;
+}
+
+.modal_import__content {
+  margin: 0 auto;
+  width: 86%;
+  margin-top: -20px;
+}
+
+.text_import {
+  color: #55585E;
+  font-size: 12px;
+  font-weight: 400;
+  padding-top: 5px;
+}
+
+.modal_import__content button {
+  border-radius: 6px;
+  width: 115px;
+  padding: 12px 0;
+  text-align: center;
+  border: 1px solid transparent;
+  background: #fb5314;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 500;
+  margin-top: 20px;
+  transition: 0.2s linear;
+  cursor: pointer;
+}
+.modal_import__content button:hover {
+  color: #fb5314;
+  background: #fff;
+  border: 1px solid #fb5314;
+}
 .custom-radio {
     position: absolute;
     z-index: -1;
@@ -7028,6 +7161,14 @@ button {
   width: 278px;
 }
 
+.redactor_index7 h6:hover {
+  color: #ff1100;
+}
+
+.redactor_index7 button:hover {
+  color: #4CAF50;
+}
+
 .index7_content {
   display: flex;
   justify-content: space-between;
@@ -7043,6 +7184,7 @@ button {
   font-size: 14px;
   font-weight: 500;
   padding-right: 15px;
+  transition: 0.2s linear;
 }
 .redactor_index7 button{
   color: #70747B;
@@ -7055,6 +7197,7 @@ button {
   margin: 0;
   width: inherit;
   padding: 0;
+  transition: 0.2s linear;
 }
 .redactor_index7 button img {
   margin-right: 5px;
@@ -10875,6 +11018,12 @@ button {
   .portfolio_slider {
     margin: 0 auto;
     width: 100%;
+  }
+  .modal_import__item {
+    width: 95%;
+  }
+  .modal_copy__item {
+    width: 95%;
   }
   .buy_index7 {
     width: 65% !important;

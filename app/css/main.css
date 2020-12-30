@@ -6815,6 +6815,7 @@ button {
   padding: 0px 10px 20px 20px;
   margin-top: 20px;
   width: 770px;
+  border-radius: 5px;
 }
 .form_order__item__input2 span img {
   margin-left: -8px;

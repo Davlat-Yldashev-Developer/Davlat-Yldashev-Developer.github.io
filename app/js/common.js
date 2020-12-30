@@ -396,7 +396,7 @@ $ (function() {
      $('.button_redactor__two ') .click(function() {
         $('.modal_complain') .show();
     })
-      $('.section_one__title_left button ') .click(function() {
+      $('.button_works ') .click(function() {
         $('.modal_video') .show();
          $('.modal_video__item') .show();
     })

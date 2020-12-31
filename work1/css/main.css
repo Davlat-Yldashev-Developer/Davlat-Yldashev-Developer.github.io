@@ -826,6 +826,11 @@ h6 {
   padding-top: 10px;
   border-bottom: 1px solid #2222228a;
   padding-bottom: 2px;
+  transition: 0.2s linear;
+}
+.portfolio_right__one-lable__item h3:hover {
+  color: #fb5314;
+  border-bottom: 1px solid #fb5314;
 }
 .portfolio_right__one-lable__item p {
   display: flex;
@@ -891,6 +896,9 @@ h6 {
   -ms-flex-align: center;
   align-items: center;
 }
+.right_contact a p:hover {
+  color: #fb5314;
+}
 .right_contact a img {
   width: 24px;
   height: 24px;
@@ -900,6 +908,7 @@ h6 {
   color: #55585E;
   padding-left: 15px;
   font-weight: 500;
+  transition: 0.2s linear;
 }
 .portfolio_right_two {
   border: 1px solid #CED4DA;
@@ -934,9 +943,7 @@ h6 {
 }
 .portfolio_right_two button {
   margin: 0 auto;
-  background: -o-linear-gradient(bottom, #4889DE, #4889DE), -o-linear-gradient(bottom, #3272ED, #3272ED), -o-linear-gradient(bottom, #39A046, #39A046), #7CBC42;
-  background: -webkit-gradient(linear, left bottom, left top, from(#4889DE), to(#4889DE)), -webkit-gradient(linear, left bottom, left top, from(#3272ED), to(#3272ED)), -webkit-gradient(linear, left bottom, left top, from(#39A046), to(#39A046)), #7CBC42;
-  background: linear-gradient(0deg, #4889DE, #4889DE), linear-gradient(0deg, #3272ED, #3272ED), linear-gradient(0deg, #39A046, #39A046), #7CBC42;
+  background: #4889de;
   border-radius: 6px;
   font-weight: bold;
   font-size: 14px;
@@ -946,7 +953,19 @@ h6 {
   width: 238px;
   margin-top: 20px;
   font-family: 'Avenir Next Cyr';
-  border: none;
+  border: 1px solid transparent;
+  transition: 0.2s linear;
+  cursor: pointer;
+}
+.portfolio_right_two button:hover {
+    border: 1px solid #4889de;
+    color: #4889de;
+    background: #fff;
+}
+.portfolio_right_two button:hover {
+    border: 1px solid #4889de;
+    color: #4889de;
+    background: #fff;
 }
 .title_section2 {
   display: -webkit-box;
@@ -1164,6 +1183,10 @@ h6 {
   font-weight: 500;
   color: #55585E;
   margin-top: 10px;
+  transition: 0.2s linear;
+}
+.slider_contact__one a:hover {
+  color: #fb5314;
 }
 .slider_contact .slick-list {
   overflow: hidden;
@@ -1336,6 +1359,31 @@ h6 {
   color: #fff;
   padding-left: 8px;
 }
+
+.prime_text {
+  display: flex;
+  justify-content: center;
+  font-weight: 600;
+  font-size: 14px;
+  padding-top: 10px;
+  align-items: center;
+  color: #fb5314;
+}
+.prime_text:hover {
+  color: #55585E;
+}
+.prime_icon2 {
+  display: none !important;
+}
+.prime_text:hover .prime_icon1 {
+  display: none !important;
+}
+.prime_text:hover .prime_icon2 {
+  display: block !important;
+}
+.prime_text img {
+  padding-right: 10px;
+}
 .tel-hover {
   font-size: 14px;
   font-weight: 400;
@@ -1476,11 +1524,15 @@ h6 {
 .section3_content__slider:hover .slick-arrow {
   opacity: 1;
 }
+.section3_text h4:hover {
+  color: #fb5314;
+}
 .section3_text h4 {
   font-weight: bold;
   font-size: 16px;
   color: #222;
   padding-top: 12px;
+  transition: 0.2s linear;
 }
 .price {
   display: -webkit-box;
@@ -4062,9 +4114,7 @@ button {
   font-weight: 500;
 }
 .redactor_focus__item button {
-  background: -o-linear-gradient(bottom, #4889DE, #4889DE), -o-linear-gradient(bottom, #3272ED, #3272ED), -o-linear-gradient(bottom, #39A046, #39A046), #7CBC42;
-  background: -webkit-gradient(linear, left bottom, left top, from(#4889DE), to(#4889DE)), -webkit-gradient(linear, left bottom, left top, from(#3272ED), to(#3272ED)), -webkit-gradient(linear, left bottom, left top, from(#39A046), to(#39A046)), #7CBC42;
-  background: linear-gradient(0deg, #4889DE, #4889DE), linear-gradient(0deg, #3272ED, #3272ED), linear-gradient(0deg, #39A046, #39A046), #7CBC42;
+  background: #4889de;
   border-radius: 6px;
   font-weight: bold;
   font-size: 14px;
@@ -4074,7 +4124,13 @@ button {
   width: 238px;
   margin-top: 20px;
   font-family: 'Avenir Next Cyr';
-  border: none;
+  border: 1px solid transparent;
+  transition: 0.2s linear;
+}
+.redactor_focus__item button:hover {
+    border: 1px solid #4889de;
+    color: #4889de;
+    background: #fff;
 }
 .redactor_icon__two-hide {
   display: none !important;

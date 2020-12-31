@@ -3692,6 +3692,10 @@ button {
   font-weight: bold;
   font-size: 18px;
   color: #222;
+  transition: 0.2s linear;
+}
+.product_center__two h4:hover {
+  color: #fb5314;
 }
 .product_center__two p span {
   transition: 0.2s linear;

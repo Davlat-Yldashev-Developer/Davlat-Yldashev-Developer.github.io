@@ -221,6 +221,10 @@ modalctr.hide();
 $(document).on('click','.box3', function(){
     $(this).toggleClass('active')
 });
+
+$(document).on('click','.menu_index8__item a', function(){
+    $(this).addClass('active').siblings().removeClass('active')
+});
 $(document).on('click','.box4', function(){
     $(this).toggleClass('active')
 });
@@ -246,7 +250,7 @@ $('.mobile__button').click(function(event) {
   });
 
 $('.button__mobile__showe__two').click(function(event) {
-    $('.checkbox_content,.select_content').toggleClass('active');
+    $('.checkbox_content,.select_content,.select_block__item').toggleClass('active');
     $('body').toggleClass('lock');
   });
 

@@ -5225,6 +5225,11 @@ button {
 .add_button__landing5 img {
   padding-right: 10px;
 }
+
+.add_button__landing5__two:hover {
+    transform: scale(1.02);
+    box-shadow: 0 0 8px 0px #00000063;
+}
 .add_button__landing5__two {
   font-weight: 500;
   font-size: 16px;
@@ -6337,6 +6342,11 @@ button {
 }
 .footer_icon__item a:hover .hide_icon__footer{
   display: block;
+}
+
+.btn_icon_menu:hover {
+    transform: scale(1.02);
+    box-shadow: 0 0 8px 0px #00000063;
 }
 
 .btn_icon_menu {
@@ -7628,6 +7638,11 @@ button {
 }
 .menu_index8__item a img {
   margin-right: 20px;
+}
+
+.section_landing1__title__right button:hover {
+    transform: scale(1.02);
+    box-shadow: 0 0 8px 0px #00000063;
 }
 
 .section_landing1__title__right button {

@@ -105,6 +105,35 @@ $(function () {
         infinite: false,
         cssEase: 'linear'
       }); 
+       $('.slider_main').slick({
+        arrows:true,
+        dots:false,  
+        slidesToShow:4,
+        slidesToScroll:1,
+        autoplaySpeed: 2000,
+        speed: 500,
+        cssEase: 'linear',
+        responsive:[
+        {
+          breakpoint: 1200,
+          settings: {
+            slidesToShow:3,
+          }
+        },{
+          breakpoint: 950,
+          settings: {
+            slidesToShow:2,
+          }
+        },
+        {
+          breakpoint: 720,
+          settings: {
+            slidesToShow:1,
+          }
+        },   
+      ]
+
+      });
       $('.slider_contact').slick({
         arrows:true,
         dots:false,  
@@ -233,10 +262,9 @@ $(document).on('click','.box3', function(){
 });
 
 
-$(document).on('click','.menu_index8__item a', function(){
+$(document).on('click','.tovar_product__item', function(){
     $(this).addClass('active').siblings().removeClass('active')
 });
-
 
 $(document).on('click','.menu_index8__item a', function(){
     $(this).addClass('active').siblings().removeClass('active')

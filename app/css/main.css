@@ -215,8 +215,13 @@
   font-weight: 500;
   font-size: 20px;
   color: #222;
+  transition: 0.2s linear;
 }
 
+
+.text_filtr__dop h4:hover {
+  color: #fb5314;
+}
 .information_text__filtr {
     width: 450px;
     display: -webkit-box;
@@ -253,6 +258,11 @@
     color: #70747B;
     font-size: 14px;
     margin-left: 5px;
+    transition: 0.2s linear;
+}
+
+.information_text__filtr p:hover {
+  color: #fb5314;
 }
 
 .filtr_dop_text {

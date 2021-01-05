@@ -158,7 +158,18 @@ $(function () {
       },
     ]
       });  
+      $('.slider_contact__dop').slick({
+        arrows:true,
+        dots:false,  
+        slidesToShow:1,
+        infinite: false,
+      });
       $('.section3_content__slider').slick({
+        arrows:true,
+        dots:true,  
+        slidesToShow:1,
+      }); 
+      $('.filtr_dop__slider').slick({
         arrows:true,
         dots:true,  
         slidesToShow:1,

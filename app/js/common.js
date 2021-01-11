@@ -157,7 +157,21 @@ $(function () {
         }
       },
     ]
-      });  
+      }); 
+      $('.block_section__slider__content').slick({
+        arrows:true,
+        dots:false,  
+        slidesToShow:2,
+        infinite: false,
+        responsive:[
+        {
+          breakpoint: 570,
+          settings: {
+            slidesToShow:1,
+          }
+        }
+        ]
+      }); 
       $('.slider_contact__dop').slick({
         arrows:true,
         dots:false,  

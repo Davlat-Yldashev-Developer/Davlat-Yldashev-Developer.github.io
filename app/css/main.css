@@ -9102,14 +9102,14 @@ button {
     border: 2px solid #fb5314;
     color: #fb5314;
     transform: scale(1.02);
-    box-shadow: 0 0 15px -3px #fb5314;
+    box-shadow: 0 0 15px -3px #fb53148f;
 }
 
 .tovar_product__item:hover {
     border: 2px solid #fb5314;
     color: #fb5314;
     transform: scale(1.02);
-    box-shadow: 0 0 15px -3px #fb5314;
+    box-shadow: 0 0 15px -3px #fb53148f;
 }
 
 .tovar_product__item:hover .tovar_icon1 {

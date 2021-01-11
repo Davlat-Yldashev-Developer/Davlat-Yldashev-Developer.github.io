@@ -457,11 +457,14 @@
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
-    display: none;
+    display: flex;
     -webkit-box-pack: justify;
     -webkit-justify-content: space-between;
     -ms-flex-pack: justify;
     justify-content: space-between;
+}
+.agencies_icon__hide {
+  display: none !important;
 }
 .agencies_content__left__fri__icon a {
     width: 32px;
@@ -553,6 +556,10 @@
     transition: 0.2s linear;
 }
 
+.agencies_content__left__one__item1 a:hover {
+  box-shadow: 0px 2px 20px rgba(0, 0, 0, 0.08);
+}
+
 .agencies_content__left__one__item1 a {
     background: #FFFFFF;
     border-radius: 50%;
@@ -561,7 +568,6 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    box-shadow: 0px 2px 20px rgba(0, 0, 0, 0.08);
     transition: 0.2s linear;
 }
 
@@ -667,6 +673,11 @@
   padding-bottom: 40px;
 }
 
+.blog__content:hover {
+    transform: scale(1.02);
+    box-shadow: 0 0 14px -5px #00000063;
+}
+
 .blog__content {
   background: #FFFFFF;
   border: 1px solid #E2E5EB;
@@ -674,6 +685,7 @@
   width: 400px;
   padding: 15px 20px;
   margin-top: 30px;
+  transition: 0.2S linear;
 }
 
 .blog_info {
@@ -7812,7 +7824,10 @@ button {
 }
 
 /*Слайдер ссссссссссссссс*/
-
+.info_block__content:hover {
+    transform: scale(1.02); 
+    box-shadow: 0 0 14px -5px #00000063;
+}
 .info_block__content {
   background: #FFFFFF;
   border: 1px solid #E2E5EB;
@@ -7820,6 +7835,7 @@ button {
   width: 300px;
   padding: 15px 20px;
   margin-top: 30px;
+  transition: 0.2s linear;
 }
 .info_block__content__title {
   display: flex;
@@ -9180,6 +9196,12 @@ button {
   box-shadow: 0px 4px 8px rgba(21, 21, 21, 0.07);
   border-radius: 8px;
   margin-top: 24px;
+  transition: 0.2S linear;
+}
+
+.block_profil__item:hover {
+    transform: scale(1.02); 
+    box-shadow: 0 0 14px -5px #00000063;
 }
 
 .block_profil__item__title {
@@ -9332,6 +9354,12 @@ button {
     width: 400px;
     padding: 15px 0px;
     margin-top: 30px;
+    transition: 0.2S linear;
+}
+
+.block_people__item:hover {
+    transform: scale(1.02);
+    box-shadow: 0 0 14px -5px #00000063;
 }
 
 .people_text h5 {
@@ -12553,6 +12581,9 @@ button {
 @media screen and (max-width: 720px) {
   .header_content__item {
     width: 520px;
+  }
+  .agencies_icon__hide {
+    display: flex !important;
   }
   .agencies_content__left__fri__icon {
     display: flex;

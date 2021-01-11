@@ -9087,13 +9087,40 @@ button {
   align-items: center;
   border: 2px solid transparent;
   font-weight: 500;
+  transition: 0.2s linear;
+}
+
+.tovar_product__item.active .tovar_icon1 {
+  display: block;
+}
+
+.tovar_product__item.active .tovar_icon1__hover {
+  display: none;
 }
 
 .tovar_product__item.active {
     border: 2px solid #fb5314;
     color: #fb5314;
+    transform: scale(1.02);
+    box-shadow: 0 0 15px -3px #fb5314;
 }
 
+.tovar_product__item:hover {
+    border: 2px solid #fb5314;
+    color: #fb5314;
+    transform: scale(1.02);
+    box-shadow: 0 0 15px -3px #fb5314;
+}
+
+.tovar_product__item:hover .tovar_icon1 {
+  display: block;
+}
+.tovar_product__item:hover .tovar_icon1__hover {
+  display: none;
+}
+.tovar_icon1 {
+  display: none;
+}
 .slider_main {
     position: relative;
     width: 1270px;

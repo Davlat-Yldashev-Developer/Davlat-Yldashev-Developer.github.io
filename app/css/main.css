@@ -10094,7 +10094,8 @@ button {
   }
   .blog_article__content__right__title h5 {
     font-size: 15px;
-    width: 222px;
+    width: 227px;
+    text-align: center;
   }
   .video_index12 iframe {
     width: 470px;

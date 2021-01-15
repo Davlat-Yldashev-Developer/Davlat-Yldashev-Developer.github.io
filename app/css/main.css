@@ -9,16 +9,11 @@
   border: none;
 }
 
-#blog_article__index16 {
-    background: #F7F8FA;
-    padding-bottom: 1px;
-    padding-top: 25px;
-}
 
 #blog_article__index16 {
-    background: #F7F8FA;
+    background: #fff;
     padding-bottom: 1px;
-    padding-top: 25px;
+    padding-top: 30px;
 }
 
 .index16_article__left {

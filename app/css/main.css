@@ -4,6 +4,85 @@
   padding: 35px 0 1px 0;
 }
 
+.form2_button {
+  display: none;
+}
+
+.registration_text {
+  display: none;
+}
+
+.bottom_text2 {
+  display: none;
+}
+
+.modal_subscription {
+  display: none;
+}
+
+.modal_contact {
+  display: none;
+}
+
+.modal_address {
+  display: none;
+}
+.modal_changes {
+  display: none;
+}
+.modal_user__argument {
+  display: none;
+}
+.menu_modal {
+  display: none;
+}
+.modal_language {
+  display: none;
+}
+
+.modal__redactor1 {
+  display: none;
+}
+.modal__redactor2 {
+  display: none;
+}
+.modal__redactor3 {
+  display: none;
+}
+.modal_comment1 {
+  display: none;
+}
+.modal_comment2 {
+  display: none;
+}
+.modal_comment3 {
+  display: none;
+}
+.modal_button__header {
+  display: none;
+}
+.modal_complain {
+  display: none;
+}
+.modal_video {
+  display: none;
+}
+.modal_import {
+  display: none;
+}
+.modal_copy {
+  display: none;
+}
+.modal_property {
+  display: none;
+}
+.modal_registration {
+  display: none;
+}
+.modal_editor {
+  display: none;
+}
+
 .line_blog__editor {
   background: transparent;
   border: none;
@@ -2283,6 +2362,7 @@
     z-index: 50;
     overflow-x: hidden;
     overflow-y: auto;
+    display: none;
 }
 .modal_spain__content {
     width: 1270px;

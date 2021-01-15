@@ -191,7 +191,7 @@ $('.box21').click(function(event) {
   });
 
 $('.button__mobile__showe__two').click(function(event) {
-    $('.checkbox_content,.select_content').toggleClass('active');
+    $('.checkbox_content,.select_content,.search_block').toggleClass('active');
     $('body').toggleClass('lock');
   });
 

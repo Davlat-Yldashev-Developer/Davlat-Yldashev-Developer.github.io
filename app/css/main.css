@@ -1,7 +1,35 @@
 
 #section15 {
   background: #F7F8FA;
-  padding: 35px 0;
+  padding: 35px 0 1px 0;
+}
+
+.line_blog__editor {
+  background: transparent;
+  border: none;
+}
+
+#blog_article__index16 {
+    background: #F7F8FA;
+    padding-bottom: 1px;
+    padding-top: 25px;
+}
+
+#blog_article__index16 {
+    background: #F7F8FA;
+    padding-bottom: 1px;
+    padding-top: 25px;
+}
+
+.index16_article__left {
+  height: 580px !important;
+  padding: 20px !important;
+}
+
+.blog_info__index16 {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
 }
 
 .modal_editor {
@@ -250,16 +278,6 @@
   padding-bottom: 1px;
 }
 
-.textarea_blog__left__icon button {
-  background: #fb5314;
-  border: none;
-  width: 20px;
-  height: 20px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-radius: 50%;
-}
 
 .line_blog__editor div {
   width: 16px;
@@ -272,15 +290,14 @@
   margin: 5px 0;
 }
 
-.icon_editor__content {
+.icon_editor__content{
     display: flex;
     justify-content: center;
     align-items: center;
-    position: relative;
+    position: absolute;
     box-shadow: 0 0 8px 0px #00000063;
-    width: 280px;
     background: #fff;
-    padding: 20px 0;
+    padding: 20px 20px;
     border-radius: 10px;
 }
 .icon_editor {
@@ -291,8 +308,8 @@
     width: 20px;
     height: 20px;
     background: #fff;
-    margin-top: -14px;
-    position: relative;
+    margin-top: 96px;
+    position: absolute;
     margin-left: 240px;
     transform: rotate(45deg);
 }
@@ -10258,6 +10275,10 @@ button {
   .select_landing3 {
     width: 335px;
   }
+  .index16_article__left {
+    height: 555px !important;
+    padding: 0px !important;
+  }
   .icon_landing3 {
     width: 335px;
   }
@@ -10452,6 +10473,10 @@ button {
   }
   .blog_article__content__right {
     width: 285px;
+  }
+  .index16_article__left {
+    height: 590px !important;
+    padding: 0px !important;
   }
   .title_blog_article h1 {
     font-size: 28px;
@@ -11060,6 +11085,14 @@ button {
 @media screen and (max-width: 1080px) {
   .header_content__item {
     width: 900px;
+  }
+  .index16_article__left {
+    height: 630px !important;
+    padding: 0px 15px !important;
+  }
+  .index16_article__left {
+    height: initial !important;
+    padding: 0px 15px 30px 15px !important;
   }
   .icon_editor {
     margin-top: 670px;
@@ -14836,7 +14869,7 @@ button {
     margin-top: 670px;
     margin-left: 0;
     position: absolute;
-    right: 32px;
+    right: 314px;
   }
   .box22 {
     margin-right: 9px;

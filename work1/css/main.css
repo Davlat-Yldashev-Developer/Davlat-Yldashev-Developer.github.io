@@ -1,3 +1,30 @@
+
+.search_block {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 15px;
+    border-top: 1px solid #D9DBE0;
+    margin-top: -10px;
+    padding-top: 25px;
+}
+
+.search_block input {
+    position: relative;
+    width: 83%;
+    height: 48px;
+    border: 2px solid #C7CBCF;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    border-radius: 6px;
+    font-size: 16px;
+    padding: 12px 10px;
+    font-weight: 500;
+    display: inline-block;
+    cursor: pointer;
+    background: #fff;
+}
+
 .message_butoon {
     display: flex;
     justify-content: space-between;
@@ -5542,6 +5569,9 @@ button {
   .header_content__item {
     width: 1150px;
   }
+  .search_block input {
+    width: 82%;
+  }
   .box22 {
     margin-right: 280px;
   }
@@ -5780,6 +5810,9 @@ button {
 @media screen and (max-width: 1200px) {
   .header_content__item {
     width: 1030px;
+  }
+  .search_block input {
+    width: 80%;
   }
   .box22 {
     margin-right: 161px;
@@ -6243,6 +6276,9 @@ button {
   .header_content__item {
     width: 900px;
   }
+  .search_block input {
+    height: 43px;
+  }
   .box22 {
     margin-right: 127px;
   }
@@ -6571,6 +6607,10 @@ button {
 @media screen and (max-width: 950px) {
   .header_content__item {
     width: 780px;
+  }
+  .search_block input {
+    width: 84%;
+    height: 40px;
   }
   .container {
     width: 780px;
@@ -6954,6 +6994,28 @@ button {
 @media screen and (max-width: 830px) {
   .header_content__item {
     width: 650px;
+  }
+  .search_block {
+    display: flex;
+    justify-content: center;
+    width: 70%;
+    margin: 0 auto;
+    align-items: center;
+    margin-bottom: 15px;
+    border-top: 1px solid #D9DBE0;
+    margin-top: 25px;
+    padding-top: 25px;
+  }
+  .search_block input {
+    width: 70%;
+    height: 48px;
+    margin-right: 10px;
+  }
+  .search_block {
+    display: none !important;
+  }
+  .search_block.active {
+    display: flex !important;
   }
   .modal_spain__content {
     width: 650px;
@@ -8299,6 +8361,9 @@ button {
 @media screen and (max-width: 570px) {
   .header_content__item {
     width: 400px;
+  }
+  .search_block {
+    width: 95%;
   }
   .modal_spain__content {
     width: 400px;

@@ -164,6 +164,30 @@ $(document).on('click','.box3', function(){
 $(document).on('click','.box4', function(){
     $(this).toggleClass('active')
 });
+
+$(document).on('click','.icon_landing3__one', function(){
+    $(this).toggleClass('active')
+});
+$(document).on('click','.icon_landing3__two', function(){
+    $(this).toggleClass('active')
+});
+$(document).on('click','.icon_landing3__fri', function(){
+    $(this).toggleClass('active')
+});
+
+$(document).on('click','.icon_landing3__for', function(){
+    $(this).toggleClass('active')
+});
+$(document).on('click','.icon_landing3__five', function(){
+    $(this).toggleClass('active')
+});
+$(document).on('click','.icon_landing3__six', function(){
+    $(this).toggleClass('active')
+});
+$(document).on('click','.icon_landing3__seven', function(){
+    $(this).toggleClass('active')
+});
+
 $(document).on('click','.box', function(){
     $(this).addClass('active').siblings().removeClass('active')
 });
@@ -171,7 +195,9 @@ $(document).on('click','.box_filtr', function(){
     $(this).toggleClass('active')
 });
 
-
+$(document).on('click','.icon_landing3 a', function(){
+    $(this).addClass('active').siblings().removeClass('active')
+});
 
 $('.mobile__button').click(function(event) {
     $('.mobile_text,.mobile__button img,.showe_text').toggleClass('active');
@@ -191,7 +217,7 @@ $('.box21').click(function(event) {
   });
 
 $('.button__mobile__showe__two').click(function(event) {
-    $('.checkbox_content,.select_content,.search_block').toggleClass('active');
+    $('.checkbox_content,.select_content,.search_block,.search_content').toggleClass('active');
     $('body').toggleClass('lock');
   });
 

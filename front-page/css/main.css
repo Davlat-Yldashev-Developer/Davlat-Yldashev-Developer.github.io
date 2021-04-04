@@ -908,6 +908,15 @@ textarea:-moz-placeholder {
 .section2__item1:hover .section2__item1__span8 {
   background: url(../img/section2-icon8__item.svg) no-repeat center / cover;
 }
+
+.section2__item1:hover .section2__item1__span30 {
+  background: url(../img/section2-icon30_item.svg) no-repeat center / cover;
+}
+
+.section2__item1__span30 {
+  background: url(../img/section2-icon30.svg) no-repeat center / cover;
+}
+
 .section2__item1 p {
   font-weight: 300;
   font-size: 16px;
@@ -5020,6 +5029,26 @@ textarea:-moz-placeholder {
 @media screen and (max-width: 460px) {
   .heading {
     width: 350px;
+  }
+  .heading_center__page13 a {
+    font-size: 12px;
+    margin: 2px 0;
+  }
+  .equipment_page13__right {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 0;
+    flex-direction: column;
+    width: 95%;
+    padding-bottom: 15px;
+    margin-top: 10px;
+  }
+  .equipment_page13__right__two {
+    margin-top: 10px;
+  }
+  .serch_page13 {
+    margin-top: 25px !important;
   }
   .heading_center__page13 {
     display: flex;

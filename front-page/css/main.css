@@ -917,6 +917,22 @@ textarea:-moz-placeholder {
   background: url(../img/section2-icon30.svg) no-repeat center / cover;
 }
 
+.section2__item1:hover .section2__item1__span31 {
+  background: url(../img/section2-icon31_item.svg) no-repeat center / cover;
+}
+
+.section2__item1__span31 {
+  background: url(../img/section2-icon31.svg) no-repeat center / cover;
+}
+
+.section2__item1:hover .section2__item1__span32 {
+  background: url(../img/section2-icon32_item.svg) no-repeat center / cover;
+}
+
+.section2__item1__span32 {
+  background: url(../img/section2-icon32.svg) no-repeat center / cover;
+}
+
 .section2__item1 p {
   font-weight: 300;
   font-size: 16px;

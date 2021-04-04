@@ -835,6 +835,7 @@ textarea:-moz-placeholder {
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
   justify-content: flex-start;
+  margin-top: 20px;
 }
 .section2__item1 {
   display: -webkit-box;
@@ -1061,18 +1062,24 @@ textarea:-moz-placeholder {
 #section3_13 {
   background: #fff;
   padding-top: 52px;
-  padding-bottom: 70px;
+  padding-bottom: 70px ;
 }
 .section3__content h2 {
   font-weight: 300;
   font-size: 45px;
-  padding-bottom: 0 !important;
+  padding-bottom: 70px;
 }
 .section3__content__title {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 20px;
+  margin-bottom: 0 !important;
+}
+.section3_page13__block {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 40px;
 }
 .section3__content__title a:hover {
   color: #0099da;
@@ -1720,7 +1727,7 @@ textarea:-moz-placeholder {
   align-items: center;
   width: 63%;
   justify-content: space-between;
-  margin-bottom: 70px;
+  margin-bottom: 0 !important;
 }
 
 .section3_page13__content__item2 button {
@@ -1768,6 +1775,30 @@ textarea:-moz-placeholder {
   color: #000;
 }
 
+
+
+.heading_center__page13 {
+  display: flex;
+  padding-top: 20px;
+}
+
+.heading_center__page13 a {
+  font-weight: 300;
+  font-size: 16px;
+  color: #000;
+  display: flex;
+  align-items: center;
+  margin: 0px 20px;
+  transition: 0.2s linear;
+}
+
+.heading_center__page13 a:hover {
+  color: #0099da;
+}
+
+.heading_center__page13 a img {
+  margin-right: 14px;
+}
 
 .equipment_page13 {
   display: flex;
@@ -1889,6 +1920,7 @@ textarea:-moz-placeholder {
   justify-content: space-between;
   width: 1100px;
 }
+
 
 .section4_page13__title h2 {
   font-weight: 300;
@@ -2451,6 +2483,14 @@ textarea:-moz-placeholder {
   .social-network {
     width: 200px;
   }
+  .heading_center__page13 a {
+    font-size: 14px;
+    margin: 0px 10px;
+  }
+  .heading_center__page13 a img {
+    margin-right: 14px;
+    width: 26px;
+  }
   .social-network a {
     font-size: 12px;
   }
@@ -2833,6 +2873,15 @@ textarea:-moz-placeholder {
     background: #fff;
     padding: 80px 0;
   }
+  .section3_page13__content__item select {
+    width: 235px;
+  }
+  .section3_page13__content__item2 button {
+    padding: 12px 170px 12px 24px;
+  }
+  .section3_page13__content__item3 button {
+    padding: 12px 170px 12px 24px;
+  }
   .equipment_page13__center {
     width: initial;
     padding: 15px;
@@ -3002,12 +3051,27 @@ textarea:-moz-placeholder {
     padding: 50px 0;
   }
   .section3_page13__content {
-    width: 100%;
+    width: 75%;
+  }
+  .section3_page13__block {
+    margin-bottom: 25px;
   }
 }
 @media screen and (max-width: 1180px) {
   .container {
     width: 950px;
+  }
+  .section3_page13__content__title h6 {
+    margin-right: 15px;
+  }
+  .section3_page13__content__item select {
+    width: 210px;
+  }
+  .section3_page13__content__item2 button {
+    padding: 12px 145px 12px 24px;
+  }
+  .section3_page13__content__item3 button {
+    padding: 12px 145px 12px 24px;
   }
   .section4_page13__content {
     width: 100%;
@@ -3037,7 +3101,7 @@ textarea:-moz-placeholder {
   #section2_page13 {
     background: #fff;
     padding-top: 30px;
-    padding-bottom: 120px;
+    padding-bottom: 80px;
   }
   .equipment_page13__right {
     padding: 8px;
@@ -3164,6 +3228,9 @@ textarea:-moz-placeholder {
   }
   .search a {
     margin-top: 45px;
+  }
+  .serch_page13 {
+    margin-top: 37px !important;
   }
   .transperant__block {
     margin-left: 180px;
@@ -3440,6 +3507,17 @@ textarea:-moz-placeholder {
   .guarantees__item2 {
     padding-top: 50px;
     padding-left: 65px;
+  }
+  .section3_page13__content {
+    width: 100%;
+    margin-bottom: 30px !important;
+  }
+  .section3_page13__block {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    margin-bottom: 30px;
+    flex-direction: column;
   }
   #section3_13 {
     padding-top: 25px;
@@ -4354,6 +4432,26 @@ textarea:-moz-placeholder {
     width: 350px;
     height: 204px;
   }
+  .heading_center__page13 {
+    display: flex;
+    padding-top: 19px;
+    padding-bottom: 14px;
+    flex-direction: column;
+  }
+  .heading_center__page13 a img {
+    margin-right: 9px;
+    width: 20px;
+  }
+  .serch_page13 {
+    margin-top: 30px !important;
+  }
+  .heading_center__page13 a {
+    font-size: 12px;
+    margin: 0px;
+  }
+  .serch_page13 {
+    margin-top: 20px !important;
+  }
   .section4_page13__content__left__select {
     width: 100%;
   }
@@ -4694,6 +4792,11 @@ textarea:-moz-placeholder {
   .container {
     width: 430px;
   }
+
+  .section3_page13__content {
+    width: 100%;
+    margin-bottom: 30px !important;
+  }
   
   .equipment_page13__item {
     display: flex;
@@ -4736,9 +4839,6 @@ textarea:-moz-placeholder {
     align-items: center;
     margin-bottom: 20px;
     flex-direction: column;
-  }
-  .section3__content__title a {
-    margin-top: 15px;
   }
   .heading {
     width: 430px;
@@ -4920,6 +5020,17 @@ textarea:-moz-placeholder {
 @media screen and (max-width: 460px) {
   .heading {
     width: 350px;
+  }
+  .heading_center__page13 {
+    display: flex;
+    padding-top: 11px;
+    padding-bottom: 8px;
+    flex-direction: column;
+    width: 183px;
+  }
+  .heading_center__page13 a img {
+    margin-right: 7px;
+    width: 18px;
   }
   .section4_page13__title h2 {
     text-align: center;

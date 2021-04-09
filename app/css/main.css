@@ -42,7 +42,7 @@ select {
 .burger_menu {
   position: absolute;
   width: 100%;
-  height: 450px;
+  padding-bottom: 25px;
   display: none;
   background: #fff;
   z-index: 1030;

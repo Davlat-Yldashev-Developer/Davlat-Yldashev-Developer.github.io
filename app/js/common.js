@@ -1,4 +1,33 @@
 
+  $('.section2_page4__menu').addClass('original').clone().insertAfter('.section2_page4__menu').addClass('cloned').css('position','fixed').css('top','0').css('margin-top','0').css('z-index','500').removeClass('original').hide();
+
+scrollIntervalID = setInterval(stickIt, 10);
+
+
+function stickIt() {
+
+  var orgElementPos = $('.original').offset();
+  orgElementTop = orgElementPos.top;               
+
+  if ($(window).scrollTop() >= (orgElementTop)) {
+    // scrolled past the original position; now only show the cloned, sticky element.
+
+    // Cloned element should always have same left position and width as original element.     
+    orgElement = $('.original');
+    coordsOrgElement = orgElement.offset();
+    leftOrgElement = coordsOrgElement.left;  
+    widthOrgElement = orgElement.css('width');
+    $('.cloned').css('left',leftOrgElement+'px').css('top',0).css('width',widthOrgElement).show();
+    $('.original').css('visibility','hidden');
+  } else {
+    // not scrolled past the menu; only show the original menu.
+    $('.cloned').hide();
+    $('.original').css('visibility','visible');
+  }
+}
+
+
+
 $(document).on('click','.section1_page4__min__slider__item', function(){
     $(this).addClass('active').siblings().removeClass('active')
 });
@@ -232,9 +261,9 @@ $('.burger_menu__item__content3 button').click(function(event) {
     slidesToShow:1,
     infinite: false,
     speed: 500,
-  	fade: true,
-  	cssEase: 'linear',
-  	asNavFor: '.offer_text__slider',
+    fade: true,
+    cssEase: 'linear',
+    asNavFor: '.offer_text__slider',
   });
     $('.offer_text__slider').slick({
     arrows:true,
@@ -243,8 +272,8 @@ $('.burger_menu__item__content3 button').click(function(event) {
     slidesToShow:1,
     infinite: false,
     speed: 500,
-  	fade: true,
-  	cssEase: 'linear',
+    fade: true,
+    cssEase: 'linear',
   });
     $('.services_link__slider').slick({
     arrows:true,
@@ -345,30 +374,14 @@ window.onclick = function(event) {
   }
 }
 
-  
-  $('.section2_page4__menu').addClass('original').clone().insertAfter('.section2_page4__menu').addClass('cloned').css('position','fixed').css('top','0').css('margin-top','0').css('z-index','500').removeClass('original').hide();
+$(document).ready(function() {
+  $('.popup-youtube, .popup-vimeo, .popup-gmaps').magnificPopup({
+    disableOn: 700,
+    type: 'iframe',
+    mainClass: 'mfp-fade',
+    removalDelay: 160,
+    preloader: false,
 
-scrollIntervalID = setInterval(stickIt, 10);
-
-
-function stickIt() {
-
-  var orgElementPos = $('.original').offset();
-  orgElementTop = orgElementPos.top;               
-
-  if ($(window).scrollTop() >= (orgElementTop)) {
-    // scrolled past the original position; now only show the cloned, sticky element.
-
-    // Cloned element should always have same left position and width as original element.     
-    orgElement = $('.original');
-    coordsOrgElement = orgElement.offset();
-    leftOrgElement = coordsOrgElement.left;  
-    widthOrgElement = orgElement.css('width');
-    $('.cloned').css('left',leftOrgElement+'px').css('top',0).css('width',widthOrgElement).show();
-    $('.original').css('visibility','hidden');
-  } else {
-    // not scrolled past the menu; only show the original menu.
-    $('.cloned').hide();
-    $('.original').css('visibility','visible');
-  }
-}
+    fixedContentPos: false
+  });
+});

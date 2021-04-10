@@ -713,7 +713,7 @@ select {
 .number:hover {
   color: #fb5314;
 }
-.text_min__slider h5{
+.text_min__slider a{
   font-weight: normal;
   font-size: 18px;
   color: #36373C;
@@ -3398,6 +3398,36 @@ button {
   padding-bottom: 70px;
 }
 
+
+/**
+ * Simple fade transition,
+ */
+.mfp-fade.mfp-bg {
+  opacity: 0;
+  -webkit-transition: all 0.15s ease-out; 
+  -moz-transition: all 0.15s ease-out; 
+  transition: all 0.15s ease-out;
+}
+.mfp-fade.mfp-bg.mfp-ready {
+  opacity: 0.8;
+}
+.mfp-fade.mfp-bg.mfp-removing {
+  opacity: 0;
+}
+
+.mfp-fade.mfp-wrap .mfp-content {
+  opacity: 0;
+  -webkit-transition: all 0.15s ease-out; 
+  -moz-transition: all 0.15s ease-out; 
+  transition: all 0.15s ease-out;
+}
+.mfp-fade.mfp-wrap.mfp-ready .mfp-content {
+  opacity: 1;
+}
+.mfp-fade.mfp-wrap.mfp-removing .mfp-content {
+  opacity: 0;
+}
+
 @media screen and (max-width: 1250px) {
   .container {
     width: 1000px;
@@ -3852,7 +3882,7 @@ button {
   .number {
     font-size: 8px;
   }
-  .text_min__slider h5 {
+  .text_min__slider a {
     font-size: 16px;
     padding-top: 8px;
   }

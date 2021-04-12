@@ -712,9 +712,6 @@ select {
   color: #818396;
   transition: 0.2s linear;
 }
-.number:hover {
-  color: #fb5314;
-}
 .text_min__slider a{
   font-weight: normal;
   font-size: 18px;
@@ -723,7 +720,7 @@ select {
   transition: 0.2s linear;
 }
 
-.text_min__slider h5:hover {
+.text_min__slider a:hover {
   color: #fb5314;
 }
 
@@ -733,10 +730,6 @@ select {
   color: #818396;
   padding-top: 11px;
   transition: 0.2s linear;
-}
-
-.text_min__slider h6:hover {
-  color: #fb5314;
 }
 
 .text_min__slider h4 {
@@ -881,7 +874,7 @@ select {
   font-size: 10px;
 }
 
-.offer_text__content__item h4 {
+.offer_text__content__item a {
   font-weight: normal;
   font-size: 24px;
   color: #36373C;
@@ -1145,6 +1138,7 @@ select {
   display: flex;
   justify-content: space-between;
   background: #fff;
+  transition: 0.2s linear;
 }
 
 .services_link__item__left {
@@ -1157,8 +1151,16 @@ select {
   font-size: 18px;
   color: #36373C;
   padding: 27px 30px;
+  transition: 0.2s linear;
 }
 
+.services_link__item:hover {
+  transform: scale(1.04);
+}
+
+.services_link__item:hover p {
+  color: #fb7414;
+}
 .services_link__item__right {
   background: linear-gradient(90.84deg, #E95D0F 2.11%, #FF6B00 47.76%, #EB650E 92.69%);
   display: flex;
@@ -1298,11 +1300,11 @@ select {
 .blog_content__item p:hover {
   color: #fb7414;
 }
-.blog_content__item h6:hover {
+.blog_content__item a:hover {
   color: #fb7414;
 }
 
-.blog_content__item h6 {
+.blog_content__item a {
   color: #36373C;
   font-size: 18px;
   font-weight: normal;
@@ -1541,9 +1543,6 @@ input {
   font-size: 16px;
   transition: 0.2s linear;
 }
-.information_content__one__right__text p:hover {
-  color: #fb5314;
-}
 
 .information_content__two {
   margin-top: 60px;
@@ -1562,9 +1561,6 @@ input {
   transition: 0.2s linear;
 }
 
-.information_content__two__left p:hover {
-  color: #fb5314;
-}
 
 .entitlement_text {
   padding-top: 10px;
@@ -1597,15 +1593,8 @@ input {
   padding-bottom: 20px;
   transition: 0.2s linear;
 }
-.information_content__two__right__item h5:hover {
-  color: #fb5314;
-}
 
 .information_content__two__right__item a:hover {
-  color: #fb5314;
-}
-
-.information_content__two__right__item2 h5:hover {
   color: #fb5314;
 }
 
@@ -1632,8 +1621,15 @@ input {
   transition: 0.2s linear;
 }
 
-.information_content__two__right__item2 h4:hover {
-  color: #fb5314;
+.information_content__two__right__item3__mobile a {
+  font-weight: normal;
+  font-size: 18px;
+  color: #fff !important;
+  padding-top: 34px;
+  transition: 0.2s linear;
+}
+.information_content__two__right__item3__mobile a:hover {
+  color: #fb7414 !important;
 }
 .information_content__two__right__item2 h6 {
   font-weight: normal;
@@ -1641,9 +1637,6 @@ input {
   color: #fff;
   padding-bottom: 15px;
   transition: 0.2s linear;
-}
-.information_content__two__right__item2 h6:hover {
-  color: #fb5314;
 }
 
 .information_content__two__right__item a:hover {
@@ -2161,11 +2154,16 @@ button {
   font-size: 14px;
 }
 
-.section1_page4__content__right__top__title h1 {
+.section1_page4__content__right__top__title a {
   font-weight: normal;
   color: #272942;
   font-size: 42px;
   padding-top: 10px;
+  transition: 0.2s linear;
+}
+
+.section1_page4__content__right__top__title a:hover {
+  color: #fb7414;
 }
 
 .section1_page4__content__right__price h6 {
@@ -2181,6 +2179,11 @@ button {
   padding-top: 10px;
   color: #818396;
   text-decoration-line: underline;
+  transition: 0.2s linear;
+}
+
+.section1_page4__content__right__price a:hover {
+  color: #fb7414;
 }
 
 .section1_page4__content__right__link a{
@@ -2190,6 +2193,11 @@ button {
   align-items: center;
   color: #36373C;
   margin-top: 20px;
+  transition: 0.2s linear;
+}
+
+.section1_page4__content__right__link a:hover {
+  color: #fb7414;
 }
 .section1_page4__content__right__link a img {
   margin-right: 15px;
@@ -2258,8 +2266,11 @@ button {
   font-weight: normal;
   font-size: 18px;
   color: #818396;
+  transition: 0.2s linear;
 }
-
+.page4_text__info__left__item__Link p:hover {
+  color: #fb7414;
+}
 .page4_text__info__right__item a {
   font-weight: normal;
   font-size: 18px;
@@ -2329,6 +2340,9 @@ button {
 .economy_item1 {
   width: 470px;
 }
+.economy_item1 input:focus {
+  border-bottom: 2px solid #fb7414;
+}
 
 .economy_item1 input {
     font-weight: normal;
@@ -2342,6 +2356,9 @@ button {
     width: 100%;
     transition: 0.2s linear;
     margin-top: 35px;
+}
+.economy_item1__select select:focus {
+  border-bottom: 2px solid #fb7414;
 }
 
 .economy_item1__select select {
@@ -2420,6 +2437,10 @@ button {
     font-weight: normal;
     font-size: 18px;
     color: #818396;
+  transition: 0.2s linear;
+}
+.economy_item2__link__item p:hover {
+  color: #fb7414;
 }
 
 .title_page4_text_slider h2 {
@@ -2468,13 +2489,17 @@ button {
     display: block;
     background: #ffffff;
     cursor: pointer;
-    text-shadow: 0 1px 0 #333131;
     font-size: 17px;
     color: #272942;
     font-family: 'Gotham';
     font-style: normal;
     font-weight: normal;
     font-size: 24px;
+    transition: 0.2s linear;
+}
+
+.pesontedan label:hover {
+  color: #fb7414;
 }
 
 .pesontedan-content {
@@ -2492,6 +2517,10 @@ button {
   font-size: 16px;
   color: #818396;
   padding-top: 20px;
+  transition: 0.2s linear;
+}
+.pesontedan-content p:hover {
+  color: #fb7414;
 }
 /* :checked */
 .pesontedan input:checked ~ .pesontedan-content {
@@ -3139,7 +3168,7 @@ button {
   color: #818396;
   transition: 0.2s linear;
 }
-.alicente_reviews__item h5 {
+.alicente_reviews__item a {
   font-weight: normal;
   font-size: 24px;
   color: #18181B;
@@ -3157,7 +3186,7 @@ button {
 .alicente_reviews__item h6:hover {
   color: #fb7414;
 }
-.alicente_reviews__item h5:hover {
+.alicente_reviews__item a:hover {
   color: #fb7414;
 }
 .alicente_reviews__item p:hover {
@@ -3383,7 +3412,7 @@ button {
   margin-left: -30px;
 }
 
-.form_page13 input:hover {
+.form_page13 input:focus {
   color: #fb7414;
   border-bottom: 2px solid #fb7414;
 }
@@ -3557,7 +3586,7 @@ button {
     width: 500px;
     height: 170px;
   }
-  .offer_text__content__item h4 {
+  .offer_text__content__item a {
     font-size: 20px;
     padding-top: 12px;
   }
@@ -3726,7 +3755,7 @@ button {
   .price_up {
     padding-top: 40px;
   }
-  .section1_page4__content__right__top__title h1 {
+  .section1_page4__content__right__top__title a {
     font-size: 38px;
   }
   .section1_page4__content__right__top__title p {
@@ -3958,7 +3987,7 @@ button {
     width: 470px;
     margin-top: -237px;
   }
-  .offer_text__content__item h4 {
+  .offer_text__content__item a {
     font-size: 17px;
     padding-top: 10px;
   }
@@ -4107,6 +4136,10 @@ button {
     font-size: 16px;
     padding-top: 20px;
   }
+  .information_content__two__right__item3__mobile a {
+    font-size: 16px;
+    padding-top: 20px;
+  }
   .information_content__two__right {
     width: 450px;
   }
@@ -4155,7 +4188,7 @@ button {
   .section1_page4__content__right {
     margin-left: 25px;
   }
-  .section1_page4__content__right__top__title h1 {
+  .section1_page4__content__right__top__title a {
     font-size: 36px;
   }
   .section1_page4__slider .slick-list {
@@ -5069,7 +5102,7 @@ button {
     padding-top: 40px;
     padding-bottom: 30px;
   }
-  .section1_page4__content__right__top__title h1 {
+  .section1_page4__content__right__top__title a {
     font-size: 32px;
   }
   .section1_page4__content__left {
@@ -5491,7 +5524,7 @@ button {
     border: none;
   }
   .section2_page4__menu::-webkit-scrollbar {
-    height: 2px;
+    height: 3px;
   }
 
   .section2_page4__menu::-webkit-scrollbar-track {

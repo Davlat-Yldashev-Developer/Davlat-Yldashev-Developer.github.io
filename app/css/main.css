@@ -1146,7 +1146,7 @@ select {
   border-radius: 8px 0px 0px 8px;
 }
 
-.services_link__item__left p {
+.services_link__item__left a {
   font-weight: normal;
   font-size: 18px;
   color: #36373C;
@@ -1158,7 +1158,7 @@ select {
   transform: scale(1.04);
 }
 
-.services_link__item:hover p {
+.services_link__item:hover a {
   color: #fb7414;
 }
 .services_link__item__right {
@@ -1770,6 +1770,9 @@ button {
   font-family: 'Gotham';
 }
 
+.alicenty_content__select__item__block select:focus {
+  border: 1px solid #fb7414;
+}
 
 .alicenty_content__select__item__block select {
     font-weight: normal;
@@ -1896,8 +1899,11 @@ button {
   margin-right: 40px;
   display: block;
   color: #ff6a00;
+  transition: 0.2s linear;
 }
-
+.alicenty_button__right__link a:hover {
+  color: #3E4046;
+}
 .alicenty_button__right__button button {
   font-weight: bold;
     font-size: 18px;
@@ -4046,7 +4052,7 @@ button {
   .services_link__item {
     width: 195px;
   }
-  .services_link__item__left p {
+  .services_link__item__left a {
     font-size: 15px;
     padding: 20px 25px;
   }

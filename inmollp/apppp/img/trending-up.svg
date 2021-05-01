@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="100" height="60" viewBox="0 0 100 60" clip-rule="evenodd" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round" style="white-space: preserve-spaces;">
+    <defs>
+        <clipPath id="ClipPath-1">
+            <path d="M85.774,8.333L70.833,8.333C68.533,8.333,66.666,6.466,66.666,4.167C66.666,1.867,68.533,0,70.833,0L95.833,0C96.544,0,97.213,0.178,97.799,0.492C98.081,0.643,98.349,0.828,98.597,1.049L98.682,1.126L98.744,1.185L98.817,1.259L98.891,1.336L98.951,1.403C99.172,1.651,99.358,1.92,99.508,2.201C99.822,2.787,100,3.456,100,4.167L100,29.167C100,31.467,98.133,33.334,95.833,33.334C93.534,33.334,91.667,31.467,91.667,29.167L91.667,14.226L59.196,46.697C57.569,48.324,54.931,48.324,53.303,46.697L35.416,28.809L7.112,57.113C5.486,58.74,2.846,58.74,1.22,57.113C-0.407,55.487,-0.407,52.847,1.22,51.221L32.47,19.971C34.097,18.343,36.735,18.343,38.362,19.971L56.25,37.858L85.774,8.333Z" fill="#7e7e3f" transform="translate(49.9999,29.1666) translate(-49.9999,-29.1666)"/>
+        </clipPath>
+    </defs>
+    <style>
+@keyframes a0_do { 0% { stroke-dashoffset: 130px; } 8.5714% { stroke-dashoffset: 130px; } 22.8571% { stroke-dashoffset: 0px; } 100% { stroke-dashoffset: 0px; } }
+@keyframes a1_do { 0% { stroke-dashoffset: 25px; } 8.5714% { stroke-dashoffset: 25px; } 22.8571% { stroke-dashoffset: 25px; } 27.1429% { stroke-dashoffset: 0px; } 100% { stroke-dashoffset: 0px; } }
+@keyframes a2_do { 0% { stroke-dashoffset: 25px; } 8.5714% { stroke-dashoffset: 25px; } 22.8571% { stroke-dashoffset: 25px; } 27.1429% { stroke-dashoffset: 0px; } 100% { stroke-dashoffset: 0px; } }
+    </style>
+    <title>trending-up</title>
+    <g clip-path="url(#ClipPath-1)" transform="translate(49.9999,30) translate(-49.9999,-29.1666)">
+        <g transform="translate(49.9995,29.167) translate(-45.8335,-25)">
+            <path d="M4.166,54.167L35.416,22.917L56.25,43.75L95.833,4.167" fill="none" fill-rule="nonzero" stroke="#fb5314" stroke-width="8.33px" stroke-dasharray="130 130" stroke-dashoffset="130" transform="translate(45.8335,25) translate(-49.9995,-29.167)" style="animation: 7s linear infinite both a0_do;"/>
+            <path d="M95.833,4.167L95.833,29.167" fill="none" fill-rule="nonzero" stroke="#fb5314" stroke-width="8.33px" stroke-dasharray="25 25" stroke-dashoffset="25" transform="translate(79.167,12.5) translate(-83.333,-16.667)" style="animation: 7s linear infinite both a1_do;"/>
+            <path d="M95.833,4.167L70.833,4.167" fill="none" fill-rule="nonzero" stroke="#fb5314" stroke-width="8.33px" stroke-dasharray="25 25" stroke-dashoffset="25" transform="translate(79.167,12.5) translate(-83.333,-16.667)" style="animation: 7s linear infinite both a2_do;"/>
+        </g>
+    </g>
+</svg>

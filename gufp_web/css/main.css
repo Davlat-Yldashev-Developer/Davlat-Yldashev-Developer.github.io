@@ -2141,6 +2141,19 @@ footer {
 	.contact_footer2 {
 		margin-top: 10px !important;
 	}
+	.footer_content__left__one {
+	    margin-right: 15px;
+	    width: 100%;
+	}
+	#section4 {
+	    padding-bottom: 0px;
+	}
+	.news {
+		height: 470px;
+	}
+	.news .slick-list {
+		height: 470px;
+	}
 }
 
 @media screen and (max-width: 390px) {

@@ -3,7 +3,7 @@ $(function () {
     $('.section1_slider').slick({
         arrows:true,
         dots:false,
-        slidesToShow:7,
+        slidesToShow:8,
         slidesToScroll:1,
         variableWidth: true,
         infinite: false,
@@ -116,4 +116,3 @@ $(document).ready(function() {
     }
   });
 });
-

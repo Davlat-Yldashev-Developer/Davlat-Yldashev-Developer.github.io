@@ -839,6 +839,7 @@ footer {
 	width: 370px !important;
 	margin: 0 auto !important;
 	display: none;
+	cursor: default !important;
 }
 
 .exit__btn {

@@ -2501,6 +2501,11 @@ footer {
 	    padding-top: 20px;
 	    padding-bottom: 70px;
 	}
+	.number_page__item button:hover {
+	    color: #E31E24;
+	    border: 1px solid #E31E24;
+	    background: #f4f4f4;
+	}
 }
 
 @media screen and (max-width: 390px) {

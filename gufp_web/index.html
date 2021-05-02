@@ -5,13 +5,13 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Document</title>
 	<link rel="stylesheet" href="css/main.css">
-	<link href="css/magnific-popup.css" rel="stylesheet">
+	<link rel="stylesheet" href="fancybox/jquery.fancybox.min.css">
 </head>
 <body>
 	<header id="header">
 		<div class="header_top">
 			<div class="container">
-				<div id="test-popup" class="form_modal white-popup mfp-with-anim mfp-hide">
+				<div id="modal" class="form_modal">
 					<div class="title_popup">
 						<h4>
 							Оставьте заявку, мы вам перезвоним в течение суток
@@ -194,7 +194,7 @@
 						<p>
 							<span></span>Изготавливаем рекламу, которая продаёт и окупается
 						</p>
-						<a href="#test-popup" class="show-popup" data-effect="mfp-zoom-in">
+						<a data-fancybox data-src="#modal" href="javascript:;" class="btn btn-primary">
 							<button class="btn1">
 								Отправить заявку
 							</button>
@@ -603,7 +603,7 @@
 		<div class="container">
 			<div class="section2_content">
 				<div class="section2_content__left">
-					<a class="popup-youtube"  href="https://youtu.be/DB10_UZ4E1s">
+					<a data-fancybox href="https://www.youtube.com/watch?v=lGzkAUQegxc">
 						<img src="img/video_photo.svg" alt="">
 					</a>
 				</div>
@@ -837,8 +837,8 @@
 		</div>
 	</footer>
 	<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+	<script src="fancybox/jquery.fancybox.min.js"></script>
 	<script src="js/slick.min.js"></script>
-	<script src="js/jquery.magnific-popup.min.js"></script>
 	<script src="js/common.js"></script>
 </body>
 </html>

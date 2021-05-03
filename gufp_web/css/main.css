@@ -2089,16 +2089,44 @@ footer {
 	.services_text h2 {
 		font-size: 36px;
 	}
-	.services_text__link p {
-		font-size: 13px;
-	}
 	.work_title h2 {
 	    font-size: 36px;
 	}
 	.services_text2 h2 {
 	    font-size: 36px;
 	}
-
+	.services_text__item {
+	    font-weight: normal;
+	    font-size: 14px;
+	    color: #525252;
+	    line-height: 22px;
+	    padding-top: 16px;
+	}
+	.services_text__link p {
+		font-size: 14px;
+	}
+	.price {
+		margin-top: 20px;
+	}
+	.services_text2 {
+	    width: 550px;
+	}
+	.services_photo2 img {
+	    width: 700px;
+	    margin-left: -280px;
+	    height: 660px;
+	}
+	.services_photo2 {
+	    height: 660px;
+	}
+	.services_photo {
+		height: 594px;
+	}
+	.services_photo img {
+	    width: 780px;
+	    margin-right: -320px;
+	    height: 594px;
+	}
 
 }
 
@@ -2108,6 +2136,9 @@ footer {
 	}
 	.telephone p {
 	    display: none;
+	}
+	.services_text__link p {
+		font-size: 13px;
 	}
 	.header_contact {
 		margin-right: 10px;
@@ -2985,6 +3016,9 @@ footer {
 	    margin-top: 15px;
 	    align-items: center;
 	    flex-direction: column;
+	}
+	.description_content__button a {
+		width: 95%;
 	}
 	.description_content__button button {
 	    width: 100%;

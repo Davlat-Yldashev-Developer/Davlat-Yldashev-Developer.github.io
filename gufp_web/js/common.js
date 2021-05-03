@@ -50,6 +50,29 @@ $(function () {
         focusOnSelect: true,
         cssEase: 'linear',
       });
+    $('.work_slider').slick({
+        arrows:true,
+        dots:false,
+        slidesToShow:3,
+        slidesToScroll:1,
+        infinite: false,
+        focusOnSelect: true,
+        cssEase: 'linear',
+         responsive:[
+        {
+          breakpoint: 980,
+          settings: {
+            slidesToShow:2,
+          }
+        },{
+          breakpoint: 660,
+          settings: {
+            slidesToShow:1,
+            variableWidth: true,
+          }
+        },
+        ]
+      });
     $('.news').slick({
         responsive: [
         {

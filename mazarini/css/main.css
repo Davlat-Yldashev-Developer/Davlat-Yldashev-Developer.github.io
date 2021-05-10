@@ -984,11 +984,14 @@ footer {
   .owl-prev {
     left: 10px;
   }
+  #header {
+    padding-bottom: 0;
+  }
 }
 
 @media screen and (max-width: 400px) {
   .request button {
-    bottom: 60px;
+    bottom: 40px;
   }
 }
 

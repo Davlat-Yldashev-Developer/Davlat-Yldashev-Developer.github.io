@@ -594,6 +594,12 @@ button {
     margin-top: 15px;
     display: flex;
     align-items: center;
+    justify-content: space-between;
+}
+
+.date_item {
+  display: flex;
+  align-items: center;
 }
 
 .date p {
@@ -760,9 +766,9 @@ footer {
     padding: 0px 25px 25px 25px;
     background: #000;
     position: absolute;
-    top: -100%;
+    top: -130%;
     width: 100%;
-    min-height: 100vh;
+    min-height: 100%;
     display: block;
     z-index: 999;
     transition: 0.5s ease;
@@ -958,6 +964,14 @@ footer {
   .request button {
     margin: 0 28%;
   }
+  #header {
+    height: 550px;
+    min-height: initial;
+  }
+  .bg-header {
+    height: 100%;
+    min-height: initial;
+  }
 }
 
 @media screen and (max-width: 530px) {
@@ -986,7 +1000,7 @@ footer {
   }
   #header {
     padding-bottom: 0;
-  }
+  } 
 }
 
 @media screen and (max-width: 400px) {

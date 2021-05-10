@@ -986,6 +986,12 @@ footer {
   }
 }
 
+@media screen and (max-width: 400px) {
+  .request button {
+    bottom: 60px;
+  }
+}
+
 @media screen and (max-width: 380px) {
   .request button {
     margin: 0 22%;

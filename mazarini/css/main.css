@@ -16,7 +16,7 @@ a {
   color: #000;
 }
 ul li {
-	display: block;
+  display: block;
 }
 h1,
 h2,
@@ -31,7 +31,7 @@ input {
   font-weight: bold;
 }
 p {
-	font-weight: normal;
+  font-weight: normal;
 }
 select {
   cursor: pointer;
@@ -39,12 +39,12 @@ select {
   font-family: 'Akrobat', sans-serif;
 }
 button {
-	display: block;
-	cursor: pointer;
-	font-family: 'Akrobat', sans-serif;
-	color: #000;
-	border: none;
-	background: transparent;
+  display: block;
+  cursor: pointer;
+  font-family: 'Akrobat', sans-serif;
+  color: #000;
+  border: none;
+  background: transparent;
 }
 
 .container {
@@ -966,9 +966,6 @@ footer {
   }
 }
 @media screen and (max-width: 480px) {
-  .request button {
-    margin: 0 23%;
-  }
   .footer_content__left p {
     margin-left: 10px;
   }
@@ -988,19 +985,9 @@ footer {
     left: 10px;
   }
 }
-@media screen and (max-width: 440px) {
-  .request button {
-    margin: 0 20%;
-  }
-}
-@media screen and (max-width: 400px) {
-  .request button {
-    margin: 0 18%;
-  }
-}
 
 @media screen and (max-width: 380px) {
   .request button {
-    margin: 0 16%;
+    margin: 0 22%;
   }
 }

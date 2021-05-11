@@ -105,6 +105,49 @@ $(document).ready(function () {
           });
         });
 
+        $(function(){
+          $('.home-slider2').each(function(){
+            $(this).owlCarousel({
+              items: 1,
+              margin: 0,
+              loop: true,
+              dots: true,
+              autoplay: true,
+              autoplayTimeout: 4000,
+              smartSpeed: 1000,
+              nav: true,
+            });
+          });
+        });
+        $(function(){
+          $('.home-slider3').each(function(){
+            $(this).owlCarousel({
+              items: 3,
+              margin: 20,
+              loop: true,
+              dots: false,
+              autoplay: true,
+              autoplayTimeout: 4000,
+              smartSpeed: 1000,
+              nav: false,
+              responsive:{
+                  0:{
+                      items:1
+                  },
+                  470:{
+                      items:2
+                  },
+                  900:{
+                      items:2
+                  },
+                  901:{
+                      items:3
+                  },
+              }
+            });
+          });
+        });
+
 $(document).ready(function() {
   $('.burger_menu').click(function(){
         $('.burger_content').toggleClass('open');

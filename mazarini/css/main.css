@@ -1335,9 +1335,6 @@ footer {
   .search {
     display: none;
   }
-  .search2 {
-    display: none;
-  }
   .search_content {
     flex-direction: column;
     justify-content: center;
